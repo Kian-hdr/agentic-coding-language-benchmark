@@ -19,6 +19,7 @@ jobs:
           python-version: '3.12'
       - run: python scripts/verify.py --full
       - run: python scripts/analyze.py --check
+      - run: python scripts/visuals.py --check
       - run: python -m unittest discover -s tests -v
       - run: python scripts/check_public.py
       - if: runner.os != 'Windows'

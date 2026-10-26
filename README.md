@@ -1,10 +1,82 @@
-# Agentic coding language benchmark
+<h1 align="center">Agentic Coding<br>Language Benchmark</h1>
+
+<p align="center">Which language should an AI agent use to write software?</p>
+
+<p align="center"><strong>9 languages · 63 main authoring turns · 42 frozen fixtures · 1 measured host</strong></p>
+
+[![Verify benchmark evidence](https://github.com/Kian-hdr/agentic-coding-language-benchmark/actions/workflows/verify.yml/badge.svg)](https://github.com/Kian-hdr/agentic-coding-language-benchmark/actions/workflows/verify.yml)
+
+**[Tier list](docs/TIER_LIST.md) · [Visual results](docs/VISUAL_GUIDE.md) · [Methods](docs/METHODS.md) · [Reproduce](docs/REPRODUCTION.md) · [Raw evidence](archive/)**
 
 **Independent research by Kian-hdr.** A descriptive, AI-assisted comparison of software authored through Codex using the recorded model alias `gpt-6.1-sol` with medium reasoning. Experiments ran October 26–27, 2026 on one Apple Silicon Mac.
 
 The question was practical: **do agent-oriented languages improve software authoring, correctness, resource use or maintenance compared with established languages?** We evaluated TypeScript, Python, Go, Rust, Swift, Kotlin, MoonBit, BAML and Zerolang.
 
 This is an exploratory benchmark with inspectable artifacts, **not a peer-reviewed study, independently replicated experiment or universal language leaderboard**. AI-assisted reviews are additional checks within the same project, not independent human replication. The recorded alias is historical access evidence; this repository does not guarantee public availability of that alias, the same model backend or the original system context.
+
+## Choose a language for the job
+
+These are **use-case recommendations**, separate from the measured results below. An S tier means a preferred starting point for its role, not a universal winner. Keep an existing suitable stack; add another language only for a platform requirement or demonstrated benefit.
+
+| Tier | Language | Where we would start |
+|---|---|---|
+| **S** | **TypeScript** | Browser UI, typical full-stack web apps and ordinary web backends |
+| **S** | **Go** | Standalone services, infrastructure, network tools and CLIs |
+| **S** | **Rust** | Memory-sensitive native components and systems code |
+| **S in its domain** | **Swift** | Native Apple applications |
+| **S in its domain** | **Kotlin** | Native Android applications |
+| **S for data / A as a general resource-sensitive default** | **Python** | Automation, scientific/data work and ML libraries |
+| **B: bounded pilot** | **MoonBit** | Isolated native/Wasm/JS modules |
+| **B: bounded pilot** | **BAML** | Agent-oriented modules integrated into an existing host |
+| **D for primary production adoption** | **Zerolang** | Research sandbox |
+
+[Read the full tier list, tradeoffs and selection map →](docs/TIER_LIST.md)
+
+> **The practical default:** TypeScript for a typical public web product; Go for a standalone service or CLI; Rust when memory/control constraints earn the complexity. Swift/Kotlin for native platforms, Python for its automation/data ecosystem. Compatibility means the relevant modern devices, with lower weight than reliability, compute use and continued support.
+
+## From an authored program to a supported result
+
+```mermaid
+flowchart LR
+    Spec[Shared task and versioned tools] --> Agent[Codex authors candidate]
+    Agent --> Build[Build and execute]
+    Build --> Correct{Oracle checks pass?}
+    Correct -->|Yes| Measure[Measure eligible CPU and RSS]
+    Correct -->|No| Failure[Retain failure evidence]
+    Measure --> Resource{Resource accounting supported?}
+    Resource -->|Yes| Compare[Publish descriptive comparison]
+    Resource -->|No| Exclude[Retain correctness, exclude resource cell]
+```
+
+The pilot and deep phase use different tasks and protocols. The diagrams explain the evaluation logic; they are not a claim that every repeated test is an independent software-authoring sample.
+
+## The results, visually
+
+<!-- BEGIN GENERATED OVERVIEW -->
+**CPU and memory favor different implementations.** The invoice chart shows CPU for 2,097,152 events; the memory chart shows the maximum supported RSS across all three workloads. Lower is less resource use. These are different measures with different denominators.
+
+```mermaid
+xychart-beta horizontal
+    title "Invoice reconciliation | CPU seconds"
+    x-axis ["TypeScript", "Rust", "Go", "Python", "Swift", "Kotlin/JVM", "MoonBit", "BAML *"]
+    y-axis "CPU seconds" 0 --> 7
+    bar [0.543720, 0.689346, 1.051086, 1.063850, 1.710523, 2.026669, 1.201754, 5.313233]
+```
+
+CPU marks are medians; n=2 except BAML invoice (*, n=1). Observed spread is in the visual guide and raw table, not a confidence interval. Zerolang is ineligible and is not plotted as zero.
+
+```mermaid
+xychart-beta horizontal
+    title "Maximum observed supported RSS"
+    x-axis ["TypeScript", "Rust", "Go", "Python", "Swift", "Kotlin/JVM", "MoonBit", "BAML"]
+    y-axis "MiB" 0 --> 350
+    bar [83.609375, 2.562500, 12.062500, 15.125000, 9.640625, 312.578125, 4.359375, 100.781250]
+```
+
+Memory uses the maximum supported observation, not the mean. The linear axis starts at zero. Full supported RSS ranges and all exclusions are shown below and in the visual guide.
+<!-- END GENERATED OVERVIEW -->
+
+The native charts are editable Mermaid text, with no PNGs or external chart embeds. [See every workload, exact observed ranges, memory and authoring effort →](docs/VISUAL_GUIDE.md)
 
 ## What we observed
 
@@ -70,8 +142,8 @@ python3 scripts/reproduce.py perf typescript --stage maintenance
 
 Local publication verification completed:
 
-- `verify.py --full` passed for 946 exported files, 42 frozen fixtures and 3,946 oracle comparisons; `analyze.py --check` passed.
-- `datasets.py --long` reproduced all original longer input/expected hashes; seven focused unit tests passed.
+- `verify.py --full` passed for 952 exported files, 42 frozen fixtures and 3,946 oracle comparisons; `analyze.py --check` passed.
+- `datasets.py --long` reproduced all original longer input/expected hashes; eight focused unit tests passed.
 - The portable Python adapter built and passed all four final deep validation files (221 responses), plus pilot initial trial 1 (69 checks) and extension trial 2 (89 checks).
 
 These are local publication-tool checks, not independent replication of model authoring or the historical resource measurements. Other language adapters have **not been revalidated for this public release**. A heavy compiler batch was deferred because of host memory pressure; adapter availability is not a cross-platform success claim. See [reproduction](docs/REPRODUCTION.md), [toolchains](docs/TOOLCHAINS.md) and [provenance](docs/PROVENANCE.md).
@@ -88,3 +160,7 @@ These are local publication-tool checks, not independent replication of model au
 - `docs/`: public explanation and interpretation.
 
 Host/account paths are redacted. Raw agent event transcripts, credentials, binary caches and unrelated private context are omitted. Historical hash fields can refer to the pre-redaction local artifact and are not automatically hashes of its public transformed counterpart. Failure observations and missing usage remain explicit. Refer to the release's provenance and license files for redistribution details; this README does not grant rights to third-party toolchains.
+
+## Public verification
+
+The corrected public verification workflow passed on **Linux, macOS and Windows**: [run40409920865](https://github.com/Kian-hdr/agentic-coding-language-benchmark/actions/runs/40409920865). Linux/macOS also rebuild and validate the Python worker; Windows verifies the evidence, analysis, units and public-file checks. This verifies the public package, not nine-language consumer-app compatibility or independent model replication.
