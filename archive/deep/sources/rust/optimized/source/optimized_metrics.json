@@ -1,0 +1,12 @@
+{
+  "language": "rust",
+  "stage": "optimized",
+  "model": "gpt-6.1-sol",
+  "reasoning": "medium",
+  "seconds": 360.01641891699995,
+  "timed_out": true,
+  "exit_code": -15,
+  "usage": [],
+  "commands": 15,
+  "failed_commands": 3
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "invoice_long",
+    "kind": "invoice",
+    "size": "long_8x_large",
+    "source_dataset": "invoice_large",
+    "source_sha256": "4c83138b7812d7152ee87223299abc8f853f5bf7fc25d1ec21baee43ed1bc16b",
+    "source_items": 262144,
+    "source_requests": 512,
+    "blocks": 8,
+    "items": 2097152,
+    "requests": 4096,
+    "input_bytes": 164301240,
+    "expected_bytes": 11966992,
+    "input_sha256": "6dff575c88012e9da4cb7a26d50248f23a4b4e33a4b07df08f518841c1780088",
+    "expected_sha256": "7253d0fda966f3fa96edd3a7d6f13e624c2203daf4e6c8243cf69b8fed9830b5"
+  },
+  {
+    "name": "access_log_long",
+    "kind": "access_log",
+    "size": "long_8x_large",
+    "source_dataset": "access_log_large",
+    "source_sha256": "a2119e473518034cfc78d6e19b74f8ee668f36028b214287014a73c932393b2d",
+    "source_items": 262144,
+    "source_requests": 512,
+    "blocks": 8,
+    "items": 2097152,
+    "requests": 4096,
+    "input_bytes": 179363491,
+    "expected_bytes": 13749936,
+    "input_sha256": "1d1298474fe5d753693689f4785cce2878b9446daccba0bd4420b1a7bca8001e",
+    "expected_sha256": "4ec6137fd830ccbfb25908482508525c35b2d5af1e7df5c724450587342454b7"
+  },
+  {
+    "name": "telemetry_long",
+    "kind": "telemetry",
+    "size": "long_8x_large",
+    "source_dataset": "telemetry_large",
+    "source_sha256": "234944840dda4e79e0574c3616acfb84e1c21e3e6df8fef585303eb2fecb40aa",
+    "source_items": 2097152,
+    "source_requests": 512,
+    "blocks": 8,
+    "items": 16777216,
+    "requests": 4096,
+    "input_bytes": 107426662,
+    "expected_bytes": 345169,
+    "input_sha256": "375b153c5b6a1bb7af8d34d790cf9b452c581439696d31c0805463840a493820",
+    "expected_sha256": "ca3d62364b49d6079b5f0bcc2bf67c1f632bda9ae059d2b4ca3dc5a1bf685c53"
+  }
+]

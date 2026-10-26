@@ -1,0 +1,1226 @@
+[
+  {
+    "language": "python",
+    "trial": 1,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "python",
+    "trial": 1,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "python",
+    "trial": 2,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "python",
+    "trial": 2,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "typescript",
+    "trial": 1,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "typescript",
+    "trial": 1,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "typescript",
+    "trial": 2,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "typescript",
+    "trial": 2,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "go",
+    "trial": 1,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "go",
+    "trial": 1,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "go",
+    "trial": 2,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "go",
+    "trial": 2,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "rust",
+    "trial": 1,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accepted": 3,
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "rust",
+    "trial": 1,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "rust",
+    "trial": 2,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accepted": 3,
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "rust",
+    "trial": 2,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "swift",
+    "trial": 1,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accepted": 3,
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "swift",
+    "trial": 1,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "swift",
+    "trial": 2,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accepted": 3,
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "swift",
+    "trial": 2,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "kotlin",
+    "trial": 1,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accepted": 3,
+      "accounts": [
+        {
+          "balance": 1,
+          "count": 1,
+          "account": "a"
+        },
+        {
+          "balance": 1,
+          "count": 1,
+          "account": "aa"
+        },
+        {
+          "balance": 1,
+          "count": 1,
+          "account": "b"
+        }
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "kotlin",
+    "trial": 1,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "kotlin",
+    "trial": 2,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accepted": 3,
+      "accounts": [
+        {
+          "balance": 1,
+          "count": 1,
+          "account": "a"
+        },
+        {
+          "balance": 1,
+          "count": 1,
+          "account": "aa"
+        },
+        {
+          "balance": 1,
+          "count": 1,
+          "account": "b"
+        }
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "kotlin",
+    "trial": 2,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "moonbit",
+    "trial": 1,
+    "operation": "ledger",
+    "ok": false,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "moonbit",
+    "trial": 1,
+    "operation": "topo",
+    "ok": false,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "b",
+        "aa"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "moonbit",
+    "trial": 2,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "moonbit",
+    "trial": 2,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "baml",
+    "trial": 1,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "baml",
+    "trial": 1,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "baml",
+    "trial": 2,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "baml",
+    "trial": 2,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "zero",
+    "trial": 1,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "zero",
+    "trial": 1,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "zero",
+    "trial": 2,
+    "operation": "ledger",
+    "ok": true,
+    "expected": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "actual": {
+      "accounts": [
+        {
+          "account": "a",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "aa",
+          "balance": 1,
+          "count": 1
+        },
+        {
+          "account": "b",
+          "balance": 1,
+          "count": 1
+        }
+      ],
+      "accepted": 3
+    },
+    "exit_code": 0
+  },
+  {
+    "language": "zero",
+    "trial": 2,
+    "operation": "topo",
+    "ok": true,
+    "expected": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "actual": {
+      "order": [
+        "a",
+        "aa",
+        "b"
+      ]
+    },
+    "exit_code": 0
+  }
+]

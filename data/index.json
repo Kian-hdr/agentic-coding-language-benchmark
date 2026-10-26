@@ -1,0 +1,208 @@
+[
+  {
+    "name": "validation",
+    "input": "validation.jsonl",
+    "expected": "validation.expected.jsonl",
+    "expected_maintenance": "validation.maintenance.expected.jsonl",
+    "items": 0,
+    "requests": 80,
+    "kind": "validation",
+    "size": "mixed",
+    "stages": [
+      "initial",
+      "optimized",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "formatting",
+    "input": "formatting.jsonl",
+    "expected": "formatting.expected.jsonl",
+    "expected_maintenance": "formatting.maintenance.expected.jsonl",
+    "items": 0,
+    "requests": 12,
+    "kind": "validation",
+    "size": "mixed",
+    "stages": [
+      "initial",
+      "optimized",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "fee_validation",
+    "input": "fee_validation.jsonl",
+    "expected": "fee_validation.expected.jsonl",
+    "expected_maintenance": "fee_validation.maintenance.expected.jsonl",
+    "items": 0,
+    "requests": 126,
+    "kind": "validation",
+    "size": "mixed",
+    "stages": [
+      "maintenance"
+    ]
+  },
+  {
+    "name": "numeric_holdout",
+    "input": "numeric_holdout.jsonl",
+    "expected": "numeric_holdout.expected.jsonl",
+    "expected_maintenance": "numeric_holdout.maintenance.expected.jsonl",
+    "items": 0,
+    "requests": 3,
+    "kind": "validation",
+    "size": "mixed",
+    "stages": [
+      "maintenance"
+    ]
+  },
+  {
+    "name": "empty",
+    "input": "empty.jsonl",
+    "expected": "empty.expected.jsonl",
+    "expected_maintenance": "empty.maintenance.expected.jsonl",
+    "items": 0,
+    "requests": 0,
+    "kind": "empty",
+    "size": "empty",
+    "stages": [
+      "initial",
+      "optimized",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "invoice_small",
+    "input": "invoice_small.jsonl",
+    "expected": "invoice_small.expected.jsonl",
+    "expected_maintenance": "invoice_small.maintenance.expected.jsonl",
+    "items": 4096,
+    "requests": 8,
+    "kind": "invoice",
+    "size": "small",
+    "stages": [
+      "initial",
+      "optimized",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "invoice_medium",
+    "input": "invoice_medium.jsonl",
+    "expected": "invoice_medium.expected.jsonl",
+    "expected_maintenance": "invoice_medium.maintenance.expected.jsonl",
+    "items": 32768,
+    "requests": 64,
+    "kind": "invoice",
+    "size": "medium",
+    "stages": [
+      "initial",
+      "optimized",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "invoice_large",
+    "input": "invoice_large.jsonl",
+    "expected": "invoice_large.expected.jsonl",
+    "expected_maintenance": "invoice_large.maintenance.expected.jsonl",
+    "items": 262144,
+    "requests": 512,
+    "kind": "invoice",
+    "size": "large",
+    "stages": [
+      "initial",
+      "optimized",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "access_log_small",
+    "input": "access_log_small.jsonl",
+    "expected": "access_log_small.expected.jsonl",
+    "expected_maintenance": "access_log_small.maintenance.expected.jsonl",
+    "items": 4096,
+    "requests": 8,
+    "kind": "access_log",
+    "size": "small",
+    "stages": [
+      "initial",
+      "optimized",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "access_log_medium",
+    "input": "access_log_medium.jsonl",
+    "expected": "access_log_medium.expected.jsonl",
+    "expected_maintenance": "access_log_medium.maintenance.expected.jsonl",
+    "items": 32768,
+    "requests": 64,
+    "kind": "access_log",
+    "size": "medium",
+    "stages": [
+      "initial",
+      "optimized",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "access_log_large",
+    "input": "access_log_large.jsonl",
+    "expected": "access_log_large.expected.jsonl",
+    "expected_maintenance": "access_log_large.maintenance.expected.jsonl",
+    "items": 262144,
+    "requests": 512,
+    "kind": "access_log",
+    "size": "large",
+    "stages": [
+      "initial",
+      "optimized",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "telemetry_small",
+    "input": "telemetry_small.jsonl",
+    "expected": "telemetry_small.expected.jsonl",
+    "expected_maintenance": "telemetry_small.maintenance.expected.jsonl",
+    "items": 32768,
+    "requests": 8,
+    "kind": "telemetry",
+    "size": "small",
+    "stages": [
+      "initial",
+      "optimized",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "telemetry_medium",
+    "input": "telemetry_medium.jsonl",
+    "expected": "telemetry_medium.expected.jsonl",
+    "expected_maintenance": "telemetry_medium.maintenance.expected.jsonl",
+    "items": 262144,
+    "requests": 64,
+    "kind": "telemetry",
+    "size": "medium",
+    "stages": [
+      "initial",
+      "optimized",
+      "maintenance"
+    ]
+  },
+  {
+    "name": "telemetry_large",
+    "input": "telemetry_large.jsonl",
+    "expected": "telemetry_large.expected.jsonl",
+    "expected_maintenance": "telemetry_large.maintenance.expected.jsonl",
+    "items": 2097152,
+    "requests": 512,
+    "kind": "telemetry",
+    "size": "large",
+    "stages": [
+      "initial",
+      "optimized",
+      "maintenance"
+    ]
+  }
+]

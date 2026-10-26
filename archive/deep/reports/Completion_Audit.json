@@ -1,0 +1,12 @@
+{
+  "all_27_stages_terminal": true,
+  "eligible_correct_languages": 8,
+  "long_correct_runs": 48,
+  "long_supported_resource_runs": 46,
+  "numpy_correct_supported_runs": 6,
+  "source_hashes_verified": true,
+  "report_links_verified": true,
+  "independent_report_review": "{ORIGINAL_BENCHMARK_ROOT}/deeper_research/Final_Report_Review.md",
+  "product_migrations": 0,
+  "scope_limits": "single generated application per language, one host, no full UI/device/HTTP/energy test"
+}

@@ -1,0 +1,12 @@
+[package]
+name = "agent_benchmark"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serde_json = { version = "=1.0.154", features = ["raw_value"] }
+serde = { version = "=1.0.229", features = ["derive"] }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

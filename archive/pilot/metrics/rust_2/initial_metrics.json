@@ -1,0 +1,21 @@
+{
+  "language": "rust",
+  "trial": 2,
+  "phase": "initial",
+  "model": "gpt-6.1-sol",
+  "reasoning": "medium",
+  "seconds": 124.97,
+  "exit_code": 0,
+  "timed_out": false,
+  "usage": [
+    {
+      "input_tokens": 260464,
+      "cached_input_tokens": 240384,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4668,
+      "reasoning_output_tokens": 456
+    }
+  ],
+  "tool_calls": 8,
+  "errors": []
+}

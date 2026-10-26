@@ -1,0 +1,20 @@
+{
+  "language": "rust",
+  "stage": "maintenance",
+  "model": "gpt-6.1-sol",
+  "reasoning": "medium",
+  "seconds": 85.05803491699999,
+  "timed_out": false,
+  "exit_code": 0,
+  "usage": [
+    {
+      "input_tokens": 470936,
+      "cached_input_tokens": 430080,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4846,
+      "reasoning_output_tokens": 464
+    }
+  ],
+  "commands": 9,
+  "failed_commands": 1
+}

@@ -1,0 +1,1 @@
+{"op":"ledger","entries":[{"id":"a","account":" bank ","amount":5},{"id":"a","account":"","amount":9},{"id":"b","account":"bank","amount":-5}]}

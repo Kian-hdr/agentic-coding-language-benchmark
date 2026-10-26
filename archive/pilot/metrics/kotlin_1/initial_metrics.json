@@ -1,0 +1,21 @@
+{
+  "language": "kotlin",
+  "trial": 1,
+  "phase": "initial",
+  "model": "gpt-6.1-sol",
+  "reasoning": "medium",
+  "seconds": 74.387,
+  "exit_code": 0,
+  "timed_out": false,
+  "usage": [
+    {
+      "input_tokens": 124811,
+      "cached_input_tokens": 101888,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4206,
+      "reasoning_output_tokens": 327
+    }
+  ],
+  "tool_calls": 5,
+  "errors": []
+}

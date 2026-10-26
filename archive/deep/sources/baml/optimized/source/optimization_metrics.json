@@ -1,0 +1,44 @@
+[
+  {
+    "dataset": "access_log",
+    "implementation": "baseline",
+    "elapsed_seconds": 1.417784333,
+    "cpu_seconds": 1.320616,
+    "peak_rss_mib": 83.171875
+  },
+  {
+    "dataset": "access_log",
+    "implementation": "optimized",
+    "elapsed_seconds": 0.6085889170000001,
+    "cpu_seconds": 0.340316,
+    "peak_rss_mib": 76.71875
+  },
+  {
+    "dataset": "invoice",
+    "implementation": "baseline",
+    "elapsed_seconds": 0.646358,
+    "cpu_seconds": 0.581658,
+    "peak_rss_mib": 81.90625
+  },
+  {
+    "dataset": "invoice",
+    "implementation": "optimized",
+    "elapsed_seconds": 0.399602209,
+    "cpu_seconds": 0.34431399999999995,
+    "peak_rss_mib": 80.953125
+  },
+  {
+    "dataset": "telemetry",
+    "implementation": "baseline",
+    "elapsed_seconds": 0.211809,
+    "cpu_seconds": 0.15712399999999999,
+    "peak_rss_mib": 77.53125
+  },
+  {
+    "dataset": "telemetry",
+    "implementation": "optimized",
+    "elapsed_seconds": 0.21540795799999998,
+    "cpu_seconds": 0.159271,
+    "peak_rss_mib": 77.9375
+  }
+]

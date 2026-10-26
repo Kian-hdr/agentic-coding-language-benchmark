@@ -1,0 +1,6 @@
+{
+  "exit_code": 0,
+  "seconds": 0.2710101250000889,
+  "stdout": "",
+  "stderr": "warning: using the internal BAML toolchain binary directly is not recommended. Use `baml` instead.\n   Packaging main\n    Finished {ORIGINAL_BENCHMARK_ROOT}/deep_phase/runs/baml/worker [main, aarch64-apple-darwin] in 0s\n"
+}

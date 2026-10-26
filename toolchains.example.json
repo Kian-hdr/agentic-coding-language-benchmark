@@ -1,0 +1,13 @@
+{
+  "python": "python3",
+  "node": "node",
+  "tsc": "tsc",
+  "go": "go",
+  "cargo": "cargo",
+  "swiftc": "swiftc",
+  "kotlinc": "kotlinc",
+  "java": "java",
+  "moon": "moon",
+  "baml": "baml",
+  "zero": "zero"
+}

@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "seconds": 0.9220421249999999,
+  "stdout": "",
+  "stderr": "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/runs/zero/zero.graph:1:1 BLD004: direct backend object buildability has too many ABI argument slots\n  expected: direct AArch64 Mach-O object buildability subset\n  actual: groups\n  help: choose a supported direct target or reduce the program to Mach-O supported direct-backend constructs\n  explain: zero explain BLD004\n"
+}

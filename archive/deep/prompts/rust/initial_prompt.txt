@@ -1,0 +1,13 @@
+Implement SPEC.md in rust, including all three application operations
+and a persistent bulk-file worker. Read LANGUAGE.md for installed tool paths and
+version-local IO APIs. The NEW SPEC.md overrides old protocol examples in LANGUAGE.
+Create optimized build.sh and worker.sh INPUT_JSONL OUTPUT_JSONL. All computation,
+JSON parsing and file reading/writing must be in rust; no per-record child
+process, no algorithm outsourcing. Build before finishing, run your own tests.
+Work only in this directory and assigned toolchain docs/starters. Do not inspect
+other runs, evaluator code, datasets or parent benchmark code. No internet,
+package installation, goals, delegation or public deployment. Existing approved
+JSON support and MoonBit official async IO are allowed. No other dependencies.
+This is a bounded experiment, not a product. Implement robustly and efficiently
+but prioritize correctness. Maximum 720 seconds. Report any unsupported capacity
+or platform behavior honestly. Finish with brief build/test evidence.

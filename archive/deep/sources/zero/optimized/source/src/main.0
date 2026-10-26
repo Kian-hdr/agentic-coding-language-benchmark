@@ -1,0 +1,613 @@
+type State {
+    offset: usize,
+    len: usize,
+    eof: Bool,
+    part: Bool,
+}
+
+type Buffer {
+    data: [120000]u8,
+}
+
+type Writer {
+    n: usize,
+}
+
+fn put(w: mutref<Writer>, out: MutSpan<u8>, out2: MutSpan<u8>, s: Span<u8>) -> Void {
+    var i: usize = 0
+    while i < std.mem.len(s) {
+        if w.n < 120000 {
+            out[w.n] = s[i]
+        } else {
+            out2[w.n - 120000] = s[i]
+        }
+        w.n = w.n + 1
+        i = i + 1
+    }
+}
+
+fn number(w: mutref<Writer>, out: MutSpan<u8>, out2: MutSpan<u8>, value: i64) -> Void {
+    var v: i64 = value
+    if v < 0 {
+        put(w, out, out2, "-")
+        v = -v
+    }
+    var digits: [24]u8 = [0; 24]
+    var n: usize = 0
+    while v > 0 {
+        digits[n] = (v % 10) as u8 + 48
+        n = n + 1
+        v = v / 10
+    }
+    if n == 0 {
+        put(w, out, out2, "0")
+    }
+    while n > 0 {
+        n = n - 1
+        if w.n < 120000 {
+            out[w.n] = digits[n]
+        } else {
+            out2[w.n - 120000] = digits[n]
+        }
+        w.n = w.n + 1
+    }
+}
+
+fn quoted(w: mutref<Writer>, out: MutSpan<u8>, out2: MutSpan<u8>, s: Span<u8>) -> Void {
+    var storage: [120000]u8 = [0; 120000]
+    let result: Maybe<Span<u8>> = std.json.writeStringBytes(storage, s)
+    if result.has {
+        put(w, out, out2, result.value)
+    }
+}
+
+fn field(s: Span<u8>, key: Span<u8>) -> Span<u8> {
+    let v: Maybe<Span<u8>> = std.json.field(s, key)
+    if v.has {
+        return v.value
+    }
+    return ""
+}
+
+fn integer(s: Span<u8>) -> i64 {
+    var i: usize = 0
+    var sign: i64 = 1
+    if std.mem.len(s) > 0 && s[0] == 45 {
+        sign = -1
+        i = 1
+    }
+    var n: i64 = 0
+    while i < std.mem.len(s) && s[i] >= 48 && s[i] <= 57 {
+        n = n * 10 + (s[i] - 48) as i64
+        i = i + 1
+    }
+    return n * sign
+}
+
+fn num(s: Span<u8>, key: Span<u8>) -> i64 {
+    return integer(field(s, key))
+}
+
+fn ws(c: u8) -> Bool {
+    return c == 32 || c >= 9 && c <= 13
+}
+
+fn trim(s: Span<u8>) -> Span<u8> {
+    var a: usize = 0
+    var b: usize = std.mem.len(s)
+    while a < b && ws(s[a]) {
+        a = a + 1
+    }
+    while b > a && ws(s[b - 1]) {
+        b = b - 1
+    }
+    return s[a..b]
+}
+
+fn skip(s: Span<u8>, start: usize) -> usize {
+    var i: usize = start
+    var depth: i64 = 0
+    var string: Bool = false
+    var escape: Bool = false
+    while i < std.mem.len(s) {
+        let c: u8 = s[i]
+        if string {
+            if escape {
+                escape = false
+            } else if c == 92 {
+                escape = true
+            } else if c == 34 {
+                string = false
+            }
+        } else if c == 34 {
+            string = true
+        } else {
+            if c == 123 || c == 91 {
+                depth = depth + 1
+            }
+            if c == 125 || c == 93 {
+                if depth == 0 {
+                    return i
+                }
+                depth = depth - 1
+            }
+            if c == 44 && depth == 0 {
+                return i
+            }
+        }
+        i = i + 1
+    }
+    return i
+}
+
+fn get(t: Span<u8>, slot: usize) -> i64 {
+    var v: i64 = 0
+    var i: usize = 7
+    while i > 0 {
+        i = i - 1
+        v = v * 256 + t[slot * 8 + i] as i64
+    }
+    if t[slot * 8 + 7] != 0 {
+        return -v
+    }
+    return v
+}
+
+fn store(t: MutSpan<u8>, slot: usize, value: i64) -> Void {
+    var v: i64 = value
+    t[slot * 8 + 7] = 0
+    if v < 0 {
+        v = -v
+        t[slot * 8 + 7] = 1
+    }
+    var i: usize = 0
+    while i < 7 {
+        t[slot * 8 + i] = (v % 256) as u8
+        v = v / 256
+        i = i + 1
+    }
+}
+
+fn less(a: Span<u8>, b: Span<u8>) -> Bool {
+    var i: usize = 0
+    while i < std.mem.len(a) && i < std.mem.len(b) {
+        if a[i] != b[i] {
+            return a[i] < b[i]
+        }
+        i = i + 1
+    }
+    return std.mem.len(a) < std.mem.len(b)
+}
+
+fn key(t: Span<u8>, pool: Span<u8>, row: usize) -> Span<u8> {
+    let a: usize = get(t, row * 8) as usize
+    let n: usize = get(t, row * 8 + 1) as usize
+    return pool[a..a + n]
+}
+
+fn find(t: Span<u8>, pool: Span<u8>, n: usize, s: Span<u8>) -> usize {
+    var i: usize = 0
+    while i < n {
+        if std.mem.eqlBytes(key(t, pool, i), s) {
+            return i
+        }
+        i = i + 1
+    }
+    return n
+}
+
+fn storekey(t: MutSpan<u8>, pool: MutSpan<u8>, used: usize, row: usize, s: Span<u8>) -> usize {
+    store(t, row * 8, used as i64)
+    store(t, row * 8 + 1, std.mem.len(s) as i64)
+    let copied: usize = std.mem.copy(pool[used..], s)
+    return used + copied
+}
+
+fn decode(dst: MutSpan<u8>, raw: Span<u8>) -> Span<u8> {
+    let s: Maybe<Span<u8>> = std.json.stringDecode(dst, raw)
+    if s.has {
+        return s.value
+    }
+    return ""
+}
+
+fn telemetry(s: Span<u8>, w: mutref<Writer>, out: MutSpan<u8>, out2: MutSpan<u8>, data: MutSpan<u8>) -> Void {
+    let samples: Span<u8> = field(s, "samples")
+    let window: i64 = num(s, "window")
+    let threshold: i64 = num(s, "threshold")
+    var n: usize = 0
+    var p: usize = 1
+    while p < std.mem.len(samples) {
+        while p < std.mem.len(samples) && (ws(samples[p]) || samples[p] == 44) {
+            p = p + 1
+        }
+        if p >= std.mem.len(samples) || samples[p] == 93 {
+            break
+        }
+        let end: usize = skip(samples, p)
+        n = n + 1
+        p = end
+    }
+    if window <= 0 || window > n as i64 {
+        put(w, out, out2, "{\"error\":\"invalid_window\"}")
+        return
+    }
+    let k: usize = window as usize
+    var sum: i64 = 0
+    var rp: usize = 1
+    var lp: usize = 1
+    var count: i64 = 0
+    var lo: i64 = 0
+    var hi: i64 = 0
+    var above: i64 = 0
+    var checksum: i64 = 0
+    var i: usize = 0
+    while i < n {
+        while rp < std.mem.len(samples) && (ws(samples[rp]) || samples[rp] == 44) {
+            rp = rp + 1
+        }
+        let re: usize = skip(samples, rp)
+        sum = sum + integer(samples[rp..re])
+        rp = re
+        if i >= k {
+            while lp < std.mem.len(samples) && (ws(samples[lp]) || samples[lp] == 44) {
+                lp = lp + 1
+            }
+            let le: usize = skip(samples, lp)
+            sum = sum - integer(samples[lp..le])
+            lp = le
+        }
+        if i + 1 >= k {
+            let avg: i64 = sum / window
+            if count == 0 || avg < lo {
+                lo = avg
+            }
+            if count == 0 || avg > hi {
+                hi = avg
+            }
+            count = count + 1
+            if avg > threshold {
+                above = above + 1
+            }
+            checksum = checksum + count * avg
+        }
+        i = i + 1
+    }
+    put(w, out, out2, "{\"count\":")
+    number(w, out, out2, count)
+    put(w, out, out2, ",\"min\":")
+    number(w, out, out2, lo)
+    put(w, out, out2, ",\"max\":")
+    number(w, out, out2, hi)
+    put(w, out, out2, ",\"above\":")
+    number(w, out, out2, above)
+    put(w, out, out2, ",\"weighted_checksum\":")
+    number(w, out, out2, checksum)
+    put(w, out, out2, "}")
+}
+
+fn groups(s: Span<u8>, outb: mutref<Buffer>, out2b: mutref<Buffer>, tb: mutref<Buffer>, idsb: mutref<Buffer>, poolb: mutref<Buffer>, invoice: Bool) -> usize {
+    var w: Writer = Writer { n: 0 }
+
+    let out: MutSpan<u8> = outb.data[..]
+    let out2: MutSpan<u8> = out2b.data[..]
+    let t: MutSpan<u8> = tb.data[..]
+    let ids: MutSpan<u8> = idsb.data[..]
+    let pool: MutSpan<u8> = poolb.data[..]
+
+    var tempstorage: [60000]u8 = [0; 60000]
+    let temp: MutSpan<u8> = tempstorage
+    var dstorage: [40000]u8 = [0; 40000]
+    let durations: MutSpan<u8> = dstorage
+    var ostorage: [16000]u8 = [0; 16000]
+    let order: MutSpan<u8> = ostorage
+    let cleared: usize = std.mem.fill(t, 0)
+    var used: usize = 0
+    var rows: usize = 0
+    var idn: usize = 0
+    var dn: usize = 0
+    var accepted: i64 = 0
+    var duplicates: i64 = 0
+    var ignored: i64 = 0
+    var rejected: i64 = 0
+    var gross: i64 = 0
+    var refunds: i64 = 0
+    var totalbytes: i64 = 0
+    var errors: i64 = 0
+    let events: Span<u8> = field(s, "events")
+    var p: usize = 1
+    while p < std.mem.len(events) {
+        while p < std.mem.len(events) && (ws(events[p]) || events[p] == 44) {
+            p = p + 1
+        }
+        if p >= std.mem.len(events) || events[p] == 93 {
+            break
+        }
+        let end: usize = skip(events, p)
+        let ev: Span<u8> = events[p..end]
+        p = end
+        if invoice {
+            let id: Span<u8> = decode(temp, field(ev, "id"))
+            if find(ids, pool, idn, id) < idn {
+                duplicates = duplicates + 1
+                continue
+            }
+            used = storekey(ids, pool, used, idn, id)
+            idn = idn + 1
+        } else {
+            let ts: i64 = num(ev, "ts_ms")
+            if ts < num(s, "start_ms") || ts >= num(s, "end_ms") {
+                continue
+            }
+        }
+        var rawkey: Span<u8> = field(ev, "route")
+        if invoice {
+            rawkey = field(ev, "customer")
+        }
+        let name: Span<u8> = trim(decode(temp, rawkey))
+        var amount: i64 = 0
+        var paid: Bool = false
+        if invoice {
+            amount = num(ev, "amount_cents")
+            var statusbuf: [64]u8 = [0; 64]
+            let status: Span<u8> = decode(statusbuf, field(ev, "status"))
+            paid = std.mem.eqlBytes(status, std.mem.span("paid"))
+            let refund: Bool = std.mem.eqlBytes(status, std.mem.span("refund"))
+            if std.mem.len(name) == 0 || amount < 0 || !paid && !refund && !std.mem.eqlBytes(status, std.mem.span("pending")) && !std.mem.eqlBytes(status, std.mem.span("void")) {
+                rejected = rejected + 1
+                continue
+            }
+            if !paid && !refund {
+                ignored = ignored + 1
+                continue
+            }
+        }
+        var row: usize = find(t, pool, rows, name)
+        if row == rows {
+            used = storekey(t, pool, used, row, name)
+            rows = rows + 1
+        }
+        let base: usize = row * 8
+        store(t, base + 2, get(t, base + 2) + 1)
+        accepted = accepted + 1
+        if invoice {
+            if paid {
+                store(t, base + 3, get(t, base + 3) + amount)
+                gross = gross + amount
+            } else {
+                store(t, base + 4, get(t, base + 4) + amount)
+                refunds = refunds + amount
+            }
+        } else {
+            let bytes: i64 = num(ev, "bytes")
+            let duration: i64 = num(ev, "duration_us")
+            if num(ev, "status") >= 500 {
+                store(t, base + 3, get(t, base + 3) + 1)
+                errors = errors + 1
+            }
+            store(t, base + 4, get(t, base + 4) + bytes)
+            totalbytes = totalbytes + bytes
+            if duration > get(t, base + 5) {
+                store(t, base + 5, duration)
+            }
+            store(durations, dn * 2, row as i64)
+            store(durations, dn * 2 + 1, duration)
+            dn = dn + 1
+        }
+    }
+    var i: usize = 0
+    while i < rows {
+        var j: usize = i
+        while j > 0 && less(key(t, pool, i), key(t, pool, get(order, j - 1) as usize)) {
+            store(order, j, get(order, j - 1))
+            j = j - 1
+        }
+        store(order, j, i as i64)
+        i = i + 1
+    }
+    if invoice {
+        put(&mut w, out, out2, "{\"customers\":[")
+    } else {
+        put(&mut w, out, out2, "{\"routes\":[")
+    }
+    i = 0
+    while i < rows {
+        let row: usize = get(order, i) as usize
+        let base: usize = row * 8
+        if i > 0 {
+            put(&mut w, out, out2, ",")
+        }
+        if invoice {
+            put(&mut w, out, out2, "{\"customer\":")
+        } else {
+            put(&mut w, out, out2, "{\"route\":")
+        }
+        quoted(&mut w, out, out2, key(t, pool, row))
+        put(&mut w, out, out2, ",\"count\":")
+        number(&mut w, out, out2, get(t, base + 2))
+        if invoice {
+            put(&mut w, out, out2, ",\"gross_cents\":")
+            number(&mut w, out, out2, get(t, base + 3))
+            put(&mut w, out, out2, ",\"refund_cents\":")
+            number(&mut w, out, out2, get(t, base + 4))
+            put(&mut w, out, out2, ",\"net_cents\":")
+            number(&mut w, out, out2, get(t, base + 3) - get(t, base + 4))
+        } else {
+            var n: usize = 0
+            var d: usize = 0
+            while d < dn {
+                if get(durations, d * 2) == row as i64 {
+                    let value: i64 = get(durations, d * 2 + 1)
+                    var j: usize = n
+                    while j > 0 && get(temp, j - 1) > value {
+                        store(temp, j, get(temp, j - 1))
+                        j = j - 1
+                    }
+                    store(temp, j, value)
+                    n = n + 1
+                }
+                d = d + 1
+            }
+            put(&mut w, out, out2, ",\"errors\":")
+            number(&mut w, out, out2, get(t, base + 3))
+            put(&mut w, out, out2, ",\"total_bytes\":")
+            number(&mut w, out, out2, get(t, base + 4))
+            put(&mut w, out, out2, ",\"max_us\":")
+            number(&mut w, out, out2, get(t, base + 5))
+            put(&mut w, out, out2, ",\"p95_us\":")
+            number(&mut w, out, out2, get(temp, (95 * n + 99) / 100 - 1))
+        }
+        put(&mut w, out, out2, "}")
+        i = i + 1
+    }
+    put(&mut w, out, out2, "]")
+    if invoice {
+        put(&mut w, out, out2, ",\"accepted\":")
+        number(&mut w, out, out2, accepted)
+        put(&mut w, out, out2, ",\"duplicates\":")
+        number(&mut w, out, out2, duplicates)
+        put(&mut w, out, out2, ",\"ignored\":")
+        number(&mut w, out, out2, ignored)
+        put(&mut w, out, out2, ",\"rejected\":")
+        number(&mut w, out, out2, rejected)
+        put(&mut w, out, out2, ",\"gross_cents\":")
+        number(&mut w, out, out2, gross)
+        put(&mut w, out, out2, ",\"refund_cents\":")
+        number(&mut w, out, out2, refunds)
+        put(&mut w, out, out2, ",\"net_cents\":")
+        number(&mut w, out, out2, gross - refunds)
+    } else {
+        put(&mut w, out, out2, ",\"total_count\":")
+        number(&mut w, out, out2, accepted)
+        put(&mut w, out, out2, ",\"total_errors\":")
+        number(&mut w, out, out2, errors)
+        put(&mut w, out, out2, ",\"total_bytes\":")
+        number(&mut w, out, out2, totalbytes)
+    }
+    put(&mut w, out, out2, "}")
+    return w.n
+}
+
+fn process(s: Span<u8>, outb: mutref<Buffer>, out2b: mutref<Buffer>, tb: mutref<Buffer>, idsb: mutref<Buffer>, poolb: mutref<Buffer>, tempb: mutref<Buffer>) -> usize {
+
+    let out: MutSpan<u8> = outb.data[..]
+    let out2: MutSpan<u8> = out2b.data[..]
+    let t: MutSpan<u8> = tb.data[..]
+    let ids: MutSpan<u8> = idsb.data[..]
+    let pool: MutSpan<u8> = poolb.data[..]
+    let temp: MutSpan<u8> = tempb.data[..]
+
+    var w: Writer = Writer { n: 0 }
+    if !std.json.validateBytes(s) {
+        put(&mut w, out, out2, "{\"error\":\"invalid_json\"}\n")
+        return w.n
+    }
+    var opbuf: [64]u8 = [0; 64]
+    let op: Span<u8> = decode(opbuf, field(s, "op"))
+    if std.mem.eqlBytes(op, std.mem.span("telemetry")) {
+        telemetry(s, &mut w, out, out2, t)
+    } else if std.mem.eqlBytes(op, std.mem.span("invoice")) {
+        w.n = groups(s, outb, out2b, tb, idsb, poolb, true)
+    } else if std.mem.eqlBytes(op, std.mem.span("access_log")) {
+        w.n = groups(s, outb, out2b, tb, idsb, poolb, false)
+    } else {
+        put(&mut w, out, out2, "{\"error\":\"unknown_op\"}")
+    }
+    put(&mut w, out, out2, "\n")
+    return w.n
+}
+
+fn layer0(st: mutref<State>, outb: mutref<Buffer>) -> Void raises {
+    var local: Buffer = Buffer { data: [0; 120000] }
+    check layer1(st, outb, &mut local)
+}
+
+fn layer1(st: mutref<State>, outb: mutref<Buffer>, out2b: mutref<Buffer>) -> Void raises {
+    var local: Buffer = Buffer { data: [0; 120000] }
+    check layer2(st, outb, out2b, &mut local)
+}
+
+fn layer2(st: mutref<State>, outb: mutref<Buffer>, out2b: mutref<Buffer>, tb: mutref<Buffer>) -> Void raises {
+    var local: Buffer = Buffer { data: [0; 120000] }
+    check layer3(st, outb, out2b, tb, &mut local)
+}
+
+fn layer3(st: mutref<State>, outb: mutref<Buffer>, out2b: mutref<Buffer>, tb: mutref<Buffer>, idsb: mutref<Buffer>) -> Void raises {
+    var local: Buffer = Buffer { data: [0; 120000] }
+    check layer4(st, outb, out2b, tb, idsb, &mut local)
+}
+
+fn layer4(st: mutref<State>, outb: mutref<Buffer>, out2b: mutref<Buffer>, tb: mutref<Buffer>, idsb: mutref<Buffer>, poolb: mutref<Buffer>) -> Void raises {
+    var local: Buffer = Buffer { data: [0; 120000] }
+    check layer5(st, outb, out2b, tb, idsb, poolb, &mut local)
+}
+
+fn layer5(st: mutref<State>, outb: mutref<Buffer>, out2b: mutref<Buffer>, tb: mutref<Buffer>, idsb: mutref<Buffer>, poolb: mutref<Buffer>, tempb: mutref<Buffer>) -> Void raises {
+    let input: String = std.args.getOr(1, "input.jsonl")
+    var linestorage: [110000]u8 = [0; 110000]
+    let line: MutSpan<u8> = linestorage
+    var chunkstorage: [16384]u8 = [0; 16384]
+    let chunk: MutSpan<u8> = chunkstorage
+    var offset: usize = st.offset
+    var used: usize = 0
+    var done: Bool = false
+    while !done {
+        let read: Maybe<usize> = std.fs.readBytesAt(input, offset, chunk)
+        if !read.has { raise Io }
+        if read.has {
+            if offset >= read.value { st.eof = true
+                break }
+            var n: usize = read.value - offset
+            if n > 16384 { n = 16384 }
+            var i: usize = 0
+            while i < n {
+                let c: u8 = chunk[i]
+                offset = offset + 1
+                i = i + 1
+                if c == 10 {
+                    if std.mem.len(trim(line[..used])) > 0 { done = true
+                        break }
+                    used = 0
+                } else {
+                    if used >= 110000 { raise TooLarge }
+                    line[used] = c
+                    used = used + 1
+                }
+            }
+        }
+    }
+    st.len = 0
+    let request: Span<u8> = trim(line[..used])
+    if std.mem.len(request) > 0 {
+        st.len = process(request, outb, out2b, tb, idsb, poolb, tempb)
+        if st.part {
+            if st.len > 120000 {
+                let copied: usize = std.mem.copy(outb.data[..], out2b.data[..st.len - 120000])
+            }
+        }
+    }
+    if !st.part { st.offset = offset }
+}
+
+pub fn main(world: World) -> Void raises {
+    var output: Buffer = Buffer { data: [0; 120000] }
+    var st: State = State { offset: 0, len: 0, eof: false, part: false }
+    while !st.eof {
+        let old: usize = st.offset
+        check layer0(&mut st, &mut output)
+        let next: usize = st.offset
+        if st.len > 0 {
+            if st.len <= 120000 {
+                check world.out.write(output.data[..st.len])
+            } else {
+                check world.out.write(output.data[..])
+                st.offset = old
+                st.part = true
+                check layer0(&mut st, &mut output)
+                check world.out.write(output.data[..st.len - 120000])
+                st.part = false
+                st.offset = next
+            }
+        }
+    }
+}

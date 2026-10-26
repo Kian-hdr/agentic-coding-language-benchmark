@@ -1,0 +1,190 @@
+{
+  "source": "saved raw otool stdout only; no commands or benchmarks rerun",
+  "original_sha256": "c8208eb9376477053d26c0be98f43f253467dfdbe677bf2df6cde207efda9937",
+  "corrected_sha256": "b7f6fe1b0248b6c389c348cd18619c0788d6421954c2f2546526afca3d3a36d4",
+  "changed_records": [
+    {
+      "name": "swift_original_macho_metadata",
+      "before": [
+        {
+          "architecture": "single_slice_or_unspecified",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "27037.1",
+          "sdk": "27.0"
+        }
+      ],
+      "after": [
+        {
+          "architecture": "single_slice_or_unspecified",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "27.2",
+          "sdk": "27.0"
+        }
+      ]
+    },
+    {
+      "name": "zero_original_macho_metadata",
+      "before": [
+        {
+          "architecture": "single_slice_or_unspecified",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "27037.1",
+          "sdk": "27.0"
+        }
+      ],
+      "after": [
+        {
+          "architecture": "single_slice_or_unspecified",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "27.0",
+          "sdk": "27.0"
+        }
+      ]
+    },
+    {
+      "name": "baml_original_macho_metadata",
+      "before": [
+        {
+          "architecture": "single_slice_or_unspecified",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "1267.0",
+          "sdk": "26.5"
+        }
+      ],
+      "after": [
+        {
+          "architecture": "single_slice_or_unspecified",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "11.0",
+          "sdk": "26.5"
+        }
+      ]
+    },
+    {
+      "name": "rust_original_macho_metadata",
+      "before": [
+        {
+          "architecture": "single_slice_or_unspecified",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "27037.1",
+          "sdk": "27.0"
+        }
+      ],
+      "after": [
+        {
+          "architecture": "single_slice_or_unspecified",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "11.0",
+          "sdk": "27.0"
+        }
+      ]
+    },
+    {
+      "name": "moonbit_original_macho_metadata",
+      "before": [
+        {
+          "architecture": "single_slice_or_unspecified",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "27037.1",
+          "sdk": "27.0"
+        }
+      ],
+      "after": [
+        {
+          "architecture": "single_slice_or_unspecified",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "27.0",
+          "sdk": "27.0"
+        }
+      ]
+    },
+    {
+      "name": "swift_x86_64_macos13_macho_metadata",
+      "before": [
+        {
+          "architecture": "single_slice_or_unspecified",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "27037.1",
+          "sdk": "27.0"
+        }
+      ],
+      "after": [
+        {
+          "architecture": "single_slice_or_unspecified",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "13.0",
+          "sdk": "27.0"
+        }
+      ]
+    },
+    {
+      "name": "swift_arm64_macos13_macho_metadata",
+      "before": [
+        {
+          "architecture": "single_slice_or_unspecified",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "27037.1",
+          "sdk": "27.0"
+        }
+      ],
+      "after": [
+        {
+          "architecture": "single_slice_or_unspecified",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "13.0",
+          "sdk": "27.0"
+        }
+      ]
+    },
+    {
+      "name": "swift_universal_macos13_macho_metadata",
+      "before": [
+        {
+          "architecture": "x86_64",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "27037.1",
+          "sdk": "27.0"
+        },
+        {
+          "architecture": "arm64",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "27037.1",
+          "sdk": "27.0"
+        }
+      ],
+      "after": [
+        {
+          "architecture": "x86_64",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "13.0",
+          "sdk": "27.0"
+        },
+        {
+          "architecture": "arm64",
+          "load_command": "LC_BUILD_VERSION",
+          "platform": "1",
+          "minimum_os": "13.0",
+          "sdk": "27.0"
+        }
+      ]
+    }
+  ],
+  "parser_assertions": "modern nested tool version, legacy command version, universal slice separation passed"
+}

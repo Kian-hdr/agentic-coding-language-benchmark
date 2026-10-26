@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite this benchmark repository and the commit or release you used."
+title: "Agentic Coding Language Benchmark: A Descriptive Nine-Language Codex Evaluation"
+type: software
+authors:
+  - name: "Kian-hdr"
+    website: "https://github.com/Kian-hdr"
+repository-code: "https://github.com/Kian-hdr/agentic-coding-language-benchmark"
+url: "https://github.com/Kian-hdr/agentic-coding-language-benchmark"
+license: MIT
+version: 1.0.0
+date-released: 2026-10-27
+abstract: "Independent, AI-assisted descriptive evaluation of software authored through Codex in nine programming languages. Includes archived pilot and deep-phase results, synthetic fixtures, source snapshots, analysis and explicit reproducibility limitations."

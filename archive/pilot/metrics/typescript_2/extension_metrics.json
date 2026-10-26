@@ -1,0 +1,21 @@
+{
+  "language": "typescript",
+  "trial": 2,
+  "phase": "extension",
+  "model": "gpt-6.1-sol",
+  "reasoning": "medium",
+  "seconds": 30.473,
+  "exit_code": 0,
+  "timed_out": false,
+  "usage": [
+    {
+      "input_tokens": 126304,
+      "cached_input_tokens": 104064,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1259,
+      "reasoning_output_tokens": 17
+    }
+  ],
+  "tool_calls": 4,
+  "errors": []
+}

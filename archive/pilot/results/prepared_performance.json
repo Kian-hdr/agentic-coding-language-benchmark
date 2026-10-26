@@ -1,0 +1,1038 @@
+[
+  {
+    "language": "python",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/bin/python3.14",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/python_1/main.py"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.03865279200000002,
+    "samples": [
+      0.025504416999999988,
+      0.03865279200000002,
+      0.026261124999999996,
+      0.25822737500000004,
+      0.05533449999999995
+    ],
+    "error": null
+  },
+  {
+    "language": "python",
+    "trial": 1,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/bin/python3.14",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/python_1/main.py"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.02612854099999995,
+    "samples": [
+      0.027164874999999977,
+      0.02612854099999995,
+      0.034925834000000044,
+      0.02244675000000007,
+      0.02124720899999999
+    ],
+    "error": null
+  },
+  {
+    "language": "python",
+    "trial": 1,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/bin/python3.14",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/python_1/main.py"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.023975332999999988,
+    "samples": [
+      0.028009167,
+      0.023975332999999988,
+      0.023798125000000003,
+      0.02289350000000001,
+      0.024933709000000026
+    ],
+    "error": null
+  },
+  {
+    "language": "python",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/bin/python3.14",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/python_2/main.py"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.023723332999999958,
+    "samples": [
+      0.03155341700000003,
+      0.02855249999999998,
+      0.023723332999999958,
+      0.02264508300000001,
+      0.022191625000000048
+    ],
+    "error": null
+  },
+  {
+    "language": "python",
+    "trial": 2,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/bin/python3.14",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/python_2/main.py"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.02608170799999998,
+    "samples": [
+      0.024534540999999965,
+      0.02608170799999998,
+      0.023149874999999875,
+      0.02655166600000003,
+      0.02831433299999997
+    ],
+    "error": null
+  },
+  {
+    "language": "python",
+    "trial": 2,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/bin/python3.14",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/python_2/main.py"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.042316208999999994,
+    "samples": [
+      0.044520333000000134,
+      0.04901433299999991,
+      0.042316208999999994,
+      0.03613708400000015,
+      0.03558808300000016
+    ],
+    "error": null
+  },
+  {
+    "language": "typescript",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/bin/node",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/typescript_1/dist/main.js"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.05459833299999994,
+    "samples": [
+      0.06080258399999994,
+      0.053276250000000136,
+      0.051753124999999844,
+      0.05459833299999994,
+      0.05494762499999983
+    ],
+    "error": null
+  },
+  {
+    "language": "typescript",
+    "trial": 1,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/bin/node",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/typescript_1/dist/main.js"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.052437499999999915,
+    "samples": [
+      0.0538760840000001,
+      0.052062209000000026,
+      0.05277266699999994,
+      0.052437499999999915,
+      0.05234358299999986
+    ],
+    "error": null
+  },
+  {
+    "language": "typescript",
+    "trial": 1,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/bin/node",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/typescript_1/dist/main.js"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.05407133400000008,
+    "samples": [
+      0.052364625000000053,
+      0.05352637499999968,
+      0.05407133400000008,
+      0.05449349999999997,
+      0.05710799999999994
+    ],
+    "error": null
+  },
+  {
+    "language": "typescript",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/bin/node",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/typescript_2/dist/main.js"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.05242566599999998,
+    "samples": [
+      0.06129616700000007,
+      0.0539164160000003,
+      0.05086437499999974,
+      0.051009957999999855,
+      0.05242566599999998
+    ],
+    "error": null
+  },
+  {
+    "language": "typescript",
+    "trial": 2,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/bin/node",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/typescript_2/dist/main.js"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.05142625000000001,
+    "samples": [
+      0.05115991700000011,
+      0.05200449999999979,
+      0.05142625000000001,
+      0.05077887500000022,
+      0.051698542000000014
+    ],
+    "error": null
+  },
+  {
+    "language": "typescript",
+    "trial": 2,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/bin/node",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/typescript_2/dist/main.js"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.05352695900000004,
+    "samples": [
+      0.050585916999999814,
+      0.05521512500000014,
+      0.0575688750000003,
+      0.05352695900000004,
+      0.05210412500000006
+    ],
+    "error": null
+  },
+  {
+    "language": "go",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/go_1/program"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.003605207999999749,
+    "samples": [
+      0.00399229099999987,
+      0.003270833000000195,
+      0.003285290999999635,
+      0.003605207999999749,
+      0.0038017090000002085
+    ],
+    "error": null
+  },
+  {
+    "language": "go",
+    "trial": 1,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/go_1/program"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.0031516250000001023,
+    "samples": [
+      0.0033357910000000324,
+      0.0032709579999998795,
+      0.0028836249999999453,
+      0.0029071250000001214,
+      0.0031516250000001023
+    ],
+    "error": null
+  },
+  {
+    "language": "go",
+    "trial": 1,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/go_1/program"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.0034021250000000336,
+    "samples": [
+      0.0032514169999999787,
+      0.0034021250000000336,
+      0.0031043330000000147,
+      0.0035899580000000597,
+      0.0034200000000002007
+    ],
+    "error": null
+  },
+  {
+    "language": "go",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/go_2/program"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.003498750000000328,
+    "samples": [
+      0.003498750000000328,
+      0.0032691660000003786,
+      0.004010000000000069,
+      0.0035149580000002345,
+      0.0031390840000002918
+    ],
+    "error": null
+  },
+  {
+    "language": "go",
+    "trial": 2,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/go_2/program"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.002990583999999963,
+    "samples": [
+      0.002990583999999963,
+      0.003102333000000179,
+      0.002687250000000141,
+      0.003174582999999842,
+      0.00292437500000009
+    ],
+    "error": null
+  },
+  {
+    "language": "go",
+    "trial": 2,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/go_2/program"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.0034106249999998894,
+    "samples": [
+      0.004104999999999581,
+      0.0034455419999996906,
+      0.002976791999999673,
+      0.0034106249999998894,
+      0.0030782080000002487
+    ],
+    "error": null
+  },
+  {
+    "language": "rust",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/rust_1/target/release/agent_benchmark"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.0046953339999999955,
+    "samples": [
+      0.005192209000000503,
+      0.005033333000000084,
+      0.0046953339999999955,
+      0.0033559159999994037,
+      0.003226833000000262
+    ],
+    "error": null
+  },
+  {
+    "language": "rust",
+    "trial": 1,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/rust_1/target/release/agent_benchmark"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.0024011670000003704,
+    "samples": [
+      0.0025281670000003587,
+      0.0026047910000004393,
+      0.0023887080000006833,
+      0.002185374999999823,
+      0.0024011670000003704
+    ],
+    "error": null
+  },
+  {
+    "language": "rust",
+    "trial": 1,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/rust_1/target/release/agent_benchmark"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.0024839580000000083,
+    "samples": [
+      0.0026986660000005713,
+      0.0024954590000003662,
+      0.0022945420000004546,
+      0.0024839580000000083,
+      0.002228124999999359
+    ],
+    "error": null
+  },
+  {
+    "language": "rust",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/rust_2/target/release/agent_benchmark"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.004003875000000434,
+    "samples": [
+      0.0054532920000003315,
+      0.005064083000000608,
+      0.004003875000000434,
+      0.0034484999999992993,
+      0.003360291999999987
+    ],
+    "error": null
+  },
+  {
+    "language": "rust",
+    "trial": 2,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/rust_2/target/release/agent_benchmark"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.0024272920000001363,
+    "samples": [
+      0.002777999999999281,
+      0.0025409580000008702,
+      0.002264916000001449,
+      0.002141875000001292,
+      0.0024272920000001363
+    ],
+    "error": null
+  },
+  {
+    "language": "rust",
+    "trial": 2,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/rust_2/target/release/agent_benchmark"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.0028530829999997565,
+    "samples": [
+      0.0027275420000005823,
+      0.003204042000000129,
+      0.002620792000000094,
+      0.0028530829999997565,
+      0.08392004100000072
+    ],
+    "error": null
+  },
+  {
+    "language": "swift",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/swift_1/program"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.006942833000000093,
+    "samples": [
+      0.0066423750000002,
+      0.006942833000000093,
+      0.007055375000000197,
+      0.006727083000001244,
+      0.007563208000000543
+    ],
+    "error": null
+  },
+  {
+    "language": "swift",
+    "trial": 1,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/swift_1/program"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.0037160830000004808,
+    "samples": [
+      0.003945416999998841,
+      0.0034916250000005533,
+      0.0037160830000004808,
+      0.003974291999998769,
+      0.0035681659999990956
+    ],
+    "error": null
+  },
+  {
+    "language": "swift",
+    "trial": 1,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/swift_1/program"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.004253499999999022,
+    "samples": [
+      0.004783458000000351,
+      0.004841208000000208,
+      0.0041307079999999274,
+      0.004161040999999699,
+      0.004253499999999022
+    ],
+    "error": null
+  },
+  {
+    "language": "swift",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/swift_2/program"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.007341750000000147,
+    "samples": [
+      0.007758625000001018,
+      0.007083334000000718,
+      0.00720504199999894,
+      0.007341750000000147,
+      0.007867084000000801
+    ],
+    "error": null
+  },
+  {
+    "language": "swift",
+    "trial": 2,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/swift_2/program"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.0036952909999996564,
+    "samples": [
+      0.0040782090000011095,
+      0.0035130419999997997,
+      0.003644458000000128,
+      0.003956499999999252,
+      0.0036952909999996564
+    ],
+    "error": null
+  },
+  {
+    "language": "swift",
+    "trial": 2,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/swift_2/program"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.004620082999998942,
+    "samples": [
+      0.004542500000001226,
+      0.004643874999999298,
+      0.004620082999998942,
+      0.004622208000000683,
+      0.004504916999998443
+    ],
+    "error": null
+  },
+  {
+    "language": "kotlin",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/opt/openjdk@21/bin/java",
+      "-cp",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/kotlin_1/app.jar:{ORIGINAL_BENCHMARK_ROOT}/toolchains/kotlin/json-20260814.jar",
+      "MainKt"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.058021124999999785,
+    "samples": [
+      0.05797179099999994,
+      0.0567584580000009,
+      0.058021124999999785,
+      0.05905299999999869,
+      0.05853708399999924
+    ],
+    "error": null
+  },
+  {
+    "language": "kotlin",
+    "trial": 1,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/opt/openjdk@21/bin/java",
+      "-cp",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/kotlin_1/app.jar:{ORIGINAL_BENCHMARK_ROOT}/toolchains/kotlin/json-20260814.jar",
+      "MainKt"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.03743912500000057,
+    "samples": [
+      0.03743912500000057,
+      0.03792200000000001,
+      0.03746566700000109,
+      0.03696670900000143,
+      0.037373917000000034
+    ],
+    "error": null
+  },
+  {
+    "language": "kotlin",
+    "trial": 1,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/opt/openjdk@21/bin/java",
+      "-cp",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/kotlin_1/app.jar:{ORIGINAL_BENCHMARK_ROOT}/toolchains/kotlin/json-20260814.jar",
+      "MainKt"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.05893591699999945,
+    "samples": [
+      0.04659754200000066,
+      0.04674991599999956,
+      0.060285000000000366,
+      0.06078479100000145,
+      0.05893591699999945
+    ],
+    "error": null
+  },
+  {
+    "language": "kotlin",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/opt/openjdk@21/bin/java",
+      "-cp",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/kotlin_2/app.jar:{ORIGINAL_BENCHMARK_ROOT}/toolchains/kotlin/json-20260814.jar",
+      "MainKt"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.05814237500000097,
+    "samples": [
+      0.05814237500000097,
+      0.05752962499999903,
+      0.06092783399999924,
+      0.05621049999999883,
+      0.06122112499999943
+    ],
+    "error": null
+  },
+  {
+    "language": "kotlin",
+    "trial": 2,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/opt/openjdk@21/bin/java",
+      "-cp",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/kotlin_2/app.jar:{ORIGINAL_BENCHMARK_ROOT}/toolchains/kotlin/json-20260814.jar",
+      "MainKt"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.03719450000000002,
+    "samples": [
+      0.03779216599999913,
+      0.036834208000000146,
+      0.03719450000000002,
+      0.037324082999999675,
+      0.037091542000000643
+    ],
+    "error": null
+  },
+  {
+    "language": "kotlin",
+    "trial": 2,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_HOMEBREW}/opt/openjdk@21/bin/java",
+      "-cp",
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/kotlin_2/app.jar:{ORIGINAL_BENCHMARK_ROOT}/toolchains/kotlin/json-20260814.jar",
+      "MainKt"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.04712945800000057,
+    "samples": [
+      0.06099945799999951,
+      0.04751629199999918,
+      0.045994458000000904,
+      0.04669804099999908,
+      0.04712945800000057
+    ],
+    "error": null
+  },
+  {
+    "language": "moonbit",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "ok": false,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/moonbit_1/solution/_build/native/release/build/cmd/main/main.exe"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": null,
+    "samples": [],
+    "error": {
+      "exit_code": 0,
+      "stdout": "{\"accounts\":[{\"account\":\"acct0\",\"balance\":43,\"count\":10},{\"account\":\"acct1\",\"balance\":0,\"count\":10},{\"account\":\"acct2\",\"balance\":-116,\"count\":9},{\"account\":\"acct3\",\"balance\":-70,\"count\":14},{\"account\":\"acct4\",\"balance\":77,\"count\":7},{\"account\":\"acct5\",\"balance\":222,\"count\":15},{\"account\":\"acct6\",\"ba",
+      "stderr": ""
+    }
+  },
+  {
+    "language": "moonbit",
+    "trial": 1,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/moonbit_1/solution/_build/native/release/build/cmd/main/main.exe"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.002693290999999931,
+    "samples": [
+      0.0023915409999997195,
+      0.00285179199999952,
+      0.002693290999999931,
+      0.0027104160000011035,
+      0.002456291999999749
+    ],
+    "error": null
+  },
+  {
+    "language": "moonbit",
+    "trial": 1,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/moonbit_1/solution/_build/native/release/build/cmd/main/main.exe"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.003057166999999694,
+    "samples": [
+      0.003057166999999694,
+      0.002792540999999815,
+      0.0026884159999998047,
+      0.0031126669999999024,
+      0.0030657909999991517
+    ],
+    "error": null
+  },
+  {
+    "language": "moonbit",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/moonbit_2/solution/_build/native/release/build/cmd/main/main.exe"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.003415624999998812,
+    "samples": [
+      0.006003750000001418,
+      0.00469033300000099,
+      0.003415624999998812,
+      0.00297629099999952,
+      0.00300020799999956
+    ],
+    "error": null
+  },
+  {
+    "language": "moonbit",
+    "trial": 2,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/moonbit_2/solution/_build/native/release/build/cmd/main/main.exe"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.002368166000000116,
+    "samples": [
+      0.002368166000000116,
+      0.0022716250000005545,
+      0.0023481250000010334,
+      0.0025057079999992737,
+      0.002609166999999246
+    ],
+    "error": null
+  },
+  {
+    "language": "moonbit",
+    "trial": 2,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/runs/moonbit_2/solution/_build/native/release/build/cmd/main/main.exe"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.002698750000000416,
+    "samples": [
+      0.0024005830000000117,
+      0.002759250000000435,
+      0.0025560000000002248,
+      0.0028141249999986684,
+      0.002698750000000416
+    ],
+    "error": null
+  },
+  {
+    "language": "baml",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/prepared/baml_1/program",
+      "--path"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.10099899999999984,
+    "samples": [
+      0.10215345800000009,
+      0.10487329200000062,
+      0.09955583300000015,
+      0.10099899999999984,
+      0.09922137499999906
+    ],
+    "error": null
+  },
+  {
+    "language": "baml",
+    "trial": 1,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/prepared/baml_1/program",
+      "--path"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.10147245799999993,
+    "samples": [
+      0.10434758399999922,
+      0.10147245799999993,
+      0.10177666700000287,
+      0.10117933400000112,
+      0.09629679200000041
+    ],
+    "error": null
+  },
+  {
+    "language": "baml",
+    "trial": 1,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/prepared/baml_1/program",
+      "--path"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.10939329200000003,
+    "samples": [
+      0.10953533300000018,
+      0.10883995899999732,
+      0.10825424999999811,
+      0.11177329199999875,
+      0.10939329200000003
+    ],
+    "error": null
+  },
+  {
+    "language": "baml",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/prepared/baml_2/program",
+      "--path"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.10059083300000182,
+    "samples": [
+      0.10032716599999958,
+      0.09667475000000181,
+      0.10059083300000182,
+      0.1035901250000002,
+      0.10074812499999908
+    ],
+    "error": null
+  },
+  {
+    "language": "baml",
+    "trial": 2,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/prepared/baml_2/program",
+      "--path"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.10065191700000042,
+    "samples": [
+      0.10065191700000042,
+      0.10038849999999755,
+      0.09962508299999939,
+      0.10466291599999877,
+      0.10116520799999762
+    ],
+    "error": null
+  },
+  {
+    "language": "baml",
+    "trial": 2,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/prepared/baml_2/program",
+      "--path"
+    ],
+    "raw_json_argument": false,
+    "median_seconds": 0.12158895800000025,
+    "samples": [
+      0.10630924999999891,
+      0.14919933299999855,
+      0.1121344999999998,
+      0.14398029100000187,
+      0.12158895800000025
+    ],
+    "error": null
+  },
+  {
+    "language": "zero",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "ok": false,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/prepared/zero_1/program"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": null,
+    "samples": [],
+    "error": "Command '['{ORIGINAL_BENCHMARK_ROOT}/prepared/zero_1/program', '{\"op\": \"ledger\", \"entries\": [{\"id\": \"0\", \"account\": \"acct62\", \"amount\": 7}, {\"id\": \"1\", \"account\": \"acct87\", \"amount\": 24}, {\"id\": \"2\", \"account\": \"acct93\", \"amount\": -19}, {\"id\": \"3\", \"account\": \"acct45\", \"amount\": 28}, {\"id\": \"4\", \"account\": \"acct10\", \"amount\": -36}, {\"id\": \"5\", \"account\": \"acct78\", \"amount\": -43}, {\"id\": \"6\", \"account\": \"acct42\", \"amount\": 47}, {\"id\": \"7\", \"account\": \"acct67\", \"amount\": 43}, {\"id\": \"8\", \"account\": \"acct40\", \"amount\": -18}, {\"id\": \"9\", \"account\": \"acct38\", \"amount\": -11}, {\"id\": \"10\", \"account\": \"acct45\", \"amount\": 47}, {\"id\": \"11\", \"account\": \"acct73\", \"amount\": 43}, {\"id\": \"12\", \"account\": \"acct88\", \"amount\": 25}, {\"id\": \"13\", \"account\": \"acct26\", \"amount\": 45}, {\"id\": \"14\", \"account\": \"acct17\", \"amount\": -35}, {\"id\": \"15\", \"account\": \"acct41\", \"amount\": 45}, {\"id\": \"16\", \"account\": \"acct46\", \"amount\": -13}, {\"id\": \"17\", \"account\": \"acct26\", \"amount\": -42}, {\"id\": \"18\", \"account\": \"acct22\", \"amount\": -28}, {\"id\": \"19\", \"account\": \"acct70\", \"amount\": -23}, {\"id\": \"20\", \"account\": \"acct48\", \"amount\": 40}, {\"id\": \"21\", \"account\": \"acct11\", \"amount\": 8}, {\"id\": \"22\", \"account\": \"acct38\", \"amount\": -31}, {\"id\": \"23\", \"account\": \"acct88\", \"amount\": 30}, {\"id\": \"24\", \"account\": \"acct45\", \"amount\": 12}, {\"id\": \"25\", \"account\": \"acct60\", \"amount\": 5}, {\"id\": \"26\", \"account\": \"acct44\", \"amount\": -27}, {\"id\": \"27\", \"account\": \"acct6\", \"amount\": 11}, {\"id\": \"28\", \"account\": \"acct71\", \"amount\": -47}, {\"id\": \"29\", \"account\": \"acct62\", \"amount\": -42}, {\"id\": \"30\", \"account\": \"acct34\", \"amount\": 10}, {\"id\": \"31\", \"account\": \"acct1\", \"amount\": -40}, {\"id\": \"32\", \"account\": \"acct29\", \"amount\": 35}, {\"id\": \"33\", \"account\": \"acct20\", \"amount\": -37}, {\"id\": \"34\", \"account\": \"acct3\", \"amount\": -36}, {\"id\": \"35\", \"account\": \"acct98\", \"amount\": 23}, {\"id\": \"36\", \"account\": \"acct71\", \"amount\": -38}, {\"id\": \"37\", \"account\": \"acct30\", \"amount\": -45}, {\"id\": \"38\", \"account\": \"acct28\", \"amount\": -17}, {\"id\": \"39\", \"account\": \"acct87\", \"amount\": -13}, {\"id\": \"40\", \"account\": \"acct5\", \"amount\": 38}, {\"id\": \"41\", \"account\": \"acct47\", \"amount\": 23}, {\"id\": \"42\", \"account\": \"acct38\", \"amount\": -25}, {\"id\": \"43\", \"account\": \"acct70\", \"amount\": 24}, {\"id\": \"44\", \"account\": \"acct64\", \"amount\": -12}, {\"id\": \"45\", \"account\": \"acct3\", \"amount\": 31}, {\"id\": \"46\", \"account\": \"acct70\", \"amount\": -11}, {\"id\": \"47\", \"account\": \"acct3\", \"amount\": 8}, {\"id\": \"48\", \"account\": \"acct95\", \"amount\": -12}, {\"id\": \"49\", \"account\": \"acct2\", \"amount\": 44}, {\"id\": \"50\", \"account\": \"acct80\", \"amount\": -47}, {\"id\": \"51\", \"account\": \"acct66\", \"amount\": 43}, {\"id\": \"52\", \"account\": \"acct72\", \"amount\": 47}, {\"id\": \"53\", \"account\": \"acct80\", \"amount\": 31}, {\"id\": \"54\", \"account\": \"acct90\", \"amount\": 42}, {\"id\": \"55\", \"account\": \"acct8\", \"amount\": 14}, {\"id\": \"56\", \"account\": \"acct34\", \"amount\": 20}, {\"id\": \"57\", \"account\": \"acct92\", \"amount\": 50}, {\"id\": \"58\", \"account\": \"acct97\", \"amount\": 28}, {\"id\": \"59\", \"account\": \"acct69\", \"amount\": 46}, {\"id\": \"60\", \"account\": \"acct11\", \"amount\": 4}, {\"id\": \"61\", \"account\": \"acct80\", \"amount\": -5}, {\"id\": \"62\", \"account\": \"acct15\", \"amount\": -6}, {\"id\": \"63\", \"account\": \"acct63\", \"amount\": -24}, {\"id\": \"64\", \"account\": \"acct97\", \"amount\": -27}, {\"id\": \"65\", \"account\": \"acct50\", \"amount\": 29}, {\"id\": \"66\", \"account\": \"acct72\", \"amount\": 14}, {\"id\": \"67\", \"account\": \"acct66\", \"amount\": -24}, {\"id\": \"68\", \"account\": \"acct5\", \"amount\": 2}, {\"id\": \"69\", \"account\": \"acct20\", \"amount\": 31}, {\"id\": \"70\", \"account\": \"acct93\", \"amount\": -46}, {\"id\": \"71\", \"account\": \"acct25\", \"amount\": -17}, {\"id\": \"72\", \"account\": \"acct49\", \"amount\": 0}, {\"id\": \"73\", \"account\": \"acct87\", \"amount\": -28}, {\"id\": \"74\", \"account\": \"acct97\", \"amount\": 35}, {\"id\": \"75\", \"account\": \"acct11\", \"amount\": 21}, {\"id\": \"76\", \"account\": \"acct14\", \"amount\": -28}, {\"id\": \"77\", \"account\": \"acct48\", \"amount\": 49}, {\"id\": \"78\", \"account\": \"acct12\", \"amount\": 24}, {\"id\": \"79\", \"account\": \"acct57\", \"amount\": 19}, {\"id\": \"80\", \"account\": \"acct84\", \"amount\": -36}, {\"id\": \"81\", \"account\": \"acct59\", \"amount\": -38}, {\"id\": \"82\", \"account\": \"acct29\", \"amount\": -47}, {\"id\": \"83\", \"account\": \"acct56\", \"amount\": -3}, {\"id\": \"84\", \"account\": \"acct32\", \"amount\": 28}, {\"id\": \"85\", \"account\": \"acct84\", \"amount\": -27}, {\"id\": \"86\", \"account\": \"acct33\", \"amount\": -31}, {\"id\": \"87\", \"account\": \"acct24\", \"amount\": 45}, {\"id\": \"88\", \"account\": \"acct23\", \"amount\": 37}, {\"id\": \"89\", \"account\": \"acct25\", \"amount\": 40}, {\"id\": \"90\", \"account\": \"acct97\", \"amount\": 32}, {\"id\": \"91\", \"account\": \"acct28\", \"amount\": 35}, {\"id\": \"92\", \"account\": \"acct50\", \"amount\": 39}, {\"id\": \"93\", \"account\": \"acct7\", \"amount\": -16}, {\"id\": \"94\", \"account\": \"acct2\", \"amount\": 19}, {\"id\": \"95\", \"account\": \"acct50\", \"amount\": 11}, {\"id\": \"96\", \"account\": \"acct96\", \"amount\": 44}, {\"id\": \"97\", \"account\": \"acct72\", \"amount\": 46}, {\"id\": \"98\", \"account\": \"acct47\", \"amount\": -10}, {\"id\": \"99\", \"account\": \"acct35\", \"amount\": 25}, {\"id\": \"100\", \"account\": \"acct12\", \"amount\": -40}, {\"id\": \"101\", \"account\": \"acct77\", \"amount\": 0}, {\"id\": \"102\", \"account\": \"acct9\", \"amount\": -24}, {\"id\": \"103\", \"account\": \"acct3\", \"amount\": -36}, {\"id\": \"104\", \"account\": \"acct10\", \"amount\": 2}, {\"id\": \"105\", \"account\": \"acct62\", \"amount\": -26}, {\"id\": \"106\", \"account\": \"acct91\", \"amount\": 16}, {\"id\": \"107\", \"account\": \"acct14\", \"amount\": -8}, {\"id\": \"108\", \"account\": \"acct23\", \"amount\": 35}, {\"id\": \"109\", \"account\": \"acct23\", \"amount\": -17}, {\"id\": \"110\", \"account\": \"acct33\", \"amount\": 44}, {\"id\": \"111\", \"account\": \"acct71\", \"amount\": 3}, {\"id\": \"112\", \"account\": \"acct0\", \"amount\": -18}, {\"id\": \"113\", \"account\": \"acct86\", \"amount\": 31}, {\"id\": \"114\", \"account\": \"acct88\", \"amount\": -26}, {\"id\": \"115\", \"account\": \"acct29\", \"amount\": 16}, {\"id\": \"116\", \"account\": \"acct64\", \"amount\": -33}, {\"id\": \"117\", \"account\": \"acct46\", \"amount\": -30}, {\"id\": \"118\", \"account\": \"acct5\", \"amount\": 44}, {\"id\": \"119\", \"account\": \"acct35\", \"amount\": 38}, {\"id\": \"120\", \"account\": \"acct68\", \"amount\": -22}, {\"id\": \"121\", \"account\": \"acct98\", \"amount\": 18}, {\"id\": \"122\", \"account\": \"acct44\", \"amount\": -21}, {\"id\": \"123\", \"account\": \"acct23\", \"amount\": -1}, {\"id\": \"124\", \"account\": \"acct79\", \"amount\": -34}, {\"id\": \"125\", \"account\": \"acct5\", \"amount\": -9}, {\"id\": \"126\", \"account\": \"acct32\", \"amount\": -32}, {\"id\": \"127\", \"account\": \"acct73\", \"amount\": -6}, {\"id\": \"128\", \"account\": \"acct97\", \"amount\": 46}, {\"id\": \"129\", \"account\": \"acct33\", \"amount\": -40}, {\"id\": \"130\", \"account\": \"acct9\", \"amount\": 2}, {\"id\": \"131\", \"account\": \"acct7\", \"amount\": 32}, {\"id\": \"132\", \"account\": \"acct21\", \"amount\": -27}, {\"id\": \"133\", \"account\": \"acct41\", \"amount\": 32}, {\"id\": \"134\", \"account\": \"acct37\", \"amount\": -31}, {\"id\": \"135\", \"account\": \"acct25\", \"amount\": -43}, {\"id\": \"136\", \"account\": \"acct2\", \"amount\": -32}, {\"id\": \"137\", \"account\": \"acct73\", \"amount\": -42}, {\"id\": \"138\", \"account\": \"acct92\", \"amount\": -47}, {\"id\": \"139\", \"account\": \"acct94\", \"amount\": -45}, {\"id\": \"140\", \"account\": \"acct85\", \"amount\": 48}, {\"id\": \"141\", \"account\": \"acct65\", \"amount\": 45}, {\"id\": \"142\", \"account\": \"acct13\", \"amount\": -6}, {\"id\": \"143\", \"account\": \"acct91\", \"amount\": 30}, {\"id\": \"144\", \"account\": \"acct6\", \"amount\": 1}, {\"id\": \"145\", \"account\": \"acct90\", \"amount\": 18}, {\"id\": \"146\", \"account\": \"acct19\", \"amount\": 45}, {\"id\": \"147\", \"account\": \"acct27\", \"amount\": 18}, {\"id\": \"148\", \"account\": \"acct57\", \"amount\": -16}, {\"id\": \"149\", \"account\": \"acct3\", \"amount\": 27}, {\"id\": \"150\", \"account\": \"acct0\", \"amount\": -19}, {\"id\": \"151\", \"account\": \"acct27\", \"amount\": -6}, {\"id\": \"152\", \"account\": \"acct43\", \"amount\": 23}, {\"id\": \"153\", \"account\": \"acct40\", \"amount\": -13}, {\"id\": \"154\", \"account\": \"acct72\", \"amount\": -21}, {\"id\": \"155\", \"account\": \"acct49\", \"amount\": -6}, {\"id\": \"156\", \"account\": \"acct99\", \"amount\": 4}, {\"id\": \"157\", \"account\": \"acct76\", \"amount\": 42}, {\"id\": \"158\", \"account\": \"acct47\", \"amount\": -36}, {\"id\": \"159\", \"account\": \"acct24\", \"amount\": -25}, {\"id\": \"160\", \"account\": \"acct79\", \"amount\": 2}, {\"id\": \"161\", \"account\": \"acct51\", \"amount\": -34}, {\"id\": \"162\", \"account\": \"acct56\", \"amount\": -25}, {\"id\": \"163\", \"account\": \"acct88\", \"amount\": 23}, {\"id\": \"164\", \"account\": \"acct46\", \"amount\": -44}, {\"id\": \"165\", \"account\": \"acct53\", \"amount\": -13}, {\"id\": \"166\", \"account\": \"acct98\", \"amount\": -5}, {\"id\": \"167\", \"account\": \"acct30\", \"amount\": -22}, {\"id\": \"168\", \"account\": \"acct50\", \"amount\": -38}, {\"id\": \"169\", \"account\": \"acct14\", \"amount\": 34}, {\"id\": \"170\", \"account\": \"acct98\", \"amount\": -46}, {\"id\": \"171\", \"account\": \"acct32\", \"amount\": -46}, {\"id\": \"172\", \"account\": \"acct5\", \"amount\": 11}, {\"id\": \"173\", \"account\": \"acct79\", \"amount\": -36}, {\"id\": \"174\", \"account\": \"acct87\", \"amount\": -16}, {\"id\": \"175\", \"account\": \"acct83\", \"amount\": 49}, {\"id\": \"176\", \"account\": \"acct27\", \"amount\": 37}, {\"id\": \"177\", \"account\": \"acct92\", \"amount\": -16}, {\"id\": \"178\", \"account\": \"acct26\", \"amount\": 50}, {\"id\": \"179\", \"account\": \"acct0\", \"amount\": 19}, {\"id\": \"180\", \"account\": \"acct67\", \"amount\": -3}, {\"id\": \"181\", \"account\": \"acct54\", \"amount\": 18}, {\"id\": \"182\", \"account\": \"acct87\", \"amount\": 9}, {\"id\": \"183\", \"account\": \"acct68\", \"amount\": -17}, {\"id\": \"184\", \"account\": \"acct68\", \"amount\": 47}, {\"id\": \"185\", \"account\": \"acct96\", \"amount\": 18}, {\"id\": \"186\", \"account\": \"acct38\", \"amount\": -28}, {\"id\": \"187\", \"account\": \"acct13\", \"amount\": -5}, {\"id\": \"188\", \"account\": \"acct73\", \"amount\": 34}, {\"id\": \"189\", \"account\": \"acct31\", \"amount\": -21}, {\"id\": \"190\", \"account\": \"acct53\", \"amount\": 27}, {\"id\": \"191\", \"account\": \"acct89\", \"amount\": -37}, {\"id\": \"192\", \"account\": \"acct16\", \"amount\": -21}, {\"id\": \"193\", \"account\": \"acct68\", \"amount\": -45}, {\"id\": \"194\", \"account\": \"acct77\", \"amount\": 14}, {\"id\": \"195\", \"account\": \"acct66\", \"amount\": 28}, {\"id\": \"196\", \"account\": \"acct47\", \"amount\": 30}, {\"id\": \"197\", \"account\": \"acct26\", \"amount\": 44}, {\"id\": \"198\", \"account\": \"acct37\", \"amount\": -42}, {\"id\": \"199\", \"account\": \"acct97\", \"amount\": 43}, {\"id\": \"200\", \"account\": \"acct52\", \"amount\": 17}, {\"id\": \"201\", \"account\": \"acct45\", \"amount\": 6}, {\"id\": \"202\", \"account\": \"acct80\", \"amount\": 47}, {\"id\": \"203\", \"account\": \"acct19\", \"amount\": -36}, {\"id\": \"204\", \"account\": \"acct38\", \"amount\": 27}, {\"id\": \"205\", \"account\": \"acct49\", \"amount\": 11}, {\"id\": \"206\", \"account\": \"acct98\", \"amount\": 22}, {\"id\": \"207\", \"account\": \"acct7\", \"amount\": -24}, {\"id\": \"208\", \"account\": \"acct29\", \"amount\": -6}, {\"id\": \"209\", \"account\": \"acct3\", \"amount\": 4}, {\"id\": \"210\", \"account\": \"acct76\", \"amount\": -49}, {\"id\": \"211\", \"account\": \"acct79\", \"amount\": -16}, {\"id\": \"212\", \"account\": \"acct67\", \"amount\": -4}, {\"id\": \"213\", \"account\": \"acct79\", \"amount\": 47}, {\"id\": \"214\", \"account\": \"acct1\", \"amount\": 49}, {\"id\": \"215\", \"account\": \"acct63\", \"amount\": 50}, {\"id\": \"216\", \"account\": \"acct61\", \"amount\": 25}, {\"id\": \"217\", \"account\": \"acct84\", \"amount\": -36}, {\"id\": \"218\", \"account\": \"acct86\", \"amount\": 24}, {\"id\": \"219\", \"account\": \"acct23\", \"amount\": -7}, {\"id\": \"220\", \"account\": \"acct71\", \"amount\": 28}, {\"id\": \"221\", \"account\": \"acct11\", \"amount\": 31}, {\"id\": \"222\", \"account\": \"acct81\", \"amount\": 13}, {\"id\": \"223\", \"account\": \"acct31\", \"amount\": 18}, {\"id\": \"224\", \"account\": \"acct31\", \"amount\": 8}, {\"id\": \"225\", \"account\": \"acct60\", \"amount\": 18}, {\"id\": \"226\", \"account\": \"acct66\", \"amount\": -37}, {\"id\": \"227\", \"account\": \"acct26\", \"amount\": -20}, {\"id\": \"228\", \"account\": \"acct44\", \"amount\": -14}, {\"id\": \"229\", \"account\": \"acct98\", \"amount\": -5}, {\"id\": \"230\", \"account\": \"acct55\", \"amount\": -30}, {\"id\": \"231\", \"account\": \"acct8\", \"amount\": 36}, {\"id\": \"232\", \"account\": \"acct1\", \"amount\": 49}, {\"id\": \"233\", \"account\": \"acct58\", \"amount\": 39}, {\"id\": \"234\", \"account\": \"acct67\", \"amount\": 32}, {\"id\": \"235\", \"account\": \"acct41\", \"amount\": -26}, {\"id\": \"236\", \"account\": \"acct62\", \"amount\": 34}, {\"id\": \"237\", \"account\": \"acct16\", \"amount\": -35}, {\"id\": \"238\", \"account\": \"acct91\", \"amount\": 29}, {\"id\": \"239\", \"account\": \"acct61\", \"amount\": -2}, {\"id\": \"240\", \"account\": \"acct91\", \"amount\": 27}, {\"id\": \"241\", \"account\": \"acct91\", \"amount\": -17}, {\"id\": \"242\", \"account\": \"acct91\", \"amount\": 9}, {\"id\": \"243\", \"account\": \"acct1\", \"amount\": 34}, {\"id\": \"244\", \"account\": \"acct24\", \"amount\": -4}, {\"id\": \"245\", \"account\": \"acct34\", \"amount\": 18}, {\"id\": \"246\", \"account\": \"acct28\", \"amount\": 30}, {\"id\": \"247\", \"account\": \"acct35\", \"amount\": 23}, {\"id\": \"248\", \"account\": \"acct81\", \"amount\": -36}, {\"id\": \"249\", \"account\": \"acct68\", \"amount\": 30}, {\"id\": \"250\", \"account\": \"acct64\", \"amount\": 15}, {\"id\": \"251\", \"account\": \"acct95\", \"amount\": -36}, {\"id\": \"252\", \"account\": \"acct70\", \"amount\": -22}, {\"id\": \"253\", \"account\": \"acct34\", \"amount\": -44}, {\"id\": \"254\", \"account\": \"acct80\", \"amount\": 22}, {\"id\": \"255\", \"account\": \"acct19\", \"amount\": -30}, {\"id\": \"256\", \"account\": \"acct8\", \"amount\": 6}, {\"id\": \"257\", \"account\": \"acct60\", \"amount\": 37}, {\"id\": \"258\", \"account\": \"acct6\", \"amount\": 32}, {\"id\": \"259\", \"account\": \"acct90\", \"amount\": -33}, {\"id\": \"260\", \"account\": \"acct45\", \"amount\": -15}, {\"id\": \"261\", \"account\": \"acct29\", \"amount\": -11}, {\"id\": \"262\", \"account\": \"acct7\", \"amount\": -3}, {\"id\": \"263\", \"account\": \"acct54\", \"amount\": 18}, {\"id\": \"264\", \"account\": \"acct73\", \"amount\": -46}, {\"id\": \"265\", \"account\": \"acct64\", \"amount\": 1}, {\"id\": \"266\", \"account\": \"acct71\", \"amount\": 34}, {\"id\": \"267\", \"account\": \"acct0\", \"amount\": 12}, {\"id\": \"268\", \"account\": \"acct79\", \"amount\": -24}, {\"id\": \"269\", \"account\": \"acct40\", \"amount\": 4}, {\"id\": \"270\", \"account\": \"acct69\", \"amount\": -11}, {\"id\": \"271\", \"account\": \"acct26\", \"amount\": -11}, {\"id\": \"272\", \"account\": \"acct40\", \"amount\": 7}, {\"id\": \"273\", \"account\": \"acct96\", \"amount\": 11}, {\"id\": \"274\", \"account\": \"acct90\", \"amount\": 37}, {\"id\": \"275\", \"account\": \"acct87\", \"amount\": -18}, {\"id\": \"276\", \"account\": \"acct92\", \"amount\": 28}, {\"id\": \"277\", \"account\": \"acct30\", \"amount\": -32}, {\"id\": \"278\", \"account\": \"acct34\", \"amount\": 0}, {\"id\": \"279\", \"account\": \"acct13\", \"amount\": 14}, {\"id\": \"280\", \"account\": \"acct84\", \"amount\": 8}, {\"id\": \"281\", \"account\": \"acct21\", \"amount\": -10}, {\"id\": \"282\", \"account\": \"acct75\", \"amount\": -9}, {\"id\": \"283\", \"account\": \"acct25\", \"amount\": -17}, {\"id\": \"284\", \"account\": \"acct25\", \"amount\": 12}, {\"id\": \"285\", \"account\": \"acct31\", \"amount\": 30}, {\"id\": \"286\", \"account\": \"acct23\", \"amount\": 16}, {\"id\": \"287\", \"account\": \"acct47\", \"amount\": 30}, {\"id\": \"288\", \"account\": \"acct23\", \"amount\": 41}, {\"id\": \"289\", \"account\": \"acct7\", \"amount\": -19}, {\"id\": \"290\", \"account\": \"acct25\", \"amount\": 6}, {\"id\": \"291\", \"account\": \"acct52\", \"amount\": 8}, {\"id\": \"292\", \"account\": \"acct49\", \"amount\": 39}, {\"id\": \"293\", \"account\": \"acct80\", \"amount\": 30}, {\"id\": \"294\", \"account\": \"acct89\", \"amount\": 3}, {\"id\": \"295\", \"account\": \"acct54\", \"amount\": 39}, {\"id\": \"296\", \"account\": \"acct59\", \"amount\": -3}, {\"id\": \"297\", \"account\": \"acct40\", \"amount\": -30}, {\"id\": \"298\", \"account\": \"acct30\", \"amount\": 37}, {\"id\": \"299\", \"account\": \"acct97\", \"amount\": -38}, {\"id\": \"300\", \"account\": \"acct44\", \"amount\": -8}, {\"id\": \"301\", \"account\": \"acct3\", \"amount\": 45}, {\"id\": \"302\", \"account\": \"acct43\", \"amount\": -30}, {\"id\": \"303\", \"account\": \"acct62\", \"amount\": -23}, {\"id\": \"304\", \"account\": \"acct41\", \"amount\": -28}, {\"id\": \"305\", \"account\": \"acct68\", \"amount\": -12}, {\"id\": \"306\", \"account\": \"acct24\", \"amount\": -33}, {\"id\": \"307\", \"account\": \"acct63\", \"amount\": -23}, {\"id\": \"308\", \"account\": \"acct77\", \"amount\": -41}, {\"id\": \"309\", \"account\": \"acct50\", \"amount\": 22}, {\"id\": \"310\", \"account\": \"acct59\", \"amount\": -20}, {\"id\": \"311\", \"account\": \"acct92\", \"amount\": 21}, {\"id\": \"312\", \"account\": \"acct89\", \"amount\": -14}, {\"id\": \"313\", \"account\": \"acct55\", \"amount\": -45}, {\"id\": \"314\", \"account\": \"acct49\", \"amount\": 46}, {\"id\": \"315\", \"account\": \"acct95\", \"amount\": -40}, {\"id\": \"316\", \"account\": \"acct45\", \"amount\": -49}, {\"id\": \"317\", \"account\": \"acct16\", \"amount\": 32}, {\"id\": \"318\", \"account\": \"acct70\", \"amount\": -30}, {\"id\": \"319\", \"account\": \"acct1\", \"amount\": 10}, {\"id\": \"320\", \"account\": \"acct94\", \"amount\": -26}, {\"id\": \"321\", \"account\": \"acct6\", \"amount\": 41}, {\"id\": \"322\", \"account\": \"acct5\", \"amount\": -17}, {\"id\": \"323\", \"account\": \"acct74\", \"amount\": -23}, {\"id\": \"324\", \"account\": \"acct57\", \"amount\": -41}, {\"id\": \"325\", \"account\": \"acct28\", \"amount\": -8}, {\"id\": \"326\", \"account\": \"acct4\", \"amount\": -19}, {\"id\": \"327\", \"account\": \"acct35\", \"amount\": 38}, {\"id\": \"328\", \"account\": \"acct91\", \"amount\": 9}, {\"id\": \"329\", \"account\": \"acct60\", \"amount\": 13}, {\"id\": \"330\", \"account\": \"acct11\", \"amount\": -37}, {\"id\": \"331\", \"account\": \"acct14\", \"amount\": 14}, {\"id\": \"332\", \"account\": \"acct49\", \"amount\": -21}, {\"id\": \"333\", \"account\": \"acct39\", \"amount\": -6}, {\"id\": \"334\", \"account\": \"acct55\", \"amount\": 31}, {\"id\": \"335\", \"account\": \"acct54\", \"amount\": 3}, {\"id\": \"336\", \"account\": \"acct65\", \"amount\": 47}, {\"id\": \"337\", \"account\": \"acct44\", \"amount\": -43}, {\"id\": \"338\", \"account\": \"acct8\", \"amount\": 38}, {\"id\": \"339\", \"account\": \"acct69\", \"amount\": -17}, {\"id\": \"340\", \"account\": \"acct53\", \"amount\": 49}, {\"id\": \"341\", \"account\": \"acct73\", \"amount\": 7}, {\"id\": \"342\", \"account\": \"acct61\", \"amount\": 23}, {\"id\": \"343\", \"account\": \"acct73\", \"amount\": -32}, {\"id\": \"344\", \"account\": \"acct76\", \"amount\": -37}, {\"id\": \"345\", \"account\": \"acct62\", \"amount\": 39}, {\"id\": \"346\", \"account\": \"acct55\", \"amount\": 33}, {\"id\": \"347\", \"account\": \"acct68\", \"amount\": 36}, {\"id\": \"348\", \"account\": \"acct34\", \"amount\": -41}, {\"id\": \"349\", \"account\": \"acct3\", \"amount\": -32}, {\"id\": \"350\", \"account\": \"acct69\", \"amount\": -48}, {\"id\": \"351\", \"account\": \"acct41\", \"amount\": 4}, {\"id\": \"352\", \"account\": \"acct64\", \"amount\": -46}, {\"id\": \"353\", \"account\": \"acct98\", \"amount\": -44}, {\"id\": \"354\", \"account\": \"acct88\", \"amount\": -42}, {\"id\": \"355\", \"account\": \"acct41\", \"amount\": 5}, {\"id\": \"356\", \"account\": \"acct72\", \"amount\": 26}, {\"id\": \"357\", \"account\": \"acct29\", \"amount\": 47}, {\"id\": \"358\", \"account\": \"acct27\", \"amount\": -24}, {\"id\": \"359\", \"account\": \"acct8\", \"amount\": -29}, {\"id\": \"360\", \"account\": \"acct18\", \"amount\": 0}, {\"id\": \"361\", \"account\": \"acct52\", \"amount\": 25}, {\"id\": \"362\", \"account\": \"acct80\", \"amount\": 30}, {\"id\": \"363\", \"account\": \"acct56\", \"amount\": 45}, {\"id\": \"364\", \"account\": \"acct53\", \"amount\": 21}, {\"id\": \"365\", \"account\": \"acct50\", \"amount\": 14}, {\"id\": \"366\", \"account\": \"acct59\", \"amount\": -9}, {\"id\": \"367\", \"account\": \"acct63\", \"amount\": 21}, {\"id\": \"368\", \"account\": \"acct40\", \"amount\": -41}, {\"id\": \"369\", \"account\": \"acct2\", \"amount\": -43}, {\"id\": \"370\", \"account\": \"acct86\", \"amount\": -39}, {\"id\": \"371\", \"account\": \"acct88\", \"amount\": -37}, {\"id\": \"372\", \"account\": \"acct63\", \"amount\": 10}, {\"id\": \"373\", \"account\": \"acct75\", \"amount\": 0}, {\"id\": \"374\", \"account\": \"acct22\", \"amount\": 13}, {\"id\": \"375\", \"account\": \"acct70\", \"amount\": -47}, {\"id\": \"376\", \"account\": \"acct72\", \"amount\": 19}, {\"id\": \"377\", \"account\": \"acct92\", \"amount\": 40}, {\"id\": \"378\", \"account\": \"acct78\", \"amount\": -46}, {\"id\": \"379\", \"account\": \"acct48\", \"amount\": 17}, {\"id\": \"380\", \"account\": \"acct24\", \"amount\": 3}, {\"id\": \"381\", \"account\": \"acct68\", \"amount\": -45}, {\"id\": \"382\", \"account\": \"acct29\", \"amount\": -13}, {\"id\": \"383\", \"account\": \"acct41\", \"amount\": 33}, {\"id\": \"384\", \"account\": \"acct7\", \"amount\": -6}, {\"id\": \"385\", \"account\": \"acct27\", \"amount\": -12}, {\"id\": \"386\", \"account\": \"acct55\", \"amount\": 23}, {\"id\": \"387\", \"account\": \"acct40\", \"amount\": 37}, {\"id\": \"388\", \"account\": \"acct95\", \"amount\": -36}, {\"id\": \"389\", \"account\": \"acct96\", \"amount\": 32}, {\"id\": \"390\", \"account\": \"acct84\", \"amount\": -11}, {\"id\": \"391\", \"account\": \"acct26\", \"amount\": 27}, {\"id\": \"392\", \"account\": \"acct33\", \"amount\": 0}, {\"id\": \"393\", \"account\": \"acct31\", \"amount\": -15}, {\"id\": \"394\", \"account\": \"acct64\", \"amount\": 6}, {\"id\": \"395\", \"account\": \"acct21\", \"amount\": 33}, {\"id\": \"396\", \"account\": \"acct40\", \"amount\": 18}, {\"id\": \"397\", \"account\": \"acct21\", \"amount\": 37}, {\"id\": \"398\", \"account\": \"acct79\", \"amount\": -42}, {\"id\": \"399\", \"account\": \"acct63\", \"amount\": -47}, {\"id\": \"400\", \"account\": \"acct14\", \"amount\": 5}, {\"id\": \"401\", \"account\": \"acct78\", \"amount\": -14}, {\"id\": \"402\", \"account\": \"acct7\", \"amount\": 1}, {\"id\": \"403\", \"account\": \"acct53\", \"amount\": 48}, {\"id\": \"404\", \"account\": \"acct31\", \"amount\": -27}, {\"id\": \"405\", \"account\": \"acct83\", \"amount\": 3}, {\"id\": \"406\", \"account\": \"acct94\", \"amount\": 38}, {\"id\": \"407\", \"account\": \"acct66\", \"amount\": 39}, {\"id\": \"408\", \"account\": \"acct15\", \"amount\": -8}, {\"id\": \"409\", \"account\": \"acct66\", \"amount\": -32}, {\"id\": \"410\", \"account\": \"acct99\", \"amount\": 0}, {\"id\": \"411\", \"account\": \"acct44\", \"amount\": -1}, {\"id\": \"412\", \"account\": \"acct35\", \"amount\": 13}, {\"id\": \"413\", \"account\": \"acct97\", \"amount\": -1}, {\"id\": \"414\", \"account\": \"acct84\", \"amount\": -23}, {\"id\": \"415\", \"account\": \"acct5\", \"amount\": 29}, {\"id\": \"416\", \"account\": \"acct5\", \"amount\": 7}, {\"id\": \"417\", \"account\": \"acct40\", \"amount\": -48}, {\"id\": \"418\", \"account\": \"acct85\", \"amount\": 22}, {\"id\": \"419\", \"account\": \"acct31\", \"amount\": 18}, {\"id\": \"420\", \"account\": \"acct76\", \"amount\": -8}, {\"id\": \"421\", \"account\": \"acct96\", \"amount\": 9}, {\"id\": \"422\", \"account\": \"acct34\", \"amount\": 45}, {\"id\": \"423\", \"account\": \"acct92\", \"amount\": -22}, {\"id\": \"424\", \"account\": \"acct45\", \"amount\": -9}, {\"id\": \"425\", \"account\": \"acct41\", \"amount\": 6}, {\"id\": \"426\", \"account\": \"acct68\", \"amount\": 50}, {\"id\": \"427\", \"account\": \"acct13\", \"amount\": 48}, {\"id\": \"428\", \"account\": \"acct68\", \"amount\": 17}, {\"id\": \"429\", \"account\": \"acct36\", \"amount\": 36}, {\"id\": \"430\", \"account\": \"acct45\", \"amount\": 12}, {\"id\": \"431\", \"account\": \"acct25\", \"amount\": 2}, {\"id\": \"432\", \"account\": \"acct71\", \"amount\": -37}, {\"id\": \"433\", \"account\": \"acct9\", \"amount\": 12}, {\"id\": \"434\", \"account\": \"acct74\", \"amount\": -33}, {\"id\": \"435\", \"account\": \"acct60\", \"amount\": 44}, {\"id\": \"436\", \"account\": \"acct38\", \"amount\": 1}, {\"id\": \"437\", \"account\": \"acct90\", \"amount\": -36}, {\"id\": \"438\", \"account\": \"acct2\", \"amount\": -29}, {\"id\": \"439\", \"account\": \"acct3\", \"amount\": -32}, {\"id\": \"440\", \"account\": \"acct68\", \"amount\": -4}, {\"id\": \"441\", \"account\": \"acct21\", \"amount\": -44}, {\"id\": \"442\", \"account\": \"acct94\", \"amount\": -29}, {\"id\": \"443\", \"account\": \"acct46\", \"amount\": 16}, {\"id\": \"444\", \"account\": \"acct15\", \"amount\": 31}, {\"id\": \"445\", \"account\": \"acct45\", \"amount\": 13}, {\"id\": \"446\", \"account\": \"acct21\", \"amount\": 36}, {\"id\": \"447\", \"account\": \"acct5\", \"amount\": -8}, {\"id\": \"448\", \"account\": \"acct50\", \"amount\": 39}, {\"id\": \"449\", \"account\": \"acct9\", \"amount\": 10}, {\"id\": \"450\", \"account\": \"acct50\", \"amount\": 38}, {\"id\": \"451\", \"account\": \"acct86\", \"amount\": -11}, {\"id\": \"452\", \"account\": \"acct78\", \"amount\": 8}, {\"id\": \"453\", \"account\": \"acct18\", \"amount\": 43}, {\"id\": \"454\", \"account\": \"acct62\", \"amount\": -30}, {\"id\": \"455\", \"account\": \"acct56\", \"amount\": -37}, {\"id\": \"456\", \"account\": \"acct29\", \"amount\": 17}, {\"id\": \"457\", \"account\": \"acct6\", \"amount\": -34}, {\"id\": \"458\", \"account\": \"acct43\", \"amount\": -31}, {\"id\": \"459\", \"account\": \"acct19\", \"amount\": -25}, {\"id\": \"460\", \"account\": \"acct11\", \"amount\": 2}, {\"id\": \"461\", \"account\": \"acct71\", \"amount\": -24}, {\"id\": \"462\", \"account\": \"acct63\", \"amount\": 28}, {\"id\": \"463\", \"account\": \"acct62\", \"amount\": 16}, {\"id\": \"464\", \"account\": \"acct5\", \"amount\": 25}, {\"id\": \"465\", \"account\": \"acct82\", \"amount\": -49}, {\"id\": \"466\", \"account\": \"acct23\", \"amount\": -21}, {\"id\": \"467\", \"account\": \"acct69\", \"amount\": -9}, {\"id\": \"468\", \"account\": \"acct71\", \"amount\": -2}, {\"id\": \"469\", \"account\": \"acct42\", \"amount\": 41}, {\"id\": \"470\", \"account\": \"acct64\", \"amount\": -17}, {\"id\": \"471\", \"account\": \"acct41\", \"amount\": 44}, {\"id\": \"472\", \"account\": \"acct65\", \"amount\": 43}, {\"id\": \"473\", \"account\": \"acct71\", \"amount\": 33}, {\"id\": \"474\", \"account\": \"acct31\", \"amount\": 44}, {\"id\": \"475\", \"account\": \"acct98\", \"amount\": -9}, {\"id\": \"476\", \"account\": \"acct5\", \"amount\": 41}, {\"id\": \"477\", \"account\": \"acct49\", \"amount\": 49}, {\"id\": \"478\", \"account\": \"acct18\", \"amount\": -24}, {\"id\": \"479\", \"account\": \"acct95\", \"amount\": -39}, {\"id\": \"480\", \"account\": \"acct45\", \"amount\": -9}, {\"id\": \"481\", \"account\": \"acct25\", \"amount\": -33}, {\"id\": \"482\", \"account\": \"acct20\", \"amount\": -34}, {\"id\": \"483\", \"account\": \"acct72\", \"amount\": -28}, {\"id\": \"484\", \"account\": \"acct31\", \"amount\": 22}, {\"id\": \"485\", \"account\": \"acct37\", \"amount\": 18}, {\"id\": \"486\", \"account\": \"acct0\", \"amount\": 23}, {\"id\": \"487\", \"account\": \"acct43\", \"amount\": -42}, {\"id\": \"488\", \"account\": \"acct9\", \"amount\": 3}, {\"id\": \"489\", \"account\": \"acct35\", \"amount\": 17}, {\"id\": \"490\", \"account\": \"acct27\", \"amount\": -44}, {\"id\": \"491\", \"account\": \"acct50\", \"amount\": 49}, {\"id\": \"492\", \"account\": \"acct9\", \"amount\": 19}, {\"id\": \"493\", \"account\": \"acct49\", \"amount\": -49}, {\"id\": \"494\", \"account\": \"acct18\", \"amount\": 23}, {\"id\": \"495\", \"account\": \"acct82\", \"amount\": -33}, {\"id\": \"496\", \"account\": \"acct87\", \"amount\": 13}, {\"id\": \"497\", \"account\": \"acct32\", \"amount\": 40}, {\"id\": \"498\", \"account\": \"acct44\", \"amount\": -38}, {\"id\": \"499\", \"account\": \"acct78\", \"amount\": 30}, {\"id\": \"500\", \"account\": \"acct71\", \"amount\": 19}, {\"id\": \"501\", \"account\": \"acct55\", \"amount\": 23}, {\"id\": \"502\", \"account\": \"acct50\", \"amount\": 20}, {\"id\": \"503\", \"account\": \"acct16\", \"amount\": 0}, {\"id\": \"504\", \"account\": \"acct74\", \"amount\": 4}, {\"id\": \"505\", \"account\": \"acct34\", \"amount\": -27}, {\"id\": \"506\", \"account\": \"acct53\", \"amount\": 7}, {\"id\": \"507\", \"account\": \"acct70\", \"amount\": -48}, {\"id\": \"508\", \"account\": \"acct68\", \"amount\": 49}, {\"id\": \"509\", \"account\": \"acct42\", \"amount\": -31}, {\"id\": \"510\", \"account\": \"acct30\", \"amount\": -9}, {\"id\": \"511\", \"account\": \"acct0\", \"amount\": 26}, {\"id\": \"512\", \"account\": \"acct24\", \"amount\": 30}, {\"id\": \"513\", \"account\": \"acct63\", \"amount\": 43}, {\"id\": \"514\", \"account\": \"acct69\", \"amount\": 7}, {\"id\": \"515\", \"account\": \"acct66\", \"amount\": 39}, {\"id\": \"516\", \"account\": \"acct34\", \"amount\": -36}, {\"id\": \"517\", \"account\": \"acct95\", \"amount\": -20}, {\"id\": \"518\", \"account\": \"acct50\", \"amount\": 6}, {\"id\": \"519\", \"account\": \"acct88\", \"amount\": -11}, {\"id\": \"520\", \"account\": \"acct58\", \"amount\": -4}, {\"id\": \"521\", \"account\": \"acct10\", \"amount\": -31}, {\"id\": \"522\", \"account\": \"acct69\", \"amount\": -16}, {\"id\": \"523\", \"account\": \"acct7\", \"amount\": 35}, {\"id\": \"524\", \"account\": \"acct4\", \"amount\": 47}, {\"id\": \"525\", \"account\": \"acct35\", \"amount\": 40}, {\"id\": \"526\", \"account\": \"acct92\", \"amount\": 32}, {\"id\": \"527\", \"account\": \"acct29\", \"amount\": 50}, {\"id\": \"528\", \"account\": \"acct86\", \"amount\": 33}, {\"id\": \"529\", \"account\": \"acct97\", \"amount\": -29}, {\"id\": \"530\", \"account\": \"acct91\", \"amount\": 24}, {\"id\": \"531\", \"account\": \"acct56\", \"amount\": 20}, {\"id\": \"532\", \"account\": \"acct55\", \"amount\": 10}, {\"id\": \"533\", \"account\": \"acct15\", \"amount\": -49}, {\"id\": \"534\", \"account\": \"acct51\", \"amount\": 43}, {\"id\": \"535\", \"account\": \"acct24\", \"amount\": 0}, {\"id\": \"536\", \"account\": \"acct60\", \"amount\": 47}, {\"id\": \"537\", \"account\": \"acct33\", \"amount\": -25}, {\"id\": \"538\", \"account\": \"acct8\", \"amount\": 21}, {\"id\": \"539\", \"account\": \"acct28\", \"amount\": -29}, {\"id\": \"540\", \"account\": \"acct41\", \"amount\": 20}, {\"id\": \"541\", \"account\": \"acct45\", \"amount\": -36}, {\"id\": \"542\", \"account\": \"acct6\", \"amount\": 46}, {\"id\": \"543\", \"account\": \"acct95\", \"amount\": 15}, {\"id\": \"544\", \"account\": \"acct40\", \"amount\": 48}, {\"id\": \"545\", \"account\": \"acct79\", \"amount\": -9}, {\"id\": \"546\", \"account\": \"acct49\", \"amount\": -13}, {\"id\": \"547\", \"account\": \"acct49\", \"amount\": 36}, {\"id\": \"548\", \"account\": \"acct84\", \"amount\": 6}, {\"id\": \"549\", \"account\": \"acct44\", \"amount\": -22}, {\"id\": \"550\", \"account\": \"acct78\", \"amount\": 27}, {\"id\": \"551\", \"account\": \"acct37\", \"amount\": 31}, {\"id\": \"552\", \"account\": \"acct14\", \"amount\": -24}, {\"id\": \"553\", \"account\": \"acct53\", \"amount\": -8}, {\"id\": \"554\", \"account\": \"acct79\", \"amount\": -6}, {\"id\": \"555\", \"account\": \"acct23\", \"amount\": -20}, {\"id\": \"556\", \"account\": \"acct33\", \"amount\": -48}, {\"id\": \"557\", \"account\": \"acct14\", \"amount\": -23}, {\"id\": \"558\", \"account\": \"acct5\", \"amount\": 34}, {\"id\": \"559\", \"account\": \"acct83\", \"amount\": 40}, {\"id\": \"560\", \"account\": \"acct15\", \"amount\": 34}, {\"id\": \"561\", \"account\": \"acct73\", \"amount\": -2}, {\"id\": \"562\", \"account\": \"acct42\", \"amount\": -38}, {\"id\": \"563\", \"account\": \"acct72\", \"amount\": -17}, {\"id\": \"564\", \"account\": \"acct73\", \"amount\": 45}, {\"id\": \"565\", \"account\": \"acct18\", \"amount\": 42}, {\"id\": \"566\", \"account\": \"acct57\", \"amount\": -29}, {\"id\": \"567\", \"account\": \"acct15\", \"amount\": 49}, {\"id\": \"568\", \"account\": \"acct76\", \"amount\": -5}, {\"id\": \"569\", \"account\": \"acct4\", \"amount\": 4}, {\"id\": \"570\", \"account\": \"acct41\", \"amount\": -13}, {\"id\": \"571\", \"account\": \"acct36\", \"amount\": 47}, {\"id\": \"572\", \"account\": \"acct3\", \"amount\": -19}, {\"id\": \"573\", \"account\": \"acct38\", \"amount\": -46}, {\"id\": \"574\", \"account\": \"acct74\", \"amount\": -23}, {\"id\": \"575\", \"account\": \"acct87\", \"amount\": -18}, {\"id\": \"576\", \"account\": \"acct43\", \"amount\": -23}, {\"id\": \"577\", \"account\": \"acct46\", \"amount\": -2}, {\"id\": \"578\", \"account\": \"acct50\", \"amount\": -45}, {\"id\": \"579\", \"account\": \"acct1\", \"amount\": -31}, {\"id\": \"580\", \"account\": \"acct9\", \"amount\": 33}, {\"id\": \"581\", \"account\": \"acct82\", \"amount\": -14}, {\"id\": \"582\", \"account\": \"acct23\", \"amount\": -44}, {\"id\": \"583\", \"account\": \"acct67\", \"amount\": -26}, {\"id\": \"584\", \"account\": \"acct78\", \"amount\": 21}, {\"id\": \"585\", \"account\": \"acct14\", \"amount\": 18}, {\"id\": \"586\", \"account\": \"acct50\", \"amount\": 25}, {\"id\": \"587\", \"account\": \"acct93\", \"amount\": 48}, {\"id\": \"588\", \"account\": \"acct67\", \"amount\": -12}, {\"id\": \"589\", \"account\": \"acct50\", \"amount\": -18}, {\"id\": \"590\", \"account\": \"acct11\", \"amount\": 49}, {\"id\": \"591\", \"account\": \"acct12\", \"amount\": 29}, {\"id\": \"592\", \"account\": \"acct60\", \"amount\": -20}, {\"id\": \"593\", \"account\": \"acct46\", \"amount\": -25}, {\"id\": \"594\", \"account\": \"acct20\", \"amount\": 44}, {\"id\": \"595\", \"account\": \"acct19\", \"amount\": 35}, {\"id\": \"596\", \"account\": \"acct30\", \"amount\": -19}, {\"id\": \"597\", \"account\": \"acct36\", \"amount\": 3}, {\"id\": \"598\", \"account\": \"acct48\", \"amount\": -37}, {\"id\": \"599\", \"account\": \"acct6\", \"amount\": 7}, {\"id\": \"600\", \"account\": \"acct4\", \"amount\": -6}, {\"id\": \"601\", \"account\": \"acct13\", \"amount\": 0}, {\"id\": \"602\", \"account\": \"acct17\", \"amount\": -8}, {\"id\": \"603\", \"account\": \"acct5\", \"amount\": 49}, {\"id\": \"604\", \"account\": \"acct2\", \"amount\": 9}, {\"id\": \"605\", \"account\": \"acct48\", \"amount\": 16}, {\"id\": \"606\", \"account\": \"acct36\", \"amount\": 48}, {\"id\": \"607\", \"account\": \"acct40\", \"amount\": -27}, {\"id\": \"608\", \"account\": \"acct26\", \"amount\": -42}, {\"id\": \"609\", \"account\": \"acct97\", \"amount\": -11}, {\"id\": \"610\", \"account\": \"acct82\", \"amount\": -30}, {\"id\": \"611\", \"account\": \"acct30\", \"amount\": 31}, {\"id\": \"612\", \"account\": \"acct61\", \"amount\": -3}, {\"id\": \"613\", \"account\": \"acct90\", \"amount\": 14}, {\"id\": \"614\", \"account\": \"acct95\", \"amount\": -5}, {\"id\": \"615\", \"account\": \"acct90\", \"amount\": 3}, {\"id\": \"616\", \"account\": \"acct11\", \"amount\": 6}, {\"id\": \"617\", \"account\": \"acct61\", \"amount\": 50}, {\"id\": \"618\", \"account\": \"acct33\", \"amount\": -39}, {\"id\": \"619\", \"account\": \"acct37\", \"amount\": 17}, {\"id\": \"620\", \"account\": \"acct80\", \"amount\": 50}, {\"id\": \"621\", \"account\": \"acct64\", \"amount\": -31}, {\"id\": \"622\", \"account\": \"acct45\", \"amount\": -26}, {\"id\": \"623\", \"account\": \"acct52\", \"amount\": 4}, {\"id\": \"624\", \"account\": \"acct51\", \"amount\": 18}, {\"id\": \"625\", \"account\": \"acct68\", \"amount\": -43}, {\"id\": \"626\", \"account\": \"acct26\", \"amount\": -23}, {\"id\": \"627\", \"account\": \"acct75\", \"amount\": -27}, {\"id\": \"628\", \"account\": \"acct42\", \"amount\": 23}, {\"id\": \"629\", \"account\": \"acct48\", \"amount\": 49}, {\"id\": \"630\", \"account\": \"acct38\", \"amount\": -45}, {\"id\": \"631\", \"account\": \"acct26\", \"amount\": 4}, {\"id\": \"632\", \"account\": \"acct91\", \"amount\": -25}, {\"id\": \"633\", \"account\": \"acct9\", \"amount\": 7}, {\"id\": \"634\", \"account\": \"acct22\", \"amount\": -30}, {\"id\": \"635\", \"account\": \"acct73\", \"amount\": -34}, {\"id\": \"636\", \"account\": \"acct31\", \"amount\": -25}, {\"id\": \"637\", \"account\": \"acct26\", \"amount\": 29}, {\"id\": \"638\", \"account\": \"acct31\", \"amount\": 46}, {\"id\": \"639\", \"account\": \"acct43\", \"amount\": -36}, {\"id\": \"640\", \"account\": \"acct86\", \"amount\": 44}, {\"id\": \"641\", \"account\": \"acct10\", \"amount\": -33}, {\"id\": \"642\", \"account\": \"acct80\", \"amount\": 7}, {\"id\": \"643\", \"account\": \"acct77\", \"amount\": 34}, {\"id\": \"644\", \"account\": \"acct13\", \"amount\": 48}, {\"id\": \"645\", \"account\": \"acct27\", \"amount\": -34}, {\"id\": \"646\", \"account\": \"acct41\", \"amount\": 37}, {\"id\": \"647\", \"account\": \"acct71\", \"amount\": -48}, {\"id\": \"648\", \"account\": \"acct15\", \"amount\": 32}, {\"id\": \"649\", \"account\": \"acct21\", \"amount\": -9}, {\"id\": \"650\", \"account\": \"acct82\", \"amount\": 41}, {\"id\": \"651\", \"account\": \"acct52\", \"amount\": -35}, {\"id\": \"652\", \"account\": \"acct45\", \"amount\": -40}, {\"id\": \"653\", \"account\": \"acct35\", \"amount\": 4}, {\"id\": \"654\", \"account\": \"acct49\", \"amount\": 17}, {\"id\": \"655\", \"account\": \"acct47\", \"amount\": -26}, {\"id\": \"656\", \"account\": \"acct73\", \"amount\": -45}, {\"id\": \"657\", \"account\": \"acct94\", \"amount\": 1}, {\"id\": \"658\", \"account\": \"acct61\", \"amount\": 37}, {\"id\": \"659\", \"account\": \"acct70\", \"amount\": 40}, {\"id\": \"660\", \"account\": \"acct76\", \"amount\": 20}, {\"id\": \"661\", \"account\": \"acct86\", \"amount\": -42}, {\"id\": \"662\", \"account\": \"acct74\", \"amount\": -38}, {\"id\": \"663\", \"account\": \"acct50\", \"amount\": -28}, {\"id\": \"664\", \"account\": \"acct73\", \"amount\": 6}, {\"id\": \"665\", \"account\": \"acct36\", \"amount\": 25}, {\"id\": \"666\", \"account\": \"acct63\", \"amount\": 45}, {\"id\": \"667\", \"account\": \"acct19\", \"amount\": 0}, {\"id\": \"668\", \"account\": \"acct58\", \"amount\": -3}, {\"id\": \"669\", \"account\": \"acct0\", \"amount\": 36}, {\"id\": \"670\", \"account\": \"acct90\", \"amount\": -10}, {\"id\": \"671\", \"account\": \"acct46\", \"amount\": -16}, {\"id\": \"672\", \"account\": \"acct47\", \"amount\": -11}, {\"id\": \"673\", \"account\": \"acct98\", \"amount\": -30}, {\"id\": \"674\", \"account\": \"acct77\", \"amount\": 49}, {\"id\": \"675\", \"account\": \"acct97\", \"amount\": -17}, {\"id\": \"676\", \"account\": \"acct80\", \"amount\": -39}, {\"id\": \"677\", \"account\": \"acct73\", \"amount\": 25}, {\"id\": \"678\", \"account\": \"acct44\", \"amount\": -2}, {\"id\": \"679\", \"account\": \"acct95\", \"amount\": 22}, {\"id\": \"680\", \"account\": \"acct49\", \"amount\": 50}, {\"id\": \"681\", \"account\": \"acct73\", \"amount\": -31}, {\"id\": \"682\", \"account\": \"acct85\", \"amount\": -46}, {\"id\": \"683\", \"account\": \"acct25\", \"amount\": 15}, {\"id\": \"684\", \"account\": \"acct55\", \"amount\": -35}, {\"id\": \"685\", \"account\": \"acct92\", \"amount\": 49}, {\"id\": \"686\", \"account\": \"acct97\", \"amount\": 43}, {\"id\": \"687\", \"account\": \"acct91\", \"amount\": -19}, {\"id\": \"688\", \"account\": \"acct52\", \"amount\": 18}, {\"id\": \"689\", \"account\": \"acct96\", \"amount\": 25}, {\"id\": \"690\", \"account\": \"acct42\", \"amount\": -14}, {\"id\": \"691\", \"account\": \"acct62\", \"amount\": -49}, {\"id\": \"692\", \"account\": \"acct51\", \"amount\": 41}, {\"id\": \"693\", \"account\": \"acct62\", \"amount\": 30}, {\"id\": \"694\", \"account\": \"acct92\", \"amount\": 4}, {\"id\": \"695\", \"account\": \"acct50\", \"amount\": -3}, {\"id\": \"696\", \"account\": \"acct34\", \"amount\": -26}, {\"id\": \"697\", \"account\": \"acct2\", \"amount\": -5}, {\"id\": \"698\", \"account\": \"acct54\", \"amount\": 13}, {\"id\": \"699\", \"account\": \"acct20\", \"amount\": -5}, {\"id\": \"700\", \"account\": \"acct25\", \"amount\": 25}, {\"id\": \"701\", \"account\": \"acct0\", \"amount\": -22}, {\"id\": \"702\", \"account\": \"acct31\", \"amount\": -33}, {\"id\": \"703\", \"account\": \"acct34\", \"amount\": -33}, {\"id\": \"704\", \"account\": \"acct51\", \"amount\": -30}, {\"id\": \"705\", \"account\": \"acct72\", \"amount\": 0}, {\"id\": \"706\", \"account\": \"acct74\", \"amount\": -20}, {\"id\": \"707\", \"account\": \"acct90\", \"amount\": -24}, {\"id\": \"708\", \"account\": \"acct60\", \"amount\": -12}, {\"id\": \"709\", \"account\": \"acct6\", \"amount\": -44}, {\"id\": \"710\", \"account\": \"acct16\", \"amount\": 7}, {\"id\": \"711\", \"account\": \"acct88\", \"amount\": 28}, {\"id\": \"712\", \"account\": \"acct91\", \"amount\": 43}, {\"id\": \"713\", \"account\": \"acct51\", \"amount\": 17}, {\"id\": \"714\", \"account\": \"acct45\", \"amount\": -13}, {\"id\": \"715\", \"account\": \"acct67\", \"amount\": 40}, {\"id\": \"716\", \"account\": \"acct57\", \"amount\": 42}, {\"id\": \"717\", \"account\": \"acct61\", \"amount\": -8}, {\"id\": \"718\", \"account\": \"acct11\", \"amount\": 10}, {\"id\": \"719\", \"account\": \"acct25\", \"amount\": 45}, {\"id\": \"720\", \"account\": \"acct88\", \"amount\": 44}, {\"id\": \"721\", \"account\": \"acct94\", \"amount\": -45}, {\"id\": \"722\", \"account\": \"acct43\", \"amount\": -7}, {\"id\": \"723\", \"account\": \"acct6\", \"amount\": -37}, {\"id\": \"724\", \"account\": \"acct1\", \"amount\": -19}, {\"id\": \"725\", \"account\": \"acct67\", \"amount\": 40}, {\"id\": \"726\", \"account\": \"acct69\", \"amount\": 46}, {\"id\": \"727\", \"account\": \"acct17\", \"amount\": 43}, {\"id\": \"728\", \"account\": \"acct50\", \"amount\": 14}, {\"id\": \"729\", \"account\": \"acct63\", \"amount\": 29}, {\"id\": \"730\", \"account\": \"acct57\", \"amount\": 35}, {\"id\": \"731\", \"account\": \"acct2\", \"amount\": -31}, {\"id\": \"732\", \"account\": \"acct64\", \"amount\": -12}, {\"id\": \"733\", \"account\": \"acct57\", \"amount\": -22}, {\"id\": \"734\", \"account\": \"acct14\", \"amount\": -19}, {\"id\": \"735\", \"account\": \"acct43\", \"amount\": -9}, {\"id\": \"736\", \"account\": \"acct90\", \"amount\": -37}, {\"id\": \"737\", \"account\": \"acct54\", \"amount\": 43}, {\"id\": \"738\", \"account\": \"acct30\", \"amount\": -9}, {\"id\": \"739\", \"account\": \"acct83\", \"amount\": -40}, {\"id\": \"740\", \"account\": \"acct29\", \"amount\": -50}, {\"id\": \"741\", \"account\": \"acct43\", \"amount\": -6}, {\"id\": \"742\", \"account\": \"acct49\", \"amount\": 11}, {\"id\": \"743\", \"account\": \"acct13\", \"amount\": -32}, {\"id\": \"744\", \"account\": \"acct30\", \"amount\": -45}, {\"id\": \"745\", \"account\": \"acct70\", \"amount\": -4}, {\"id\": \"746\", \"account\": \"acct38\", \"amount\": 47}, {\"id\": \"747\", \"account\": \"acct63\", \"amount\": -14}, {\"id\": \"748\", \"account\": \"acct34\", \"amount\": -20}, {\"id\": \"749\", \"account\": \"acct65\", \"amount\": 15}, {\"id\": \"750\", \"account\": \"acct78\", \"amount\": 32}, {\"id\": \"751\", \"account\": \"acct68\", \"amount\": 42}, {\"id\": \"752\", \"account\": \"acct7\", \"amount\": -3}, {\"id\": \"753\", \"account\": \"acct28\", \"amount\": 42}, {\"id\": \"754\", \"account\": \"acct88\", \"amount\": -27}, {\"id\": \"755\", \"account\": \"acct59\", \"amount\": -32}, {\"id\": \"756\", \"account\": \"acct63\", \"amount\": -11}, {\"id\": \"757\", \"account\": \"acct88\", \"amount\": -20}, {\"id\": \"758\", \"account\": \"acct23\", \"amount\": 2}, {\"id\": \"759\", \"account\": \"acct66\", \"amount\": -37}, {\"id\": \"760\", \"account\": \"acct9\", \"amount\": 36}, {\"id\": \"761\", \"account\": \"acct86\", \"amount\": 0}, {\"id\": \"762\", \"account\": \"acct52\", \"amount\": -11}, {\"id\": \"763\", \"account\": \"acct8\", \"amount\": -7}, {\"id\": \"764\", \"account\": \"acct62\", \"amount\": -44}, {\"id\": \"765\", \"account\": \"acct77\", \"amount\": 7}, {\"id\": \"766\", \"account\": \"acct44\", \"amount\": 15}, {\"id\": \"767\", \"account\": \"acct44\", \"amount\": -1}, {\"id\": \"768\", \"account\": \"acct42\", \"amount\": 26}, {\"id\": \"769\", \"account\": \"acct93\", \"amount\": 29}, {\"id\": \"770\", \"account\": \"acct30\", \"amount\": 28}, {\"id\": \"771\", \"account\": \"acct28\", \"amount\": -26}, {\"id\": \"772\", \"account\": \"acct69\", \"amount\": -35}, {\"id\": \"773\", \"account\": \"acct62\", \"amount\": -50}, {\"id\": \"774\", \"account\": \"acct67\", \"amount\": -36}, {\"id\": \"775\", \"account\": \"acct51\", \"amount\": -7}, {\"id\": \"776\", \"account\": \"acct59\", \"amount\": 48}, {\"id\": \"777\", \"account\": \"acct28\", \"amount\": -7}, {\"id\": \"778\", \"account\": \"acct64\", \"amount\": -25}, {\"id\": \"779\", \"account\": \"acct33\", \"amount\": 38}, {\"id\": \"780\", \"account\": \"acct37\", \"amount\": 47}, {\"id\": \"781\", \"account\": \"acct40\", \"amount\": -5}, {\"id\": \"782\", \"account\": \"acct28\", \"amount\": -19}, {\"id\": \"783\", \"account\": \"acct57\", \"amount\": -33}, {\"id\": \"784\", \"account\": \"acct68\", \"amount\": -14}, {\"id\": \"785\", \"account\": \"acct14\", \"amount\": -2}, {\"id\": \"786\", \"account\": \"acct15\", \"amount\": -39}, {\"id\": \"787\", \"account\": \"acct42\", \"amount\": 14}, {\"id\": \"788\", \"account\": \"acct46\", \"amount\": 30}, {\"id\": \"789\", \"account\": \"acct1\", \"amount\": -30}, {\"id\": \"790\", \"account\": \"acct19\", \"amount\": -46}, {\"id\": \"791\", \"account\": \"acct84\", \"amount\": 47}, {\"id\": \"792\", \"account\": \"acct91\", \"amount\": 1}, {\"id\": \"793\", \"account\": \"acct31\", \"amount\": 27}, {\"id\": \"794\", \"account\": \"acct69\", \"amount\": -28}, {\"id\": \"795\", \"account\": \"acct90\", \"amount\": 10}, {\"id\": \"796\", \"account\": \"acct44\", \"amount\": -5}, {\"id\": \"797\", \"account\": \"acct80\", \"amount\": -49}, {\"id\": \"798\", \"account\": \"acct69\", \"amount\": -10}, {\"id\": \"799\", \"account\": \"acct87\", \"amount\": -1}, {\"id\": \"800\", \"account\": \"acct12\", \"amount\": 4}, {\"id\": \"801\", \"account\": \"acct57\", \"amount\": -28}, {\"id\": \"802\", \"account\": \"acct15\", \"amount\": 22}, {\"id\": \"803\", \"account\": \"acct3\", \"amount\": -11}, {\"id\": \"804\", \"account\": \"acct33\", \"amount\": -4}, {\"id\": \"805\", \"account\": \"acct8\", \"amount\": -11}, {\"id\": \"806\", \"account\": \"acct3\", \"amount\": -50}, {\"id\": \"807\", \"account\": \"acct71\", \"amount\": -25}, {\"id\": \"808\", \"account\": \"acct6\", \"amount\": 15}, {\"id\": \"809\", \"account\": \"acct20\", \"amount\": -39}, {\"id\": \"810\", \"account\": \"acct41\", \"amount\": -19}, {\"id\": \"811\", \"account\": \"acct31\", \"amount\": 49}, {\"id\": \"812\", \"account\": \"acct46\", \"amount\": 17}, {\"id\": \"813\", \"account\": \"acct33\", \"amount\": 25}, {\"id\": \"814\", \"account\": \"acct33\", \"amount\": 9}, {\"id\": \"815\", \"account\": \"acct45\", \"amount\": -2}, {\"id\": \"816\", \"account\": \"acct94\", \"amount\": -19}, {\"id\": \"817\", \"account\": \"acct31\", \"amount\": 32}, {\"id\": \"818\", \"account\": \"acct54\", \"amount\": 22}, {\"id\": \"819\", \"account\": \"acct16\", \"amount\": 36}, {\"id\": \"820\", \"account\": \"acct69\", \"amount\": 28}, {\"id\": \"821\", \"account\": \"acct54\", \"amount\": -41}, {\"id\": \"822\", \"account\": \"acct27\", \"amount\": 4}, {\"id\": \"823\", \"account\": \"acct18\", \"amount\": -45}, {\"id\": \"824\", \"account\": \"acct69\", \"amount\": -9}, {\"id\": \"825\", \"account\": \"acct45\", \"amount\": -16}, {\"id\": \"826\", \"account\": \"acct20\", \"amount\": -31}, {\"id\": \"827\", \"account\": \"acct42\", \"amount\": -42}, {\"id\": \"828\", \"account\": \"acct61\", \"amount\": -24}, {\"id\": \"829\", \"account\": \"acct68\", \"amount\": 50}, {\"id\": \"830\", \"account\": \"acct75\", \"amount\": 22}, {\"id\": \"831\", \"account\": \"acct19\", \"amount\": -6}, {\"id\": \"832\", \"account\": \"acct82\", \"amount\": -21}, {\"id\": \"833\", \"account\": \"acct22\", \"amount\": 28}, {\"id\": \"834\", \"account\": \"acct65\", \"amount\": -42}, {\"id\": \"835\", \"account\": \"acct5\", \"amount\": 0}, {\"id\": \"836\", \"account\": \"acct72\", \"amount\": -6}, {\"id\": \"837\", \"account\": \"acct40\", \"amount\": -23}, {\"id\": \"838\", \"account\": \"acct8\", \"amount\": 11}, {\"id\": \"839\", \"account\": \"acct98\", \"amount\": -7}, {\"id\": \"840\", \"account\": \"acct12\", \"amount\": 34}, {\"id\": \"841\", \"account\": \"acct14\", \"amount\": -17}, {\"id\": \"842\", \"account\": \"acct73\", \"amount\": -19}, {\"id\": \"843\", \"account\": \"acct47\", \"amount\": 1}, {\"id\": \"844\", \"account\": \"acct68\", \"amount\": 6}, {\"id\": \"845\", \"account\": \"acct38\", \"amount\": -2}, {\"id\": \"846\", \"account\": \"acct97\", \"amount\": 12}, {\"id\": \"847\", \"account\": \"acct84\", \"amount\": 36}, {\"id\": \"848\", \"account\": \"acct76\", \"amount\": -19}, {\"id\": \"849\", \"account\": \"acct74\", \"amount\": 8}, {\"id\": \"850\", \"account\": \"acct97\", \"amount\": 22}, {\"id\": \"851\", \"account\": \"acct70\", \"amount\": -29}, {\"id\": \"852\", \"account\": \"acct12\", \"amount\": -10}, {\"id\": \"853\", \"account\": \"acct1\", \"amount\": 7}, {\"id\": \"854\", \"account\": \"acct15\", \"amount\": -4}, {\"id\": \"855\", \"account\": \"acct88\", \"amount\": 31}, {\"id\": \"856\", \"account\": \"acct4\", \"amount\": 43}, {\"id\": \"857\", \"account\": \"acct49\", \"amount\": 4}, {\"id\": \"858\", \"account\": \"acct74\", \"amount\": 31}, {\"id\": \"859\", \"account\": \"acct88\", \"amount\": -1}, {\"id\": \"860\", \"account\": \"acct98\", \"amount\": 2}, {\"id\": \"861\", \"account\": \"acct36\", \"amount\": 8}, {\"id\": \"862\", \"account\": \"acct46\", \"amount\": 16}, {\"id\": \"863\", \"account\": \"acct22\", \"amount\": 47}, {\"id\": \"864\", \"account\": \"acct13\", \"amount\": 9}, {\"id\": \"865\", \"account\": \"acct72\", \"amount\": 25}, {\"id\": \"866\", \"account\": \"acct62\", \"amount\": -27}, {\"id\": \"867\", \"account\": \"acct35\", \"amount\": -39}, {\"id\": \"868\", \"account\": \"acct29\", \"amount\": -48}, {\"id\": \"869\", \"account\": \"acct28\", \"amount\": 36}, {\"id\": \"870\", \"account\": \"acct90\", \"amount\": -17}, {\"id\": \"871\", \"account\": \"acct7\", \"amount\": -10}, {\"id\": \"872\", \"account\": \"acct24\", \"amount\": 1}, {\"id\": \"873\", \"account\": \"acct6\", \"amount\": -24}, {\"id\": \"874\", \"account\": \"acct50\", \"amount\": 36}, {\"id\": \"875\", \"account\": \"acct87\", \"amount\": -44}, {\"id\": \"876\", \"account\": \"acct45\", \"amount\": -38}, {\"id\": \"877\", \"account\": \"acct66\", \"amount\": 47}, {\"id\": \"878\", \"account\": \"acct75\", \"amount\": 8}, {\"id\": \"879\", \"account\": \"acct53\", \"amount\": 14}, {\"id\": \"880\", \"account\": \"acct2\", \"amount\": -48}, {\"id\": \"881\", \"account\": \"acct7\", \"amount\": -28}, {\"id\": \"882\", \"account\": \"acct88\", \"amount\": -38}, {\"id\": \"883\", \"account\": \"acct36\", \"amount\": -22}, {\"id\": \"884\", \"account\": \"acct0\", \"amount\": -27}, {\"id\": \"885\", \"account\": \"acct58\", \"amount\": 45}, {\"id\": \"886\", \"account\": \"acct67\", \"amount\": -37}, {\"id\": \"887\", \"account\": \"acct50\", \"amount\": -10}, {\"id\": \"888\", \"account\": \"acct94\", \"amount\": -38}, {\"id\": \"889\", \"account\": \"acct90\", \"amount\": -3}, {\"id\": \"890\", \"account\": \"acct25\", \"amount\": 34}, {\"id\": \"891\", \"account\": \"acct94\", \"amount\": 15}, {\"id\": \"892\", \"account\": \"acct24\", \"amount\": -7}, {\"id\": \"893\", \"account\": \"acct89\", \"amount\": -22}, {\"id\": \"894\", \"account\": \"acct3\", \"amount\": -5}, {\"id\": \"895\", \"account\": \"acct91\", \"amount\": -20}, {\"id\": \"896\", \"account\": \"acct18\", \"amount\": -25}, {\"id\": \"897\", \"account\": \"acct66\", \"amount\": 13}, {\"id\": \"898\", \"account\": \"acct12\", \"amount\": -5}, {\"id\": \"899\", \"account\": \"acct45\", \"amount\": 32}, {\"id\": \"900\", \"account\": \"acct9\", \"amount\": 42}, {\"id\": \"901\", \"account\": \"acct3\", \"amount\": 36}, {\"id\": \"902\", \"account\": \"acct21\", \"amount\": 23}, {\"id\": \"903\", \"account\": \"acct19\", \"amount\": -23}, {\"id\": \"904\", \"account\": \"acct40\", \"amount\": -8}, {\"id\": \"905\", \"account\": \"acct59\", \"amount\": 41}, {\"id\": \"906\", \"account\": \"acct94\", \"amount\": 22}, {\"id\": \"907\", \"account\": \"acct58\", \"amount\": 48}, {\"id\": \"908\", \"account\": \"acct4\", \"amount\": -1}, {\"id\": \"909\", \"account\": \"acct5\", \"amount\": -24}, {\"id\": \"910\", \"account\": \"acct94\", \"amount\": 9}, {\"id\": \"911\", \"account\": \"acct59\", \"amount\": -37}, {\"id\": \"912\", \"account\": \"acct87\", \"amount\": -1}, {\"id\": \"913\", \"account\": \"acct6\", \"amount\": 23}, {\"id\": \"914\", \"account\": \"acct59\", \"amount\": -20}, {\"id\": \"915\", \"account\": \"acct1\", \"amount\": -29}, {\"id\": \"916\", \"account\": \"acct86\", \"amount\": 39}, {\"id\": \"917\", \"account\": \"acct35\", \"amount\": -9}, {\"id\": \"918\", \"account\": \"acct88\", \"amount\": -13}, {\"id\": \"919\", \"account\": \"acct46\", \"amount\": -45}, {\"id\": \"920\", \"account\": \"acct54\", \"amount\": -10}, {\"id\": \"921\", \"account\": \"acct26\", \"amount\": -24}, {\"id\": \"922\", \"account\": \"acct27\", \"amount\": 22}, {\"id\": \"923\", \"account\": \"acct46\", \"amount\": -20}, {\"id\": \"924\", \"account\": \"acct18\", \"amount\": 6}, {\"id\": \"925\", \"account\": \"acct82\", \"amount\": -5}, {\"id\": \"926\", \"account\": \"acct44\", \"amount\": -40}, {\"id\": \"927\", \"account\": \"acct0\", \"amount\": 13}, {\"id\": \"928\", \"account\": \"acct96\", \"amount\": -24}, {\"id\": \"929\", \"account\": \"acct12\", \"amount\": 41}, {\"id\": \"930\", \"account\": \"acct78\", \"amount\": -41}, {\"id\": \"931\", \"account\": \"acct64\", \"amount\": -5}, {\"id\": \"932\", \"account\": \"acct52\", \"amount\": -12}, {\"id\": \"933\", \"account\": \"acct44\", \"amount\": 32}, {\"id\": \"934\", \"account\": \"acct44\", \"amount\": -16}, {\"id\": \"935\", \"account\": \"acct15\", \"amount\": -33}, {\"id\": \"936\", \"account\": \"acct79\", \"amount\": -39}, {\"id\": \"937\", \"account\": \"acct66\", \"amount\": -17}, {\"id\": \"938\", \"account\": \"acct82\", \"amount\": 20}, {\"id\": \"939\", \"account\": \"acct45\", \"amount\": -25}, {\"id\": \"940\", \"account\": \"acct31\", \"amount\": 8}, {\"id\": \"941\", \"account\": \"acct34\", \"amount\": -21}, {\"id\": \"942\", \"account\": \"acct33\", \"amount\": 7}, {\"id\": \"943\", \"account\": \"acct52\", \"amount\": 36}, {\"id\": \"944\", \"account\": \"acct29\", \"amount\": 18}, {\"id\": \"945\", \"account\": \"acct27\", \"amount\": 47}, {\"id\": \"946\", \"account\": \"acct30\", \"amount\": 47}, {\"id\": \"947\", \"account\": \"acct75\", \"amount\": 2}, {\"id\": \"948\", \"account\": \"acct93\", \"amount\": -16}, {\"id\": \"949\", \"account\": \"acct21\", \"amount\": 8}, {\"id\": \"950\", \"account\": \"acct22\", \"amount\": -6}, {\"id\": \"951\", \"account\": \"acct28\", \"amount\": -15}, {\"id\": \"952\", \"account\": \"acct10\", \"amount\": 13}, {\"id\": \"953\", \"account\": \"acct64\", \"amount\": 24}, {\"id\": \"954\", \"account\": \"acct29\", \"amount\": 44}, {\"id\": \"955\", \"account\": \"acct74\", \"amount\": -16}, {\"id\": \"956\", \"account\": \"acct95\", \"amount\": -16}, {\"id\": \"957\", \"account\": \"acct58\", \"amount\": -47}, {\"id\": \"958\", \"account\": \"acct20\", \"amount\": -11}, {\"id\": \"959\", \"account\": \"acct91\", \"amount\": 42}, {\"id\": \"960\", \"account\": \"acct24\", \"amount\": 22}, {\"id\": \"961\", \"account\": \"acct38\", \"amount\": -9}, {\"id\": \"962\", \"account\": \"acct32\", \"amount\": -11}, {\"id\": \"963\", \"account\": \"acct29\", \"amount\": -10}, {\"id\": \"964\", \"account\": \"acct86\", \"amount\": 27}, {\"id\": \"965\", \"account\": \"acct98\", \"amount\": 11}, {\"id\": \"966\", \"account\": \"acct44\", \"amount\": 45}, {\"id\": \"967\", \"account\": \"acct69\", \"amount\": -13}, {\"id\": \"968\", \"account\": \"acct87\", \"amount\": -8}, {\"id\": \"969\", \"account\": \"acct47\", \"amount\": -44}, {\"id\": \"970\", \"account\": \"acct62\", \"amount\": -24}, {\"id\": \"971\", \"account\": \"acct16\", \"amount\": 35}, {\"id\": \"972\", \"account\": \"acct36\", \"amount\": -17}, {\"id\": \"973\", \"account\": \"acct42\", \"amount\": 33}, {\"id\": \"974\", \"account\": \"acct54\", \"amount\": 39}, {\"id\": \"975\", \"account\": \"acct25\", \"amount\": 8}, {\"id\": \"976\", \"account\": \"acct25\", \"amount\": 44}, {\"id\": \"977\", \"account\": \"acct93\", \"amount\": -16}, {\"id\": \"978\", \"account\": \"acct27\", \"amount\": 0}, {\"id\": \"979\", \"account\": \"acct34\", \"amount\": -9}, {\"id\": \"980\", \"account\": \"acct31\", \"amount\": 36}, {\"id\": \"981\", \"account\": \"acct53\", \"amount\": 17}, {\"id\": \"982\", \"account\": \"acct40\", \"amount\": -13}, {\"id\": \"983\", \"account\": \"acct44\", \"amount\": -45}, {\"id\": \"984\", \"account\": \"acct42\", \"amount\": -3}, {\"id\": \"985\", \"account\": \"acct52\", \"amount\": -28}, {\"id\": \"986\", \"account\": \"acct12\", \"amount\": 45}, {\"id\": \"987\", \"account\": \"acct36\", \"amount\": 33}, {\"id\": \"988\", \"account\": \"acct27\", \"amount\": -47}, {\"id\": \"989\", \"account\": \"acct65\", \"amount\": -12}, {\"id\": \"990\", \"account\": \"acct52\", \"amount\": 42}, {\"id\": \"991\", \"account\": \"acct65\", \"amount\": -40}, {\"id\": \"992\", \"account\": \"acct15\", \"amount\": -22}, {\"id\": \"993\", \"account\": \"acct4\", \"amount\": 9}, {\"id\": \"994\", \"account\": \"acct21\", \"amount\": 30}, {\"id\": \"995\", \"account\": \"acct75\", \"amount\": 19}, {\"id\": \"996\", \"account\": \"acct91\", \"amount\": 13}, {\"id\": \"997\", \"account\": \"acct73\", \"amount\": 32}, {\"id\": \"998\", \"account\": \"acct78\", \"amount\": -8}, {\"id\": \"999\", \"account\": \"acct19\", \"amount\": 44}]}']' timed out after 10 seconds"
+  },
+  {
+    "language": "zero",
+    "trial": 1,
+    "workload": "topo_100",
+    "ok": false,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/prepared/zero_1/program"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": null,
+    "samples": [],
+    "error": "Command '['{ORIGINAL_BENCHMARK_ROOT}/prepared/zero_1/program', '{\"op\": \"topo\", \"nodes\": [\"n000\", \"n001\", \"n002\", \"n003\", \"n004\", \"n005\", \"n006\", \"n007\", \"n008\", \"n009\", \"n010\", \"n011\", \"n012\", \"n013\", \"n014\", \"n015\", \"n016\", \"n017\", \"n018\", \"n019\", \"n020\", \"n021\", \"n022\", \"n023\", \"n024\", \"n025\", \"n026\", \"n027\", \"n028\", \"n029\", \"n030\", \"n031\", \"n032\", \"n033\", \"n034\", \"n035\", \"n036\", \"n037\", \"n038\", \"n039\", \"n040\", \"n041\", \"n042\", \"n043\", \"n044\", \"n045\", \"n046\", \"n047\", \"n048\", \"n049\", \"n050\", \"n051\", \"n052\", \"n053\", \"n054\", \"n055\", \"n056\", \"n057\", \"n058\", \"n059\", \"n060\", \"n061\", \"n062\", \"n063\", \"n064\", \"n065\", \"n066\", \"n067\", \"n068\", \"n069\", \"n070\", \"n071\", \"n072\", \"n073\", \"n074\", \"n075\", \"n076\", \"n077\", \"n078\", \"n079\", \"n080\", \"n081\", \"n082\", \"n083\", \"n084\", \"n085\", \"n086\", \"n087\", \"n088\", \"n089\", \"n090\", \"n091\", \"n092\", \"n093\", \"n094\", \"n095\", \"n096\", \"n097\", \"n098\", \"n099\"], \"edges\": [[\"n000\", \"n046\"], [\"n001\", \"n002\"], [\"n001\", \"n012\"], [\"n001\", \"n078\"], [\"n002\", \"n028\"], [\"n002\", \"n043\"], [\"n002\", \"n066\"], [\"n002\", \"n071\"], [\"n002\", \"n085\"], [\"n003\", \"n040\"], [\"n003\", \"n059\"], [\"n004\", \"n084\"], [\"n005\", \"n017\"], [\"n005\", \"n045\"], [\"n005\", \"n061\"], [\"n006\", \"n013\"], [\"n006\", \"n073\"], [\"n006\", \"n085\"], [\"n006\", \"n089\"], [\"n007\", \"n015\"], [\"n008\", \"n015\"], [\"n008\", \"n027\"], [\"n008\", \"n045\"], [\"n008\", \"n067\"], [\"n009\", \"n039\"], [\"n009\", \"n093\"], [\"n010\", \"n063\"], [\"n011\", \"n016\"], [\"n011\", \"n020\"], [\"n011\", \"n021\"], [\"n011\", \"n040\"], [\"n011\", \"n093\"], [\"n012\", \"n030\"], [\"n013\", \"n031\"], [\"n013\", \"n035\"], [\"n013\", \"n076\"], [\"n013\", \"n081\"], [\"n014\", \"n031\"], [\"n014\", \"n052\"], [\"n014\", \"n085\"], [\"n014\", \"n092\"], [\"n015\", \"n016\"], [\"n015\", \"n058\"], [\"n015\", \"n065\"], [\"n015\", \"n096\"], [\"n016\", \"n026\"], [\"n016\", \"n058\"], [\"n016\", \"n082\"], [\"n017\", \"n048\"], [\"n017\", \"n053\"], [\"n017\", \"n066\"], [\"n018\", \"n026\"], [\"n018\", \"n066\"], [\"n018\", \"n082\"], [\"n019\", \"n024\"], [\"n020\", \"n053\"], [\"n021\", \"n028\"], [\"n021\", \"n040\"], [\"n021\", \"n083\"], [\"n021\", \"n087\"], [\"n022\", \"n067\"], [\"n022\", \"n079\"], [\"n023\", \"n051\"], [\"n024\", \"n031\"], [\"n024\", \"n040\"], [\"n024\", \"n075\"], [\"n025\", \"n052\"], [\"n025\", \"n081\"], [\"n026\", \"n028\"], [\"n026\", \"n050\"], [\"n027\", \"n037\"], [\"n027\", \"n054\"], [\"n027\", \"n096\"], [\"n028\", \"n081\"], [\"n028\", \"n096\"], [\"n029\", \"n039\"], [\"n029\", \"n054\"], [\"n029\", \"n058\"], [\"n030\", \"n031\"], [\"n030\", \"n054\"], [\"n030\", \"n063\"], [\"n030\", \"n078\"], [\"n031\", \"n055\"], [\"n031\", \"n071\"], [\"n032\", \"n091\"], [\"n033\", \"n075\"], [\"n034\", \"n039\"], [\"n035\", \"n040\"], [\"n036\", \"n093\"], [\"n037\", \"n068\"], [\"n038\", \"n077\"], [\"n039\", \"n074\"], [\"n039\", \"n090\"], [\"n040\", \"n072\"], [\"n040\", \"n089\"], [\"n041\", \"n080\"], [\"n041\", \"n086\"], [\"n042\", \"n053\"], [\"n042\", \"n059\"], [\"n042\", \"n090\"], [\"n042\", \"n095\"], [\"n043\", \"n046\"], [\"n043\", \"n052\"], [\"n043\", \"n059\"], [\"n045\", \"n075\"], [\"n046\", \"n075\"], [\"n046\", \"n091\"], [\"n046\", \"n098\"], [\"n047\", \"n078\"], [\"n047\", \"n094\"], [\"n047\", \"n098\"], [\"n048\", \"n051\"], [\"n048\", \"n053\"], [\"n048\", \"n056\"], [\"n048\", \"n060\"], [\"n049\", \"n093\"], [\"n050\", \"n066\"], [\"n050\", \"n089\"], [\"n050\", \"n091\"], [\"n051\", \"n064\"], [\"n051\", \"n084\"], [\"n051\", \"n099\"], [\"n053\", \"n063\"], [\"n054\", \"n092\"], [\"n055\", \"n072\"], [\"n055\", \"n087\"], [\"n056\", \"n059\"], [\"n056\", \"n085\"], [\"n057\", \"n065\"], [\"n057\", \"n096\"], [\"n058\", \"n087\"], [\"n059\", \"n061\"], [\"n059\", \"n088\"], [\"n059\", \"n096\"], [\"n059\", \"n097\"], [\"n060\", \"n080\"], [\"n061\", \"n080\"], [\"n062\", \"n082\"], [\"n063\", \"n086\"], [\"n066\", \"n091\"], [\"n067\", \"n087\"], [\"n067\", \"n098\"], [\"n070\", \"n087\"], [\"n072\", \"n079\"], [\"n073\", \"n086\"], [\"n074\", \"n093\"], [\"n076\", \"n084\"], [\"n077\", \"n082\"], [\"n077\", \"n083\"], [\"n077\", \"n085\"], [\"n077\", \"n087\"], [\"n079\", \"n089\"], [\"n080\", \"n082\"], [\"n081\", \"n090\"], [\"n081\", \"n099\"], [\"n082\", \"n090\"], [\"n083\", \"n090\"], [\"n084\", \"n089\"], [\"n087\", \"n098\"], [\"n091\", \"n094\"], [\"n094\", \"n095\"], [\"n096\", \"n099\"]]}']' timed out after 10 seconds"
+  },
+  {
+    "language": "zero",
+    "trial": 1,
+    "workload": "merge_1000",
+    "ok": false,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/prepared/zero_1/program"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": null,
+    "samples": [],
+    "error": "Command '['{ORIGINAL_BENCHMARK_ROOT}/prepared/zero_1/program', '{\"op\": \"merge\", \"intervals\": [[7260, 7263], [3330, 3333], [2300, 2303], [9790, 9793], [8330, 8333], [6740, 6743], [2330, 2333], [9700, 9703], [9650, 9653], [6720, 6723], [5470, 5473], [7220, 7223], [3160, 3163], [6790, 6793], [7480, 7483], [6480, 6483], [6320, 6323], [8430, 8433], [1110, 1113], [7420, 7423], [7960, 7963], [360, 363], [7290, 7293], [390, 393], [2810, 2813], [4340, 4343], [7140, 7143], [2650, 2653], [2370, 2373], [4070, 4073], [220, 223], [6090, 6093], [1490, 1493], [5750, 5753], [5830, 5833], [6650, 6653], [5380, 5383], [6880, 6883], [9560, 9563], [5700, 5703], [1570, 1573], [2540, 2543], [9150, 9153], [5460, 5463], [4620, 4623], [750, 753], [2260, 2263], [9320, 9323], [6960, 6963], [8130, 8133], [670, 673], [9370, 9373], [3670, 3673], [840, 843], [3280, 3283], [20, 23], [5190, 5193], [8720, 8723], [2990, 2993], [3810, 3813], [7500, 7503], [9460, 9463], [3310, 3313], [9580, 9583], [3830, 3833], [3410, 3413], [1120, 1123], [3970, 3973], [4300, 4303], [2490, 2493], [380, 383], [7720, 7723], [5180, 5183], [1010, 1013], [150, 153], [8230, 8233], [5740, 5743], [8750, 8753], [2310, 2313], [9820, 9823], [5880, 5883], [9360, 9363], [4900, 4903], [4880, 4883], [5480, 5483], [6520, 6523], [6840, 6843], [7750, 7753], [2700, 2703], [1130, 1133], [60, 63], [6390, 6393], [2750, 2753], [2840, 2843], [7530, 7533], [820, 823], [8680, 8683], [5640, 5643], [7160, 7163], [3260, 3263], [9470, 9473], [6270, 6273], [9860, 9863], [4790, 4793], [6620, 6623], [5980, 5983], [1800, 1803], [9350, 9353], [3710, 3713], [740, 743], [1850, 1853], [4190, 4193], [8090, 8093], [540, 543], [3200, 3203], [6470, 6473], [1660, 1663], [2510, 2513], [7970, 7973], [1900, 1903], [9680, 9683], [4690, 4693], [4710, 4713], [7860, 7863], [9970, 9973], [3700, 3703], [2570, 2573], [9330, 9333], [5930, 5933], [5550, 5553], [7310, 7313], [3300, 3303], [1330, 1333], [2970, 2973], [1460, 1463], [7760, 7763], [9270, 9273], [6760, 6763], [4630, 4633], [9170, 9173], [7680, 7683], [6020, 6023], [2410, 2413], [4930, 4933], [1750, 1753], [1590, 1593], [5130, 5133], [1440, 1443], [3980, 3983], [5280, 5283], [7770, 7773], [4490, 4493], [470, 473], [3560, 3563], [7350, 7353], [4870, 4873], [2600, 2603], [8100, 8103], [2680, 2683], [510, 513], [4170, 4173], [6440, 6443], [8780, 8783], [3470, 3473], [230, 233], [4700, 4703], [6050, 6053], [9760, 9763], [9500, 9503], [9900, 9903], [4270, 4273], [620, 623], [8650, 8653], [5590, 5593], [9140, 9143], [6280, 6283], [6140, 6143], [8850, 8853], [1910, 1913], [6110, 6113], [8480, 8483], [6000, 6003], [4730, 4733], [2860, 2863], [3840, 3843], [6230, 6233], [3360, 3363], [1040, 1043], [1960, 1963], [4440, 4443], [9200, 9203], [4110, 4113], [9420, 9423], [6600, 6603], [5050, 5053], [7370, 7373], [3270, 3273], [4560, 4563], [2420, 2423], [2380, 2383], [4370, 4373], [4590, 4593], [6640, 6643], [5220, 5223], [2690, 2693], [3820, 3823], [7540, 7543], [3040, 3043], [330, 333], [5940, 5943], [8290, 8293], [770, 773], [4750, 4753], [3600, 3603], [4030, 4033], [1070, 1073], [1970, 1973], [2030, 2033], [4580, 4583], [4850, 4853], [8520, 8523], [4770, 4773], [7630, 7633], [7700, 7703], [120, 123], [6820, 6823], [9830, 9833], [3940, 3943], [2050, 2053], [6420, 6423], [6100, 6103], [1370, 1373], [7080, 7083], [4320, 4323], [1320, 1323], [9190, 9193], [6570, 6573], [9130, 9133], [1550, 1553], [7280, 7283], [3030, 3033], [1090, 1093], [300, 303], [1620, 1623], [4130, 4133], [5080, 5083], [7360, 7363], [4410, 4413], [3740, 3743], [960, 963], [7900, 7903], [2210, 2213], [460, 463], [2250, 2253], [8250, 8253], [440, 443], [3660, 3663], [9240, 9243], [700, 703], [1400, 1403], [3500, 3503], [9550, 9553], [280, 283], [4740, 4743], [5000, 5003], [7810, 7813], [5600, 5603], [7150, 7153], [4640, 4643], [4960, 4963], [8860, 8863], [2450, 2453], [4460, 4463], [2950, 2953], [8180, 8183], [2360, 2363], [4680, 4683], [6590, 6593], [350, 353], [3060, 3063], [2090, 2093], [7210, 7213], [8950, 8953], [6800, 6803], [7520, 7523], [9840, 9843], [8410, 8413], [7570, 7573], [3620, 3623], [3400, 3403], [6260, 6263], [5850, 5853], [3960, 3963], [5320, 5323], [3610, 3613], [4660, 4663], [6940, 6943], [1230, 1233], [8660, 8663], [2820, 2823], [9090, 9093], [6190, 6193], [8370, 8373], [1500, 1503], [4830, 4833], [900, 903], [5110, 5113], [5570, 5573], [9430, 9433], [3630, 3633], [5800, 5803], [6370, 6373], [9160, 9163], [3590, 3593], [4720, 4723], [4010, 4013], [1560, 1563], [950, 953], [7300, 7303], [2610, 2613], [6690, 6693], [1880, 1883], [8110, 8113], [7980, 7983], [5890, 5893], [8170, 8173], [8630, 8633], [5400, 5403], [2220, 2223], [5120, 5123], [1310, 1313], [7400, 7403], [8400, 8403], [1830, 1833], [5350, 5353], [8390, 8393], [8310, 8313], [7610, 7613], [1210, 1213], [2340, 2343], [2100, 2103], [7180, 7183], [8440, 8443], [4020, 4023], [1630, 1633], [1450, 1453], [3870, 3873], [8870, 8873], [5200, 5203], [3350, 3353], [6660, 6663], [7940, 7943], [5420, 5423], [8740, 8743], [9340, 9343], [4380, 4383], [40, 43], [6510, 6513], [2290, 2293], [4350, 4353], [8260, 8263], [4520, 4523], [8070, 8073], [5760, 5763], [8710, 8713], [4480, 4483], [7660, 7663], [7010, 7013], [1950, 1953], [3140, 3143], [1300, 1303], [5780, 5783], [7060, 7063], [6250, 6253], [4150, 4153], [800, 803], [6180, 6183], [420, 423], [4600, 4603], [9310, 9313], [6160, 6163], [2520, 2523], [3930, 3933], [680, 683], [990, 993], [7090, 7093], [7120, 7123], [5490, 5493], [5960, 5963], [4650, 4653], [5900, 5903], [8240, 8243], [7430, 7433], [1390, 1393], [1240, 1243], [310, 313], [1150, 1153], [1840, 1843], [5810, 5813], [8360, 8363], [3490, 3493], [2460, 2463], [4840, 4843], [9810, 9813], [400, 403], [6450, 6453], [2120, 2123], [6980, 6983], [3430, 3433], [8690, 8693], [5410, 5413], [5040, 5043], [8150, 8153], [2140, 2143], [180, 183], [8510, 8513], [1760, 1763], [3450, 3453], [3790, 3793], [1180, 1183], [1780, 1783], [9180, 9183], [4160, 4163], [6860, 6863], [7190, 7193], [7050, 7053], [9640, 9643], [9110, 9113], [2400, 2403], [5770, 5773], [6300, 6303], [2770, 2773], [6700, 6703], [2180, 2183], [4080, 4083], [1350, 1353], [8990, 8993], [3770, 3773], [6150, 6153], [550, 553], [8570, 8573], [5720, 5723], [8760, 8763], [5390, 5393], [8050, 8053], [2130, 2133], [1920, 1923], [2790, 2793], [1940, 1943], [8610, 8613], [1740, 1743], [4210, 4213], [7250, 7253], [6060, 6063], [250, 253], [5260, 5263], [5240, 5243], [90, 93], [6920, 6923], [4060, 4063], [4330, 4333], [3150, 3153], [3890, 3893], [2240, 2243], [9070, 9073], [1820, 1823], [1870, 1873], [5540, 5543], [2640, 2643], [6310, 6313], [8790, 8793], [870, 873], [7820, 7823], [7020, 7023], [4230, 4233], [6930, 6933], [1730, 1733], [9530, 9533], [8770, 8773], [9410, 9413], [8600, 8603], [3180, 3183], [7930, 7933], [9890, 9893], [30, 33], [2320, 2323], [8060, 8063], [9770, 9773], [7830, 7833], [1220, 1223], [7440, 7443], [1080, 1083], [6210, 6213], [3800, 3803], [1530, 1533], [5680, 5683], [9920, 9923], [1610, 1613], [710, 713], [6870, 6873], [3920, 3923], [8910, 8913], [1270, 1273], [860, 863], [8270, 8273], [2730, 2733], [8420, 8423], [8550, 8553], [5560, 5563], [2660, 2663], [9080, 9083], [5660, 5663], [5920, 5923], [7070, 7073], [6910, 6913], [2230, 2233], [340, 343], [3380, 3383], [1790, 1793], [5340, 5343], [810, 813], [7390, 7393], [1990, 1993], [7800, 7803], [3250, 3253], [1380, 1383], [3210, 3213], [500, 503], [7320, 7323], [910, 913], [930, 933], [1050, 1053], [5250, 5253], [1170, 1173], [8160, 8163], [2720, 2723], [6540, 6543], [480, 483], [1720, 1723], [8560, 8563], [3720, 3723], [4980, 4983], [6340, 6343], [4470, 4473], [9400, 9403], [8040, 8043], [7030, 7033], [1290, 1293], [5790, 5793], [3110, 3113], [8010, 8013], [1340, 1343], [790, 793], [6560, 6563], [3390, 3393], [5610, 5613], [9540, 9543], [4860, 4863], [4140, 4143], [9730, 9733], [8820, 8823], [8530, 8533], [6380, 6383], [3860, 3863], [890, 893], [1690, 1693], [6410, 6413], [8970, 8973], [2670, 2673], [4220, 4223], [7230, 7233], [7110, 7113], [4910, 4913], [4530, 4533], [7790, 7793], [5620, 5623], [2440, 2443], [7460, 7463], [9290, 9293], [240, 243], [3420, 3423], [2930, 2933], [260, 263], [7780, 7783], [8340, 8343], [9520, 9523], [3480, 3483], [3650, 3653], [80, 83], [9480, 9483], [6950, 6953], [2080, 2083], [3070, 3073], [4540, 4543], [3780, 3783], [9980, 9983], [5430, 5433], [3680, 3683], [3990, 3993], [7240, 7243], [730, 733], [8880, 8883], [8890, 8893], [5020, 5023], [560, 563], [9880, 9883], [5690, 5693], [4290, 4293], [7990, 7993], [1710, 1713], [1810, 1813], [3230, 3233], [1580, 1583], [2940, 2943], [2740, 2743], [7730, 7733], [1160, 1163], [2060, 2063], [2470, 2473], [6220, 6223], [3510, 3513], [4420, 4423], [7380, 7383], [1600, 1603], [6810, 6813], [190, 193], [5860, 5863], [9850, 9853], [660, 663], [9710, 9713], [9490, 9493], [1190, 1193], [2900, 2903], [9570, 9573], [4450, 4453], [9780, 9783], [4920, 4923], [6120, 6123], [2170, 2173], [9220, 9223], [9300, 9303], [7560, 7563], [6490, 6493], [3640, 3643], [3580, 3583], [2000, 2003], [10, 13], [1420, 1423], [8940, 8943], [7170, 7173], [7920, 7923], [6900, 6903], [5160, 5163], [9630, 9633], [2580, 2583], [7600, 7603], [920, 923], [170, 173], [1520, 1523], [4550, 4553], [5450, 5453], [5650, 5653], [9380, 9383], [8920, 8923], [5440, 5443], [6330, 6333], [7550, 7553], [1020, 1023], [9930, 9933], [590, 593], [6630, 6633], [5100, 5103], [9000, 9003], [2500, 2503], [9750, 9753], [610, 613], [580, 583], [6990, 6993], [8810, 8813], [4970, 4973], [4780, 4783], [5310, 5313], [6040, 6043], [1480, 1483], [6730, 6733], [450, 453], [4800, 4803], [4310, 4313], [2160, 2163], [410, 413], [9950, 9953], [1430, 1433], [3020, 3023], [5990, 5993], [140, 143], [3050, 3053], [2760, 2763], [3190, 3193], [5910, 5913], [7620, 7623], [9940, 9943], [5330, 5333], [1280, 1283], [9440, 9443], [6710, 6713], [7340, 7343], [6030, 6033], [7650, 7653], [8980, 8983], [5270, 5273], [0, 3], [9280, 9283], [9990, 9993], [2350, 2353], [3090, 3093], [6530, 6533], [530, 533], [7270, 7273], [9020, 9023], [1030, 1033], [7840, 7843], [370, 373], [3850, 3853], [4820, 4823], [1100, 1103], [490, 493], [2910, 2913], [5710, 5713], [4670, 4673], [4050, 4053], [6850, 6853], [760, 763], [4280, 4283], [100, 103], [9720, 9723], [970, 973], [6830, 6833], [9230, 9233], [320, 323], [6970, 6973], [780, 783], [6890, 6893], [4120, 4123], [8000, 8003], [8460, 8463], [6670, 6673], [5870, 5873], [3290, 3293], [8700, 8703], [8960, 8963], [1860, 1863], [4360, 4363], [6460, 6463], [9660, 9663], [9210, 9213], [6500, 6503], [5010, 5013], [1770, 1773], [3690, 3693], [5290, 5293], [6750, 6753], [880, 883], [270, 273], [630, 633], [8470, 8473], [2870, 2873], [8020, 8023], [3530, 3533], [8540, 8543], [4090, 4093], [8500, 8503], [3730, 3733], [8930, 8933], [3010, 3013], [7880, 7883], [8120, 8123], [70, 73], [2550, 2553], [5150, 5153], [2590, 2593], [7950, 7953], [600, 603], [6010, 6013], [4570, 4573], [7040, 7043], [4250, 4253], [7850, 7853], [8830, 8833], [1410, 1413], [4200, 4203], [8080, 8083], [2200, 2203], [3220, 3223], [1250, 1253], [3570, 3573], [690, 693], [4100, 4103], [8620, 8623], [8580, 8583], [50, 53], [1930, 1933], [5060, 5063], [9450, 9453], [2270, 2273], [650, 653], [980, 983], [6360, 6363], [850, 853], [8030, 8033], [7670, 7673], [8900, 8903], [200, 203], [2620, 2623], [9610, 9613], [4610, 4613], [8320, 8323], [9250, 9253], [1680, 1683], [430, 433], [5580, 5583], [4990, 4993], [7200, 7203], [2830, 2833], [2560, 2563], [3760, 3763], [2280, 2283], [1510, 1513], [2020, 2023], [9390, 9393], [8280, 8283], [5170, 5173], [290, 293], [8220, 8223], [5070, 5073], [6170, 6173], [3000, 3003], [9060, 9063], [1650, 1653], [3900, 3903], [5510, 5513], [5230, 5233], [2880, 2883], [2980, 2983], [8840, 8843], [8190, 8193], [4510, 4513], [3130, 3133], [1980, 1983], [8140, 8143], [5210, 5213], [2190, 2193], [6680, 6683], [1890, 1893], [7890, 7893], [5140, 5143], [7490, 7493], [9800, 9803], [720, 723], [4500, 4503], [4760, 4763], [5360, 5363], [3170, 3173], [6290, 6293], [8590, 8593], [6240, 6243], [7410, 7413], [5520, 5523], [7000, 7003], [8450, 8453], [2040, 2043], [1540, 1543], [3320, 3323], [4400, 4403], [3120, 3123], [210, 213], [7640, 7643], [1640, 1643], [5500, 5503], [2630, 2633], [9870, 9873], [2960, 2963], [7450, 7453], [2850, 2853], [8730, 8733], [130, 133], [4260, 4263], [8300, 8303], [3550, 3553], [1260, 1263], [9600, 9603], [5630, 5633], [6350, 6353], [9120, 9123], [8350, 8353], [5370, 5373], [3340, 3343], [7580, 7583], [7590, 7593], [6070, 6073], [1360, 1363], [2800, 2803], [9670, 9673], [4810, 4813], [3880, 3883], [3910, 3913], [5840, 5843], [1140, 1143], [160, 163], [8670, 8673], [1670, 1673], [1470, 1473], [4040, 4043], [2530, 2533], [830, 833], [2390, 2393], [4240, 4243], [3080, 3083], [7510, 7513], [6080, 6083], [940, 943], [1200, 1203], [6130, 6133], [1060, 1063], [2480, 2483], [2920, 2923], [9010, 9013], [9050, 9053], [5030, 5033], [8200, 8203], [3520, 3523], [8800, 8803], [2150, 2153], [4430, 4433], [7470, 7473], [6610, 6613], [7870, 7873], [520, 523], [2430, 2433], [9960, 9963], [4940, 4943], [3100, 3103], [6770, 6773], [5530, 5533], [8210, 8213], [6400, 6403], [8380, 8383], [5970, 5973], [7910, 7913], [5300, 5303], [9510, 9513], [5820, 5823], [7690, 7693], [2070, 2073], [4950, 4953], [9690, 9693], [9910, 9913], [7740, 7743], [6780, 6783], [4390, 4393], [5730, 5733], [2110, 2113], [9740, 9743], [3750, 3753], [5950, 5953], [9620, 9623], [6200, 6203], [8640, 8643], [9040, 9043], [9030, 9033], [3440, 3443], [7130, 7133], [3540, 3543], [110, 113], [9100, 9103], [7100, 7103], [6430, 6433], [2010, 2013], [4000, 4003], [9590, 9593], [2890, 2893], [640, 643], [5090, 5093], [2710, 2713], [4890, 4893], [3240, 3243], [570, 573], [5670, 5673], [6550, 6553], [7330, 7333], [3950, 3953], [9260, 9263], [7710, 7713], [1700, 1703], [1000, 1003], [3370, 3373], [3460, 3463], [8490, 8493], [2780, 2783], [4180, 4183], [6580, 6583]]}']' timed out after 10 seconds"
+  },
+  {
+    "language": "zero",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "ok": false,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/prepared/zero_2/program"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": null,
+    "samples": [],
+    "error": "Command '['{ORIGINAL_BENCHMARK_ROOT}/prepared/zero_2/program', '{\"op\": \"ledger\", \"entries\": [{\"id\": \"0\", \"account\": \"acct62\", \"amount\": 7}, {\"id\": \"1\", \"account\": \"acct87\", \"amount\": 24}, {\"id\": \"2\", \"account\": \"acct93\", \"amount\": -19}, {\"id\": \"3\", \"account\": \"acct45\", \"amount\": 28}, {\"id\": \"4\", \"account\": \"acct10\", \"amount\": -36}, {\"id\": \"5\", \"account\": \"acct78\", \"amount\": -43}, {\"id\": \"6\", \"account\": \"acct42\", \"amount\": 47}, {\"id\": \"7\", \"account\": \"acct67\", \"amount\": 43}, {\"id\": \"8\", \"account\": \"acct40\", \"amount\": -18}, {\"id\": \"9\", \"account\": \"acct38\", \"amount\": -11}, {\"id\": \"10\", \"account\": \"acct45\", \"amount\": 47}, {\"id\": \"11\", \"account\": \"acct73\", \"amount\": 43}, {\"id\": \"12\", \"account\": \"acct88\", \"amount\": 25}, {\"id\": \"13\", \"account\": \"acct26\", \"amount\": 45}, {\"id\": \"14\", \"account\": \"acct17\", \"amount\": -35}, {\"id\": \"15\", \"account\": \"acct41\", \"amount\": 45}, {\"id\": \"16\", \"account\": \"acct46\", \"amount\": -13}, {\"id\": \"17\", \"account\": \"acct26\", \"amount\": -42}, {\"id\": \"18\", \"account\": \"acct22\", \"amount\": -28}, {\"id\": \"19\", \"account\": \"acct70\", \"amount\": -23}, {\"id\": \"20\", \"account\": \"acct48\", \"amount\": 40}, {\"id\": \"21\", \"account\": \"acct11\", \"amount\": 8}, {\"id\": \"22\", \"account\": \"acct38\", \"amount\": -31}, {\"id\": \"23\", \"account\": \"acct88\", \"amount\": 30}, {\"id\": \"24\", \"account\": \"acct45\", \"amount\": 12}, {\"id\": \"25\", \"account\": \"acct60\", \"amount\": 5}, {\"id\": \"26\", \"account\": \"acct44\", \"amount\": -27}, {\"id\": \"27\", \"account\": \"acct6\", \"amount\": 11}, {\"id\": \"28\", \"account\": \"acct71\", \"amount\": -47}, {\"id\": \"29\", \"account\": \"acct62\", \"amount\": -42}, {\"id\": \"30\", \"account\": \"acct34\", \"amount\": 10}, {\"id\": \"31\", \"account\": \"acct1\", \"amount\": -40}, {\"id\": \"32\", \"account\": \"acct29\", \"amount\": 35}, {\"id\": \"33\", \"account\": \"acct20\", \"amount\": -37}, {\"id\": \"34\", \"account\": \"acct3\", \"amount\": -36}, {\"id\": \"35\", \"account\": \"acct98\", \"amount\": 23}, {\"id\": \"36\", \"account\": \"acct71\", \"amount\": -38}, {\"id\": \"37\", \"account\": \"acct30\", \"amount\": -45}, {\"id\": \"38\", \"account\": \"acct28\", \"amount\": -17}, {\"id\": \"39\", \"account\": \"acct87\", \"amount\": -13}, {\"id\": \"40\", \"account\": \"acct5\", \"amount\": 38}, {\"id\": \"41\", \"account\": \"acct47\", \"amount\": 23}, {\"id\": \"42\", \"account\": \"acct38\", \"amount\": -25}, {\"id\": \"43\", \"account\": \"acct70\", \"amount\": 24}, {\"id\": \"44\", \"account\": \"acct64\", \"amount\": -12}, {\"id\": \"45\", \"account\": \"acct3\", \"amount\": 31}, {\"id\": \"46\", \"account\": \"acct70\", \"amount\": -11}, {\"id\": \"47\", \"account\": \"acct3\", \"amount\": 8}, {\"id\": \"48\", \"account\": \"acct95\", \"amount\": -12}, {\"id\": \"49\", \"account\": \"acct2\", \"amount\": 44}, {\"id\": \"50\", \"account\": \"acct80\", \"amount\": -47}, {\"id\": \"51\", \"account\": \"acct66\", \"amount\": 43}, {\"id\": \"52\", \"account\": \"acct72\", \"amount\": 47}, {\"id\": \"53\", \"account\": \"acct80\", \"amount\": 31}, {\"id\": \"54\", \"account\": \"acct90\", \"amount\": 42}, {\"id\": \"55\", \"account\": \"acct8\", \"amount\": 14}, {\"id\": \"56\", \"account\": \"acct34\", \"amount\": 20}, {\"id\": \"57\", \"account\": \"acct92\", \"amount\": 50}, {\"id\": \"58\", \"account\": \"acct97\", \"amount\": 28}, {\"id\": \"59\", \"account\": \"acct69\", \"amount\": 46}, {\"id\": \"60\", \"account\": \"acct11\", \"amount\": 4}, {\"id\": \"61\", \"account\": \"acct80\", \"amount\": -5}, {\"id\": \"62\", \"account\": \"acct15\", \"amount\": -6}, {\"id\": \"63\", \"account\": \"acct63\", \"amount\": -24}, {\"id\": \"64\", \"account\": \"acct97\", \"amount\": -27}, {\"id\": \"65\", \"account\": \"acct50\", \"amount\": 29}, {\"id\": \"66\", \"account\": \"acct72\", \"amount\": 14}, {\"id\": \"67\", \"account\": \"acct66\", \"amount\": -24}, {\"id\": \"68\", \"account\": \"acct5\", \"amount\": 2}, {\"id\": \"69\", \"account\": \"acct20\", \"amount\": 31}, {\"id\": \"70\", \"account\": \"acct93\", \"amount\": -46}, {\"id\": \"71\", \"account\": \"acct25\", \"amount\": -17}, {\"id\": \"72\", \"account\": \"acct49\", \"amount\": 0}, {\"id\": \"73\", \"account\": \"acct87\", \"amount\": -28}, {\"id\": \"74\", \"account\": \"acct97\", \"amount\": 35}, {\"id\": \"75\", \"account\": \"acct11\", \"amount\": 21}, {\"id\": \"76\", \"account\": \"acct14\", \"amount\": -28}, {\"id\": \"77\", \"account\": \"acct48\", \"amount\": 49}, {\"id\": \"78\", \"account\": \"acct12\", \"amount\": 24}, {\"id\": \"79\", \"account\": \"acct57\", \"amount\": 19}, {\"id\": \"80\", \"account\": \"acct84\", \"amount\": -36}, {\"id\": \"81\", \"account\": \"acct59\", \"amount\": -38}, {\"id\": \"82\", \"account\": \"acct29\", \"amount\": -47}, {\"id\": \"83\", \"account\": \"acct56\", \"amount\": -3}, {\"id\": \"84\", \"account\": \"acct32\", \"amount\": 28}, {\"id\": \"85\", \"account\": \"acct84\", \"amount\": -27}, {\"id\": \"86\", \"account\": \"acct33\", \"amount\": -31}, {\"id\": \"87\", \"account\": \"acct24\", \"amount\": 45}, {\"id\": \"88\", \"account\": \"acct23\", \"amount\": 37}, {\"id\": \"89\", \"account\": \"acct25\", \"amount\": 40}, {\"id\": \"90\", \"account\": \"acct97\", \"amount\": 32}, {\"id\": \"91\", \"account\": \"acct28\", \"amount\": 35}, {\"id\": \"92\", \"account\": \"acct50\", \"amount\": 39}, {\"id\": \"93\", \"account\": \"acct7\", \"amount\": -16}, {\"id\": \"94\", \"account\": \"acct2\", \"amount\": 19}, {\"id\": \"95\", \"account\": \"acct50\", \"amount\": 11}, {\"id\": \"96\", \"account\": \"acct96\", \"amount\": 44}, {\"id\": \"97\", \"account\": \"acct72\", \"amount\": 46}, {\"id\": \"98\", \"account\": \"acct47\", \"amount\": -10}, {\"id\": \"99\", \"account\": \"acct35\", \"amount\": 25}, {\"id\": \"100\", \"account\": \"acct12\", \"amount\": -40}, {\"id\": \"101\", \"account\": \"acct77\", \"amount\": 0}, {\"id\": \"102\", \"account\": \"acct9\", \"amount\": -24}, {\"id\": \"103\", \"account\": \"acct3\", \"amount\": -36}, {\"id\": \"104\", \"account\": \"acct10\", \"amount\": 2}, {\"id\": \"105\", \"account\": \"acct62\", \"amount\": -26}, {\"id\": \"106\", \"account\": \"acct91\", \"amount\": 16}, {\"id\": \"107\", \"account\": \"acct14\", \"amount\": -8}, {\"id\": \"108\", \"account\": \"acct23\", \"amount\": 35}, {\"id\": \"109\", \"account\": \"acct23\", \"amount\": -17}, {\"id\": \"110\", \"account\": \"acct33\", \"amount\": 44}, {\"id\": \"111\", \"account\": \"acct71\", \"amount\": 3}, {\"id\": \"112\", \"account\": \"acct0\", \"amount\": -18}, {\"id\": \"113\", \"account\": \"acct86\", \"amount\": 31}, {\"id\": \"114\", \"account\": \"acct88\", \"amount\": -26}, {\"id\": \"115\", \"account\": \"acct29\", \"amount\": 16}, {\"id\": \"116\", \"account\": \"acct64\", \"amount\": -33}, {\"id\": \"117\", \"account\": \"acct46\", \"amount\": -30}, {\"id\": \"118\", \"account\": \"acct5\", \"amount\": 44}, {\"id\": \"119\", \"account\": \"acct35\", \"amount\": 38}, {\"id\": \"120\", \"account\": \"acct68\", \"amount\": -22}, {\"id\": \"121\", \"account\": \"acct98\", \"amount\": 18}, {\"id\": \"122\", \"account\": \"acct44\", \"amount\": -21}, {\"id\": \"123\", \"account\": \"acct23\", \"amount\": -1}, {\"id\": \"124\", \"account\": \"acct79\", \"amount\": -34}, {\"id\": \"125\", \"account\": \"acct5\", \"amount\": -9}, {\"id\": \"126\", \"account\": \"acct32\", \"amount\": -32}, {\"id\": \"127\", \"account\": \"acct73\", \"amount\": -6}, {\"id\": \"128\", \"account\": \"acct97\", \"amount\": 46}, {\"id\": \"129\", \"account\": \"acct33\", \"amount\": -40}, {\"id\": \"130\", \"account\": \"acct9\", \"amount\": 2}, {\"id\": \"131\", \"account\": \"acct7\", \"amount\": 32}, {\"id\": \"132\", \"account\": \"acct21\", \"amount\": -27}, {\"id\": \"133\", \"account\": \"acct41\", \"amount\": 32}, {\"id\": \"134\", \"account\": \"acct37\", \"amount\": -31}, {\"id\": \"135\", \"account\": \"acct25\", \"amount\": -43}, {\"id\": \"136\", \"account\": \"acct2\", \"amount\": -32}, {\"id\": \"137\", \"account\": \"acct73\", \"amount\": -42}, {\"id\": \"138\", \"account\": \"acct92\", \"amount\": -47}, {\"id\": \"139\", \"account\": \"acct94\", \"amount\": -45}, {\"id\": \"140\", \"account\": \"acct85\", \"amount\": 48}, {\"id\": \"141\", \"account\": \"acct65\", \"amount\": 45}, {\"id\": \"142\", \"account\": \"acct13\", \"amount\": -6}, {\"id\": \"143\", \"account\": \"acct91\", \"amount\": 30}, {\"id\": \"144\", \"account\": \"acct6\", \"amount\": 1}, {\"id\": \"145\", \"account\": \"acct90\", \"amount\": 18}, {\"id\": \"146\", \"account\": \"acct19\", \"amount\": 45}, {\"id\": \"147\", \"account\": \"acct27\", \"amount\": 18}, {\"id\": \"148\", \"account\": \"acct57\", \"amount\": -16}, {\"id\": \"149\", \"account\": \"acct3\", \"amount\": 27}, {\"id\": \"150\", \"account\": \"acct0\", \"amount\": -19}, {\"id\": \"151\", \"account\": \"acct27\", \"amount\": -6}, {\"id\": \"152\", \"account\": \"acct43\", \"amount\": 23}, {\"id\": \"153\", \"account\": \"acct40\", \"amount\": -13}, {\"id\": \"154\", \"account\": \"acct72\", \"amount\": -21}, {\"id\": \"155\", \"account\": \"acct49\", \"amount\": -6}, {\"id\": \"156\", \"account\": \"acct99\", \"amount\": 4}, {\"id\": \"157\", \"account\": \"acct76\", \"amount\": 42}, {\"id\": \"158\", \"account\": \"acct47\", \"amount\": -36}, {\"id\": \"159\", \"account\": \"acct24\", \"amount\": -25}, {\"id\": \"160\", \"account\": \"acct79\", \"amount\": 2}, {\"id\": \"161\", \"account\": \"acct51\", \"amount\": -34}, {\"id\": \"162\", \"account\": \"acct56\", \"amount\": -25}, {\"id\": \"163\", \"account\": \"acct88\", \"amount\": 23}, {\"id\": \"164\", \"account\": \"acct46\", \"amount\": -44}, {\"id\": \"165\", \"account\": \"acct53\", \"amount\": -13}, {\"id\": \"166\", \"account\": \"acct98\", \"amount\": -5}, {\"id\": \"167\", \"account\": \"acct30\", \"amount\": -22}, {\"id\": \"168\", \"account\": \"acct50\", \"amount\": -38}, {\"id\": \"169\", \"account\": \"acct14\", \"amount\": 34}, {\"id\": \"170\", \"account\": \"acct98\", \"amount\": -46}, {\"id\": \"171\", \"account\": \"acct32\", \"amount\": -46}, {\"id\": \"172\", \"account\": \"acct5\", \"amount\": 11}, {\"id\": \"173\", \"account\": \"acct79\", \"amount\": -36}, {\"id\": \"174\", \"account\": \"acct87\", \"amount\": -16}, {\"id\": \"175\", \"account\": \"acct83\", \"amount\": 49}, {\"id\": \"176\", \"account\": \"acct27\", \"amount\": 37}, {\"id\": \"177\", \"account\": \"acct92\", \"amount\": -16}, {\"id\": \"178\", \"account\": \"acct26\", \"amount\": 50}, {\"id\": \"179\", \"account\": \"acct0\", \"amount\": 19}, {\"id\": \"180\", \"account\": \"acct67\", \"amount\": -3}, {\"id\": \"181\", \"account\": \"acct54\", \"amount\": 18}, {\"id\": \"182\", \"account\": \"acct87\", \"amount\": 9}, {\"id\": \"183\", \"account\": \"acct68\", \"amount\": -17}, {\"id\": \"184\", \"account\": \"acct68\", \"amount\": 47}, {\"id\": \"185\", \"account\": \"acct96\", \"amount\": 18}, {\"id\": \"186\", \"account\": \"acct38\", \"amount\": -28}, {\"id\": \"187\", \"account\": \"acct13\", \"amount\": -5}, {\"id\": \"188\", \"account\": \"acct73\", \"amount\": 34}, {\"id\": \"189\", \"account\": \"acct31\", \"amount\": -21}, {\"id\": \"190\", \"account\": \"acct53\", \"amount\": 27}, {\"id\": \"191\", \"account\": \"acct89\", \"amount\": -37}, {\"id\": \"192\", \"account\": \"acct16\", \"amount\": -21}, {\"id\": \"193\", \"account\": \"acct68\", \"amount\": -45}, {\"id\": \"194\", \"account\": \"acct77\", \"amount\": 14}, {\"id\": \"195\", \"account\": \"acct66\", \"amount\": 28}, {\"id\": \"196\", \"account\": \"acct47\", \"amount\": 30}, {\"id\": \"197\", \"account\": \"acct26\", \"amount\": 44}, {\"id\": \"198\", \"account\": \"acct37\", \"amount\": -42}, {\"id\": \"199\", \"account\": \"acct97\", \"amount\": 43}, {\"id\": \"200\", \"account\": \"acct52\", \"amount\": 17}, {\"id\": \"201\", \"account\": \"acct45\", \"amount\": 6}, {\"id\": \"202\", \"account\": \"acct80\", \"amount\": 47}, {\"id\": \"203\", \"account\": \"acct19\", \"amount\": -36}, {\"id\": \"204\", \"account\": \"acct38\", \"amount\": 27}, {\"id\": \"205\", \"account\": \"acct49\", \"amount\": 11}, {\"id\": \"206\", \"account\": \"acct98\", \"amount\": 22}, {\"id\": \"207\", \"account\": \"acct7\", \"amount\": -24}, {\"id\": \"208\", \"account\": \"acct29\", \"amount\": -6}, {\"id\": \"209\", \"account\": \"acct3\", \"amount\": 4}, {\"id\": \"210\", \"account\": \"acct76\", \"amount\": -49}, {\"id\": \"211\", \"account\": \"acct79\", \"amount\": -16}, {\"id\": \"212\", \"account\": \"acct67\", \"amount\": -4}, {\"id\": \"213\", \"account\": \"acct79\", \"amount\": 47}, {\"id\": \"214\", \"account\": \"acct1\", \"amount\": 49}, {\"id\": \"215\", \"account\": \"acct63\", \"amount\": 50}, {\"id\": \"216\", \"account\": \"acct61\", \"amount\": 25}, {\"id\": \"217\", \"account\": \"acct84\", \"amount\": -36}, {\"id\": \"218\", \"account\": \"acct86\", \"amount\": 24}, {\"id\": \"219\", \"account\": \"acct23\", \"amount\": -7}, {\"id\": \"220\", \"account\": \"acct71\", \"amount\": 28}, {\"id\": \"221\", \"account\": \"acct11\", \"amount\": 31}, {\"id\": \"222\", \"account\": \"acct81\", \"amount\": 13}, {\"id\": \"223\", \"account\": \"acct31\", \"amount\": 18}, {\"id\": \"224\", \"account\": \"acct31\", \"amount\": 8}, {\"id\": \"225\", \"account\": \"acct60\", \"amount\": 18}, {\"id\": \"226\", \"account\": \"acct66\", \"amount\": -37}, {\"id\": \"227\", \"account\": \"acct26\", \"amount\": -20}, {\"id\": \"228\", \"account\": \"acct44\", \"amount\": -14}, {\"id\": \"229\", \"account\": \"acct98\", \"amount\": -5}, {\"id\": \"230\", \"account\": \"acct55\", \"amount\": -30}, {\"id\": \"231\", \"account\": \"acct8\", \"amount\": 36}, {\"id\": \"232\", \"account\": \"acct1\", \"amount\": 49}, {\"id\": \"233\", \"account\": \"acct58\", \"amount\": 39}, {\"id\": \"234\", \"account\": \"acct67\", \"amount\": 32}, {\"id\": \"235\", \"account\": \"acct41\", \"amount\": -26}, {\"id\": \"236\", \"account\": \"acct62\", \"amount\": 34}, {\"id\": \"237\", \"account\": \"acct16\", \"amount\": -35}, {\"id\": \"238\", \"account\": \"acct91\", \"amount\": 29}, {\"id\": \"239\", \"account\": \"acct61\", \"amount\": -2}, {\"id\": \"240\", \"account\": \"acct91\", \"amount\": 27}, {\"id\": \"241\", \"account\": \"acct91\", \"amount\": -17}, {\"id\": \"242\", \"account\": \"acct91\", \"amount\": 9}, {\"id\": \"243\", \"account\": \"acct1\", \"amount\": 34}, {\"id\": \"244\", \"account\": \"acct24\", \"amount\": -4}, {\"id\": \"245\", \"account\": \"acct34\", \"amount\": 18}, {\"id\": \"246\", \"account\": \"acct28\", \"amount\": 30}, {\"id\": \"247\", \"account\": \"acct35\", \"amount\": 23}, {\"id\": \"248\", \"account\": \"acct81\", \"amount\": -36}, {\"id\": \"249\", \"account\": \"acct68\", \"amount\": 30}, {\"id\": \"250\", \"account\": \"acct64\", \"amount\": 15}, {\"id\": \"251\", \"account\": \"acct95\", \"amount\": -36}, {\"id\": \"252\", \"account\": \"acct70\", \"amount\": -22}, {\"id\": \"253\", \"account\": \"acct34\", \"amount\": -44}, {\"id\": \"254\", \"account\": \"acct80\", \"amount\": 22}, {\"id\": \"255\", \"account\": \"acct19\", \"amount\": -30}, {\"id\": \"256\", \"account\": \"acct8\", \"amount\": 6}, {\"id\": \"257\", \"account\": \"acct60\", \"amount\": 37}, {\"id\": \"258\", \"account\": \"acct6\", \"amount\": 32}, {\"id\": \"259\", \"account\": \"acct90\", \"amount\": -33}, {\"id\": \"260\", \"account\": \"acct45\", \"amount\": -15}, {\"id\": \"261\", \"account\": \"acct29\", \"amount\": -11}, {\"id\": \"262\", \"account\": \"acct7\", \"amount\": -3}, {\"id\": \"263\", \"account\": \"acct54\", \"amount\": 18}, {\"id\": \"264\", \"account\": \"acct73\", \"amount\": -46}, {\"id\": \"265\", \"account\": \"acct64\", \"amount\": 1}, {\"id\": \"266\", \"account\": \"acct71\", \"amount\": 34}, {\"id\": \"267\", \"account\": \"acct0\", \"amount\": 12}, {\"id\": \"268\", \"account\": \"acct79\", \"amount\": -24}, {\"id\": \"269\", \"account\": \"acct40\", \"amount\": 4}, {\"id\": \"270\", \"account\": \"acct69\", \"amount\": -11}, {\"id\": \"271\", \"account\": \"acct26\", \"amount\": -11}, {\"id\": \"272\", \"account\": \"acct40\", \"amount\": 7}, {\"id\": \"273\", \"account\": \"acct96\", \"amount\": 11}, {\"id\": \"274\", \"account\": \"acct90\", \"amount\": 37}, {\"id\": \"275\", \"account\": \"acct87\", \"amount\": -18}, {\"id\": \"276\", \"account\": \"acct92\", \"amount\": 28}, {\"id\": \"277\", \"account\": \"acct30\", \"amount\": -32}, {\"id\": \"278\", \"account\": \"acct34\", \"amount\": 0}, {\"id\": \"279\", \"account\": \"acct13\", \"amount\": 14}, {\"id\": \"280\", \"account\": \"acct84\", \"amount\": 8}, {\"id\": \"281\", \"account\": \"acct21\", \"amount\": -10}, {\"id\": \"282\", \"account\": \"acct75\", \"amount\": -9}, {\"id\": \"283\", \"account\": \"acct25\", \"amount\": -17}, {\"id\": \"284\", \"account\": \"acct25\", \"amount\": 12}, {\"id\": \"285\", \"account\": \"acct31\", \"amount\": 30}, {\"id\": \"286\", \"account\": \"acct23\", \"amount\": 16}, {\"id\": \"287\", \"account\": \"acct47\", \"amount\": 30}, {\"id\": \"288\", \"account\": \"acct23\", \"amount\": 41}, {\"id\": \"289\", \"account\": \"acct7\", \"amount\": -19}, {\"id\": \"290\", \"account\": \"acct25\", \"amount\": 6}, {\"id\": \"291\", \"account\": \"acct52\", \"amount\": 8}, {\"id\": \"292\", \"account\": \"acct49\", \"amount\": 39}, {\"id\": \"293\", \"account\": \"acct80\", \"amount\": 30}, {\"id\": \"294\", \"account\": \"acct89\", \"amount\": 3}, {\"id\": \"295\", \"account\": \"acct54\", \"amount\": 39}, {\"id\": \"296\", \"account\": \"acct59\", \"amount\": -3}, {\"id\": \"297\", \"account\": \"acct40\", \"amount\": -30}, {\"id\": \"298\", \"account\": \"acct30\", \"amount\": 37}, {\"id\": \"299\", \"account\": \"acct97\", \"amount\": -38}, {\"id\": \"300\", \"account\": \"acct44\", \"amount\": -8}, {\"id\": \"301\", \"account\": \"acct3\", \"amount\": 45}, {\"id\": \"302\", \"account\": \"acct43\", \"amount\": -30}, {\"id\": \"303\", \"account\": \"acct62\", \"amount\": -23}, {\"id\": \"304\", \"account\": \"acct41\", \"amount\": -28}, {\"id\": \"305\", \"account\": \"acct68\", \"amount\": -12}, {\"id\": \"306\", \"account\": \"acct24\", \"amount\": -33}, {\"id\": \"307\", \"account\": \"acct63\", \"amount\": -23}, {\"id\": \"308\", \"account\": \"acct77\", \"amount\": -41}, {\"id\": \"309\", \"account\": \"acct50\", \"amount\": 22}, {\"id\": \"310\", \"account\": \"acct59\", \"amount\": -20}, {\"id\": \"311\", \"account\": \"acct92\", \"amount\": 21}, {\"id\": \"312\", \"account\": \"acct89\", \"amount\": -14}, {\"id\": \"313\", \"account\": \"acct55\", \"amount\": -45}, {\"id\": \"314\", \"account\": \"acct49\", \"amount\": 46}, {\"id\": \"315\", \"account\": \"acct95\", \"amount\": -40}, {\"id\": \"316\", \"account\": \"acct45\", \"amount\": -49}, {\"id\": \"317\", \"account\": \"acct16\", \"amount\": 32}, {\"id\": \"318\", \"account\": \"acct70\", \"amount\": -30}, {\"id\": \"319\", \"account\": \"acct1\", \"amount\": 10}, {\"id\": \"320\", \"account\": \"acct94\", \"amount\": -26}, {\"id\": \"321\", \"account\": \"acct6\", \"amount\": 41}, {\"id\": \"322\", \"account\": \"acct5\", \"amount\": -17}, {\"id\": \"323\", \"account\": \"acct74\", \"amount\": -23}, {\"id\": \"324\", \"account\": \"acct57\", \"amount\": -41}, {\"id\": \"325\", \"account\": \"acct28\", \"amount\": -8}, {\"id\": \"326\", \"account\": \"acct4\", \"amount\": -19}, {\"id\": \"327\", \"account\": \"acct35\", \"amount\": 38}, {\"id\": \"328\", \"account\": \"acct91\", \"amount\": 9}, {\"id\": \"329\", \"account\": \"acct60\", \"amount\": 13}, {\"id\": \"330\", \"account\": \"acct11\", \"amount\": -37}, {\"id\": \"331\", \"account\": \"acct14\", \"amount\": 14}, {\"id\": \"332\", \"account\": \"acct49\", \"amount\": -21}, {\"id\": \"333\", \"account\": \"acct39\", \"amount\": -6}, {\"id\": \"334\", \"account\": \"acct55\", \"amount\": 31}, {\"id\": \"335\", \"account\": \"acct54\", \"amount\": 3}, {\"id\": \"336\", \"account\": \"acct65\", \"amount\": 47}, {\"id\": \"337\", \"account\": \"acct44\", \"amount\": -43}, {\"id\": \"338\", \"account\": \"acct8\", \"amount\": 38}, {\"id\": \"339\", \"account\": \"acct69\", \"amount\": -17}, {\"id\": \"340\", \"account\": \"acct53\", \"amount\": 49}, {\"id\": \"341\", \"account\": \"acct73\", \"amount\": 7}, {\"id\": \"342\", \"account\": \"acct61\", \"amount\": 23}, {\"id\": \"343\", \"account\": \"acct73\", \"amount\": -32}, {\"id\": \"344\", \"account\": \"acct76\", \"amount\": -37}, {\"id\": \"345\", \"account\": \"acct62\", \"amount\": 39}, {\"id\": \"346\", \"account\": \"acct55\", \"amount\": 33}, {\"id\": \"347\", \"account\": \"acct68\", \"amount\": 36}, {\"id\": \"348\", \"account\": \"acct34\", \"amount\": -41}, {\"id\": \"349\", \"account\": \"acct3\", \"amount\": -32}, {\"id\": \"350\", \"account\": \"acct69\", \"amount\": -48}, {\"id\": \"351\", \"account\": \"acct41\", \"amount\": 4}, {\"id\": \"352\", \"account\": \"acct64\", \"amount\": -46}, {\"id\": \"353\", \"account\": \"acct98\", \"amount\": -44}, {\"id\": \"354\", \"account\": \"acct88\", \"amount\": -42}, {\"id\": \"355\", \"account\": \"acct41\", \"amount\": 5}, {\"id\": \"356\", \"account\": \"acct72\", \"amount\": 26}, {\"id\": \"357\", \"account\": \"acct29\", \"amount\": 47}, {\"id\": \"358\", \"account\": \"acct27\", \"amount\": -24}, {\"id\": \"359\", \"account\": \"acct8\", \"amount\": -29}, {\"id\": \"360\", \"account\": \"acct18\", \"amount\": 0}, {\"id\": \"361\", \"account\": \"acct52\", \"amount\": 25}, {\"id\": \"362\", \"account\": \"acct80\", \"amount\": 30}, {\"id\": \"363\", \"account\": \"acct56\", \"amount\": 45}, {\"id\": \"364\", \"account\": \"acct53\", \"amount\": 21}, {\"id\": \"365\", \"account\": \"acct50\", \"amount\": 14}, {\"id\": \"366\", \"account\": \"acct59\", \"amount\": -9}, {\"id\": \"367\", \"account\": \"acct63\", \"amount\": 21}, {\"id\": \"368\", \"account\": \"acct40\", \"amount\": -41}, {\"id\": \"369\", \"account\": \"acct2\", \"amount\": -43}, {\"id\": \"370\", \"account\": \"acct86\", \"amount\": -39}, {\"id\": \"371\", \"account\": \"acct88\", \"amount\": -37}, {\"id\": \"372\", \"account\": \"acct63\", \"amount\": 10}, {\"id\": \"373\", \"account\": \"acct75\", \"amount\": 0}, {\"id\": \"374\", \"account\": \"acct22\", \"amount\": 13}, {\"id\": \"375\", \"account\": \"acct70\", \"amount\": -47}, {\"id\": \"376\", \"account\": \"acct72\", \"amount\": 19}, {\"id\": \"377\", \"account\": \"acct92\", \"amount\": 40}, {\"id\": \"378\", \"account\": \"acct78\", \"amount\": -46}, {\"id\": \"379\", \"account\": \"acct48\", \"amount\": 17}, {\"id\": \"380\", \"account\": \"acct24\", \"amount\": 3}, {\"id\": \"381\", \"account\": \"acct68\", \"amount\": -45}, {\"id\": \"382\", \"account\": \"acct29\", \"amount\": -13}, {\"id\": \"383\", \"account\": \"acct41\", \"amount\": 33}, {\"id\": \"384\", \"account\": \"acct7\", \"amount\": -6}, {\"id\": \"385\", \"account\": \"acct27\", \"amount\": -12}, {\"id\": \"386\", \"account\": \"acct55\", \"amount\": 23}, {\"id\": \"387\", \"account\": \"acct40\", \"amount\": 37}, {\"id\": \"388\", \"account\": \"acct95\", \"amount\": -36}, {\"id\": \"389\", \"account\": \"acct96\", \"amount\": 32}, {\"id\": \"390\", \"account\": \"acct84\", \"amount\": -11}, {\"id\": \"391\", \"account\": \"acct26\", \"amount\": 27}, {\"id\": \"392\", \"account\": \"acct33\", \"amount\": 0}, {\"id\": \"393\", \"account\": \"acct31\", \"amount\": -15}, {\"id\": \"394\", \"account\": \"acct64\", \"amount\": 6}, {\"id\": \"395\", \"account\": \"acct21\", \"amount\": 33}, {\"id\": \"396\", \"account\": \"acct40\", \"amount\": 18}, {\"id\": \"397\", \"account\": \"acct21\", \"amount\": 37}, {\"id\": \"398\", \"account\": \"acct79\", \"amount\": -42}, {\"id\": \"399\", \"account\": \"acct63\", \"amount\": -47}, {\"id\": \"400\", \"account\": \"acct14\", \"amount\": 5}, {\"id\": \"401\", \"account\": \"acct78\", \"amount\": -14}, {\"id\": \"402\", \"account\": \"acct7\", \"amount\": 1}, {\"id\": \"403\", \"account\": \"acct53\", \"amount\": 48}, {\"id\": \"404\", \"account\": \"acct31\", \"amount\": -27}, {\"id\": \"405\", \"account\": \"acct83\", \"amount\": 3}, {\"id\": \"406\", \"account\": \"acct94\", \"amount\": 38}, {\"id\": \"407\", \"account\": \"acct66\", \"amount\": 39}, {\"id\": \"408\", \"account\": \"acct15\", \"amount\": -8}, {\"id\": \"409\", \"account\": \"acct66\", \"amount\": -32}, {\"id\": \"410\", \"account\": \"acct99\", \"amount\": 0}, {\"id\": \"411\", \"account\": \"acct44\", \"amount\": -1}, {\"id\": \"412\", \"account\": \"acct35\", \"amount\": 13}, {\"id\": \"413\", \"account\": \"acct97\", \"amount\": -1}, {\"id\": \"414\", \"account\": \"acct84\", \"amount\": -23}, {\"id\": \"415\", \"account\": \"acct5\", \"amount\": 29}, {\"id\": \"416\", \"account\": \"acct5\", \"amount\": 7}, {\"id\": \"417\", \"account\": \"acct40\", \"amount\": -48}, {\"id\": \"418\", \"account\": \"acct85\", \"amount\": 22}, {\"id\": \"419\", \"account\": \"acct31\", \"amount\": 18}, {\"id\": \"420\", \"account\": \"acct76\", \"amount\": -8}, {\"id\": \"421\", \"account\": \"acct96\", \"amount\": 9}, {\"id\": \"422\", \"account\": \"acct34\", \"amount\": 45}, {\"id\": \"423\", \"account\": \"acct92\", \"amount\": -22}, {\"id\": \"424\", \"account\": \"acct45\", \"amount\": -9}, {\"id\": \"425\", \"account\": \"acct41\", \"amount\": 6}, {\"id\": \"426\", \"account\": \"acct68\", \"amount\": 50}, {\"id\": \"427\", \"account\": \"acct13\", \"amount\": 48}, {\"id\": \"428\", \"account\": \"acct68\", \"amount\": 17}, {\"id\": \"429\", \"account\": \"acct36\", \"amount\": 36}, {\"id\": \"430\", \"account\": \"acct45\", \"amount\": 12}, {\"id\": \"431\", \"account\": \"acct25\", \"amount\": 2}, {\"id\": \"432\", \"account\": \"acct71\", \"amount\": -37}, {\"id\": \"433\", \"account\": \"acct9\", \"amount\": 12}, {\"id\": \"434\", \"account\": \"acct74\", \"amount\": -33}, {\"id\": \"435\", \"account\": \"acct60\", \"amount\": 44}, {\"id\": \"436\", \"account\": \"acct38\", \"amount\": 1}, {\"id\": \"437\", \"account\": \"acct90\", \"amount\": -36}, {\"id\": \"438\", \"account\": \"acct2\", \"amount\": -29}, {\"id\": \"439\", \"account\": \"acct3\", \"amount\": -32}, {\"id\": \"440\", \"account\": \"acct68\", \"amount\": -4}, {\"id\": \"441\", \"account\": \"acct21\", \"amount\": -44}, {\"id\": \"442\", \"account\": \"acct94\", \"amount\": -29}, {\"id\": \"443\", \"account\": \"acct46\", \"amount\": 16}, {\"id\": \"444\", \"account\": \"acct15\", \"amount\": 31}, {\"id\": \"445\", \"account\": \"acct45\", \"amount\": 13}, {\"id\": \"446\", \"account\": \"acct21\", \"amount\": 36}, {\"id\": \"447\", \"account\": \"acct5\", \"amount\": -8}, {\"id\": \"448\", \"account\": \"acct50\", \"amount\": 39}, {\"id\": \"449\", \"account\": \"acct9\", \"amount\": 10}, {\"id\": \"450\", \"account\": \"acct50\", \"amount\": 38}, {\"id\": \"451\", \"account\": \"acct86\", \"amount\": -11}, {\"id\": \"452\", \"account\": \"acct78\", \"amount\": 8}, {\"id\": \"453\", \"account\": \"acct18\", \"amount\": 43}, {\"id\": \"454\", \"account\": \"acct62\", \"amount\": -30}, {\"id\": \"455\", \"account\": \"acct56\", \"amount\": -37}, {\"id\": \"456\", \"account\": \"acct29\", \"amount\": 17}, {\"id\": \"457\", \"account\": \"acct6\", \"amount\": -34}, {\"id\": \"458\", \"account\": \"acct43\", \"amount\": -31}, {\"id\": \"459\", \"account\": \"acct19\", \"amount\": -25}, {\"id\": \"460\", \"account\": \"acct11\", \"amount\": 2}, {\"id\": \"461\", \"account\": \"acct71\", \"amount\": -24}, {\"id\": \"462\", \"account\": \"acct63\", \"amount\": 28}, {\"id\": \"463\", \"account\": \"acct62\", \"amount\": 16}, {\"id\": \"464\", \"account\": \"acct5\", \"amount\": 25}, {\"id\": \"465\", \"account\": \"acct82\", \"amount\": -49}, {\"id\": \"466\", \"account\": \"acct23\", \"amount\": -21}, {\"id\": \"467\", \"account\": \"acct69\", \"amount\": -9}, {\"id\": \"468\", \"account\": \"acct71\", \"amount\": -2}, {\"id\": \"469\", \"account\": \"acct42\", \"amount\": 41}, {\"id\": \"470\", \"account\": \"acct64\", \"amount\": -17}, {\"id\": \"471\", \"account\": \"acct41\", \"amount\": 44}, {\"id\": \"472\", \"account\": \"acct65\", \"amount\": 43}, {\"id\": \"473\", \"account\": \"acct71\", \"amount\": 33}, {\"id\": \"474\", \"account\": \"acct31\", \"amount\": 44}, {\"id\": \"475\", \"account\": \"acct98\", \"amount\": -9}, {\"id\": \"476\", \"account\": \"acct5\", \"amount\": 41}, {\"id\": \"477\", \"account\": \"acct49\", \"amount\": 49}, {\"id\": \"478\", \"account\": \"acct18\", \"amount\": -24}, {\"id\": \"479\", \"account\": \"acct95\", \"amount\": -39}, {\"id\": \"480\", \"account\": \"acct45\", \"amount\": -9}, {\"id\": \"481\", \"account\": \"acct25\", \"amount\": -33}, {\"id\": \"482\", \"account\": \"acct20\", \"amount\": -34}, {\"id\": \"483\", \"account\": \"acct72\", \"amount\": -28}, {\"id\": \"484\", \"account\": \"acct31\", \"amount\": 22}, {\"id\": \"485\", \"account\": \"acct37\", \"amount\": 18}, {\"id\": \"486\", \"account\": \"acct0\", \"amount\": 23}, {\"id\": \"487\", \"account\": \"acct43\", \"amount\": -42}, {\"id\": \"488\", \"account\": \"acct9\", \"amount\": 3}, {\"id\": \"489\", \"account\": \"acct35\", \"amount\": 17}, {\"id\": \"490\", \"account\": \"acct27\", \"amount\": -44}, {\"id\": \"491\", \"account\": \"acct50\", \"amount\": 49}, {\"id\": \"492\", \"account\": \"acct9\", \"amount\": 19}, {\"id\": \"493\", \"account\": \"acct49\", \"amount\": -49}, {\"id\": \"494\", \"account\": \"acct18\", \"amount\": 23}, {\"id\": \"495\", \"account\": \"acct82\", \"amount\": -33}, {\"id\": \"496\", \"account\": \"acct87\", \"amount\": 13}, {\"id\": \"497\", \"account\": \"acct32\", \"amount\": 40}, {\"id\": \"498\", \"account\": \"acct44\", \"amount\": -38}, {\"id\": \"499\", \"account\": \"acct78\", \"amount\": 30}, {\"id\": \"500\", \"account\": \"acct71\", \"amount\": 19}, {\"id\": \"501\", \"account\": \"acct55\", \"amount\": 23}, {\"id\": \"502\", \"account\": \"acct50\", \"amount\": 20}, {\"id\": \"503\", \"account\": \"acct16\", \"amount\": 0}, {\"id\": \"504\", \"account\": \"acct74\", \"amount\": 4}, {\"id\": \"505\", \"account\": \"acct34\", \"amount\": -27}, {\"id\": \"506\", \"account\": \"acct53\", \"amount\": 7}, {\"id\": \"507\", \"account\": \"acct70\", \"amount\": -48}, {\"id\": \"508\", \"account\": \"acct68\", \"amount\": 49}, {\"id\": \"509\", \"account\": \"acct42\", \"amount\": -31}, {\"id\": \"510\", \"account\": \"acct30\", \"amount\": -9}, {\"id\": \"511\", \"account\": \"acct0\", \"amount\": 26}, {\"id\": \"512\", \"account\": \"acct24\", \"amount\": 30}, {\"id\": \"513\", \"account\": \"acct63\", \"amount\": 43}, {\"id\": \"514\", \"account\": \"acct69\", \"amount\": 7}, {\"id\": \"515\", \"account\": \"acct66\", \"amount\": 39}, {\"id\": \"516\", \"account\": \"acct34\", \"amount\": -36}, {\"id\": \"517\", \"account\": \"acct95\", \"amount\": -20}, {\"id\": \"518\", \"account\": \"acct50\", \"amount\": 6}, {\"id\": \"519\", \"account\": \"acct88\", \"amount\": -11}, {\"id\": \"520\", \"account\": \"acct58\", \"amount\": -4}, {\"id\": \"521\", \"account\": \"acct10\", \"amount\": -31}, {\"id\": \"522\", \"account\": \"acct69\", \"amount\": -16}, {\"id\": \"523\", \"account\": \"acct7\", \"amount\": 35}, {\"id\": \"524\", \"account\": \"acct4\", \"amount\": 47}, {\"id\": \"525\", \"account\": \"acct35\", \"amount\": 40}, {\"id\": \"526\", \"account\": \"acct92\", \"amount\": 32}, {\"id\": \"527\", \"account\": \"acct29\", \"amount\": 50}, {\"id\": \"528\", \"account\": \"acct86\", \"amount\": 33}, {\"id\": \"529\", \"account\": \"acct97\", \"amount\": -29}, {\"id\": \"530\", \"account\": \"acct91\", \"amount\": 24}, {\"id\": \"531\", \"account\": \"acct56\", \"amount\": 20}, {\"id\": \"532\", \"account\": \"acct55\", \"amount\": 10}, {\"id\": \"533\", \"account\": \"acct15\", \"amount\": -49}, {\"id\": \"534\", \"account\": \"acct51\", \"amount\": 43}, {\"id\": \"535\", \"account\": \"acct24\", \"amount\": 0}, {\"id\": \"536\", \"account\": \"acct60\", \"amount\": 47}, {\"id\": \"537\", \"account\": \"acct33\", \"amount\": -25}, {\"id\": \"538\", \"account\": \"acct8\", \"amount\": 21}, {\"id\": \"539\", \"account\": \"acct28\", \"amount\": -29}, {\"id\": \"540\", \"account\": \"acct41\", \"amount\": 20}, {\"id\": \"541\", \"account\": \"acct45\", \"amount\": -36}, {\"id\": \"542\", \"account\": \"acct6\", \"amount\": 46}, {\"id\": \"543\", \"account\": \"acct95\", \"amount\": 15}, {\"id\": \"544\", \"account\": \"acct40\", \"amount\": 48}, {\"id\": \"545\", \"account\": \"acct79\", \"amount\": -9}, {\"id\": \"546\", \"account\": \"acct49\", \"amount\": -13}, {\"id\": \"547\", \"account\": \"acct49\", \"amount\": 36}, {\"id\": \"548\", \"account\": \"acct84\", \"amount\": 6}, {\"id\": \"549\", \"account\": \"acct44\", \"amount\": -22}, {\"id\": \"550\", \"account\": \"acct78\", \"amount\": 27}, {\"id\": \"551\", \"account\": \"acct37\", \"amount\": 31}, {\"id\": \"552\", \"account\": \"acct14\", \"amount\": -24}, {\"id\": \"553\", \"account\": \"acct53\", \"amount\": -8}, {\"id\": \"554\", \"account\": \"acct79\", \"amount\": -6}, {\"id\": \"555\", \"account\": \"acct23\", \"amount\": -20}, {\"id\": \"556\", \"account\": \"acct33\", \"amount\": -48}, {\"id\": \"557\", \"account\": \"acct14\", \"amount\": -23}, {\"id\": \"558\", \"account\": \"acct5\", \"amount\": 34}, {\"id\": \"559\", \"account\": \"acct83\", \"amount\": 40}, {\"id\": \"560\", \"account\": \"acct15\", \"amount\": 34}, {\"id\": \"561\", \"account\": \"acct73\", \"amount\": -2}, {\"id\": \"562\", \"account\": \"acct42\", \"amount\": -38}, {\"id\": \"563\", \"account\": \"acct72\", \"amount\": -17}, {\"id\": \"564\", \"account\": \"acct73\", \"amount\": 45}, {\"id\": \"565\", \"account\": \"acct18\", \"amount\": 42}, {\"id\": \"566\", \"account\": \"acct57\", \"amount\": -29}, {\"id\": \"567\", \"account\": \"acct15\", \"amount\": 49}, {\"id\": \"568\", \"account\": \"acct76\", \"amount\": -5}, {\"id\": \"569\", \"account\": \"acct4\", \"amount\": 4}, {\"id\": \"570\", \"account\": \"acct41\", \"amount\": -13}, {\"id\": \"571\", \"account\": \"acct36\", \"amount\": 47}, {\"id\": \"572\", \"account\": \"acct3\", \"amount\": -19}, {\"id\": \"573\", \"account\": \"acct38\", \"amount\": -46}, {\"id\": \"574\", \"account\": \"acct74\", \"amount\": -23}, {\"id\": \"575\", \"account\": \"acct87\", \"amount\": -18}, {\"id\": \"576\", \"account\": \"acct43\", \"amount\": -23}, {\"id\": \"577\", \"account\": \"acct46\", \"amount\": -2}, {\"id\": \"578\", \"account\": \"acct50\", \"amount\": -45}, {\"id\": \"579\", \"account\": \"acct1\", \"amount\": -31}, {\"id\": \"580\", \"account\": \"acct9\", \"amount\": 33}, {\"id\": \"581\", \"account\": \"acct82\", \"amount\": -14}, {\"id\": \"582\", \"account\": \"acct23\", \"amount\": -44}, {\"id\": \"583\", \"account\": \"acct67\", \"amount\": -26}, {\"id\": \"584\", \"account\": \"acct78\", \"amount\": 21}, {\"id\": \"585\", \"account\": \"acct14\", \"amount\": 18}, {\"id\": \"586\", \"account\": \"acct50\", \"amount\": 25}, {\"id\": \"587\", \"account\": \"acct93\", \"amount\": 48}, {\"id\": \"588\", \"account\": \"acct67\", \"amount\": -12}, {\"id\": \"589\", \"account\": \"acct50\", \"amount\": -18}, {\"id\": \"590\", \"account\": \"acct11\", \"amount\": 49}, {\"id\": \"591\", \"account\": \"acct12\", \"amount\": 29}, {\"id\": \"592\", \"account\": \"acct60\", \"amount\": -20}, {\"id\": \"593\", \"account\": \"acct46\", \"amount\": -25}, {\"id\": \"594\", \"account\": \"acct20\", \"amount\": 44}, {\"id\": \"595\", \"account\": \"acct19\", \"amount\": 35}, {\"id\": \"596\", \"account\": \"acct30\", \"amount\": -19}, {\"id\": \"597\", \"account\": \"acct36\", \"amount\": 3}, {\"id\": \"598\", \"account\": \"acct48\", \"amount\": -37}, {\"id\": \"599\", \"account\": \"acct6\", \"amount\": 7}, {\"id\": \"600\", \"account\": \"acct4\", \"amount\": -6}, {\"id\": \"601\", \"account\": \"acct13\", \"amount\": 0}, {\"id\": \"602\", \"account\": \"acct17\", \"amount\": -8}, {\"id\": \"603\", \"account\": \"acct5\", \"amount\": 49}, {\"id\": \"604\", \"account\": \"acct2\", \"amount\": 9}, {\"id\": \"605\", \"account\": \"acct48\", \"amount\": 16}, {\"id\": \"606\", \"account\": \"acct36\", \"amount\": 48}, {\"id\": \"607\", \"account\": \"acct40\", \"amount\": -27}, {\"id\": \"608\", \"account\": \"acct26\", \"amount\": -42}, {\"id\": \"609\", \"account\": \"acct97\", \"amount\": -11}, {\"id\": \"610\", \"account\": \"acct82\", \"amount\": -30}, {\"id\": \"611\", \"account\": \"acct30\", \"amount\": 31}, {\"id\": \"612\", \"account\": \"acct61\", \"amount\": -3}, {\"id\": \"613\", \"account\": \"acct90\", \"amount\": 14}, {\"id\": \"614\", \"account\": \"acct95\", \"amount\": -5}, {\"id\": \"615\", \"account\": \"acct90\", \"amount\": 3}, {\"id\": \"616\", \"account\": \"acct11\", \"amount\": 6}, {\"id\": \"617\", \"account\": \"acct61\", \"amount\": 50}, {\"id\": \"618\", \"account\": \"acct33\", \"amount\": -39}, {\"id\": \"619\", \"account\": \"acct37\", \"amount\": 17}, {\"id\": \"620\", \"account\": \"acct80\", \"amount\": 50}, {\"id\": \"621\", \"account\": \"acct64\", \"amount\": -31}, {\"id\": \"622\", \"account\": \"acct45\", \"amount\": -26}, {\"id\": \"623\", \"account\": \"acct52\", \"amount\": 4}, {\"id\": \"624\", \"account\": \"acct51\", \"amount\": 18}, {\"id\": \"625\", \"account\": \"acct68\", \"amount\": -43}, {\"id\": \"626\", \"account\": \"acct26\", \"amount\": -23}, {\"id\": \"627\", \"account\": \"acct75\", \"amount\": -27}, {\"id\": \"628\", \"account\": \"acct42\", \"amount\": 23}, {\"id\": \"629\", \"account\": \"acct48\", \"amount\": 49}, {\"id\": \"630\", \"account\": \"acct38\", \"amount\": -45}, {\"id\": \"631\", \"account\": \"acct26\", \"amount\": 4}, {\"id\": \"632\", \"account\": \"acct91\", \"amount\": -25}, {\"id\": \"633\", \"account\": \"acct9\", \"amount\": 7}, {\"id\": \"634\", \"account\": \"acct22\", \"amount\": -30}, {\"id\": \"635\", \"account\": \"acct73\", \"amount\": -34}, {\"id\": \"636\", \"account\": \"acct31\", \"amount\": -25}, {\"id\": \"637\", \"account\": \"acct26\", \"amount\": 29}, {\"id\": \"638\", \"account\": \"acct31\", \"amount\": 46}, {\"id\": \"639\", \"account\": \"acct43\", \"amount\": -36}, {\"id\": \"640\", \"account\": \"acct86\", \"amount\": 44}, {\"id\": \"641\", \"account\": \"acct10\", \"amount\": -33}, {\"id\": \"642\", \"account\": \"acct80\", \"amount\": 7}, {\"id\": \"643\", \"account\": \"acct77\", \"amount\": 34}, {\"id\": \"644\", \"account\": \"acct13\", \"amount\": 48}, {\"id\": \"645\", \"account\": \"acct27\", \"amount\": -34}, {\"id\": \"646\", \"account\": \"acct41\", \"amount\": 37}, {\"id\": \"647\", \"account\": \"acct71\", \"amount\": -48}, {\"id\": \"648\", \"account\": \"acct15\", \"amount\": 32}, {\"id\": \"649\", \"account\": \"acct21\", \"amount\": -9}, {\"id\": \"650\", \"account\": \"acct82\", \"amount\": 41}, {\"id\": \"651\", \"account\": \"acct52\", \"amount\": -35}, {\"id\": \"652\", \"account\": \"acct45\", \"amount\": -40}, {\"id\": \"653\", \"account\": \"acct35\", \"amount\": 4}, {\"id\": \"654\", \"account\": \"acct49\", \"amount\": 17}, {\"id\": \"655\", \"account\": \"acct47\", \"amount\": -26}, {\"id\": \"656\", \"account\": \"acct73\", \"amount\": -45}, {\"id\": \"657\", \"account\": \"acct94\", \"amount\": 1}, {\"id\": \"658\", \"account\": \"acct61\", \"amount\": 37}, {\"id\": \"659\", \"account\": \"acct70\", \"amount\": 40}, {\"id\": \"660\", \"account\": \"acct76\", \"amount\": 20}, {\"id\": \"661\", \"account\": \"acct86\", \"amount\": -42}, {\"id\": \"662\", \"account\": \"acct74\", \"amount\": -38}, {\"id\": \"663\", \"account\": \"acct50\", \"amount\": -28}, {\"id\": \"664\", \"account\": \"acct73\", \"amount\": 6}, {\"id\": \"665\", \"account\": \"acct36\", \"amount\": 25}, {\"id\": \"666\", \"account\": \"acct63\", \"amount\": 45}, {\"id\": \"667\", \"account\": \"acct19\", \"amount\": 0}, {\"id\": \"668\", \"account\": \"acct58\", \"amount\": -3}, {\"id\": \"669\", \"account\": \"acct0\", \"amount\": 36}, {\"id\": \"670\", \"account\": \"acct90\", \"amount\": -10}, {\"id\": \"671\", \"account\": \"acct46\", \"amount\": -16}, {\"id\": \"672\", \"account\": \"acct47\", \"amount\": -11}, {\"id\": \"673\", \"account\": \"acct98\", \"amount\": -30}, {\"id\": \"674\", \"account\": \"acct77\", \"amount\": 49}, {\"id\": \"675\", \"account\": \"acct97\", \"amount\": -17}, {\"id\": \"676\", \"account\": \"acct80\", \"amount\": -39}, {\"id\": \"677\", \"account\": \"acct73\", \"amount\": 25}, {\"id\": \"678\", \"account\": \"acct44\", \"amount\": -2}, {\"id\": \"679\", \"account\": \"acct95\", \"amount\": 22}, {\"id\": \"680\", \"account\": \"acct49\", \"amount\": 50}, {\"id\": \"681\", \"account\": \"acct73\", \"amount\": -31}, {\"id\": \"682\", \"account\": \"acct85\", \"amount\": -46}, {\"id\": \"683\", \"account\": \"acct25\", \"amount\": 15}, {\"id\": \"684\", \"account\": \"acct55\", \"amount\": -35}, {\"id\": \"685\", \"account\": \"acct92\", \"amount\": 49}, {\"id\": \"686\", \"account\": \"acct97\", \"amount\": 43}, {\"id\": \"687\", \"account\": \"acct91\", \"amount\": -19}, {\"id\": \"688\", \"account\": \"acct52\", \"amount\": 18}, {\"id\": \"689\", \"account\": \"acct96\", \"amount\": 25}, {\"id\": \"690\", \"account\": \"acct42\", \"amount\": -14}, {\"id\": \"691\", \"account\": \"acct62\", \"amount\": -49}, {\"id\": \"692\", \"account\": \"acct51\", \"amount\": 41}, {\"id\": \"693\", \"account\": \"acct62\", \"amount\": 30}, {\"id\": \"694\", \"account\": \"acct92\", \"amount\": 4}, {\"id\": \"695\", \"account\": \"acct50\", \"amount\": -3}, {\"id\": \"696\", \"account\": \"acct34\", \"amount\": -26}, {\"id\": \"697\", \"account\": \"acct2\", \"amount\": -5}, {\"id\": \"698\", \"account\": \"acct54\", \"amount\": 13}, {\"id\": \"699\", \"account\": \"acct20\", \"amount\": -5}, {\"id\": \"700\", \"account\": \"acct25\", \"amount\": 25}, {\"id\": \"701\", \"account\": \"acct0\", \"amount\": -22}, {\"id\": \"702\", \"account\": \"acct31\", \"amount\": -33}, {\"id\": \"703\", \"account\": \"acct34\", \"amount\": -33}, {\"id\": \"704\", \"account\": \"acct51\", \"amount\": -30}, {\"id\": \"705\", \"account\": \"acct72\", \"amount\": 0}, {\"id\": \"706\", \"account\": \"acct74\", \"amount\": -20}, {\"id\": \"707\", \"account\": \"acct90\", \"amount\": -24}, {\"id\": \"708\", \"account\": \"acct60\", \"amount\": -12}, {\"id\": \"709\", \"account\": \"acct6\", \"amount\": -44}, {\"id\": \"710\", \"account\": \"acct16\", \"amount\": 7}, {\"id\": \"711\", \"account\": \"acct88\", \"amount\": 28}, {\"id\": \"712\", \"account\": \"acct91\", \"amount\": 43}, {\"id\": \"713\", \"account\": \"acct51\", \"amount\": 17}, {\"id\": \"714\", \"account\": \"acct45\", \"amount\": -13}, {\"id\": \"715\", \"account\": \"acct67\", \"amount\": 40}, {\"id\": \"716\", \"account\": \"acct57\", \"amount\": 42}, {\"id\": \"717\", \"account\": \"acct61\", \"amount\": -8}, {\"id\": \"718\", \"account\": \"acct11\", \"amount\": 10}, {\"id\": \"719\", \"account\": \"acct25\", \"amount\": 45}, {\"id\": \"720\", \"account\": \"acct88\", \"amount\": 44}, {\"id\": \"721\", \"account\": \"acct94\", \"amount\": -45}, {\"id\": \"722\", \"account\": \"acct43\", \"amount\": -7}, {\"id\": \"723\", \"account\": \"acct6\", \"amount\": -37}, {\"id\": \"724\", \"account\": \"acct1\", \"amount\": -19}, {\"id\": \"725\", \"account\": \"acct67\", \"amount\": 40}, {\"id\": \"726\", \"account\": \"acct69\", \"amount\": 46}, {\"id\": \"727\", \"account\": \"acct17\", \"amount\": 43}, {\"id\": \"728\", \"account\": \"acct50\", \"amount\": 14}, {\"id\": \"729\", \"account\": \"acct63\", \"amount\": 29}, {\"id\": \"730\", \"account\": \"acct57\", \"amount\": 35}, {\"id\": \"731\", \"account\": \"acct2\", \"amount\": -31}, {\"id\": \"732\", \"account\": \"acct64\", \"amount\": -12}, {\"id\": \"733\", \"account\": \"acct57\", \"amount\": -22}, {\"id\": \"734\", \"account\": \"acct14\", \"amount\": -19}, {\"id\": \"735\", \"account\": \"acct43\", \"amount\": -9}, {\"id\": \"736\", \"account\": \"acct90\", \"amount\": -37}, {\"id\": \"737\", \"account\": \"acct54\", \"amount\": 43}, {\"id\": \"738\", \"account\": \"acct30\", \"amount\": -9}, {\"id\": \"739\", \"account\": \"acct83\", \"amount\": -40}, {\"id\": \"740\", \"account\": \"acct29\", \"amount\": -50}, {\"id\": \"741\", \"account\": \"acct43\", \"amount\": -6}, {\"id\": \"742\", \"account\": \"acct49\", \"amount\": 11}, {\"id\": \"743\", \"account\": \"acct13\", \"amount\": -32}, {\"id\": \"744\", \"account\": \"acct30\", \"amount\": -45}, {\"id\": \"745\", \"account\": \"acct70\", \"amount\": -4}, {\"id\": \"746\", \"account\": \"acct38\", \"amount\": 47}, {\"id\": \"747\", \"account\": \"acct63\", \"amount\": -14}, {\"id\": \"748\", \"account\": \"acct34\", \"amount\": -20}, {\"id\": \"749\", \"account\": \"acct65\", \"amount\": 15}, {\"id\": \"750\", \"account\": \"acct78\", \"amount\": 32}, {\"id\": \"751\", \"account\": \"acct68\", \"amount\": 42}, {\"id\": \"752\", \"account\": \"acct7\", \"amount\": -3}, {\"id\": \"753\", \"account\": \"acct28\", \"amount\": 42}, {\"id\": \"754\", \"account\": \"acct88\", \"amount\": -27}, {\"id\": \"755\", \"account\": \"acct59\", \"amount\": -32}, {\"id\": \"756\", \"account\": \"acct63\", \"amount\": -11}, {\"id\": \"757\", \"account\": \"acct88\", \"amount\": -20}, {\"id\": \"758\", \"account\": \"acct23\", \"amount\": 2}, {\"id\": \"759\", \"account\": \"acct66\", \"amount\": -37}, {\"id\": \"760\", \"account\": \"acct9\", \"amount\": 36}, {\"id\": \"761\", \"account\": \"acct86\", \"amount\": 0}, {\"id\": \"762\", \"account\": \"acct52\", \"amount\": -11}, {\"id\": \"763\", \"account\": \"acct8\", \"amount\": -7}, {\"id\": \"764\", \"account\": \"acct62\", \"amount\": -44}, {\"id\": \"765\", \"account\": \"acct77\", \"amount\": 7}, {\"id\": \"766\", \"account\": \"acct44\", \"amount\": 15}, {\"id\": \"767\", \"account\": \"acct44\", \"amount\": -1}, {\"id\": \"768\", \"account\": \"acct42\", \"amount\": 26}, {\"id\": \"769\", \"account\": \"acct93\", \"amount\": 29}, {\"id\": \"770\", \"account\": \"acct30\", \"amount\": 28}, {\"id\": \"771\", \"account\": \"acct28\", \"amount\": -26}, {\"id\": \"772\", \"account\": \"acct69\", \"amount\": -35}, {\"id\": \"773\", \"account\": \"acct62\", \"amount\": -50}, {\"id\": \"774\", \"account\": \"acct67\", \"amount\": -36}, {\"id\": \"775\", \"account\": \"acct51\", \"amount\": -7}, {\"id\": \"776\", \"account\": \"acct59\", \"amount\": 48}, {\"id\": \"777\", \"account\": \"acct28\", \"amount\": -7}, {\"id\": \"778\", \"account\": \"acct64\", \"amount\": -25}, {\"id\": \"779\", \"account\": \"acct33\", \"amount\": 38}, {\"id\": \"780\", \"account\": \"acct37\", \"amount\": 47}, {\"id\": \"781\", \"account\": \"acct40\", \"amount\": -5}, {\"id\": \"782\", \"account\": \"acct28\", \"amount\": -19}, {\"id\": \"783\", \"account\": \"acct57\", \"amount\": -33}, {\"id\": \"784\", \"account\": \"acct68\", \"amount\": -14}, {\"id\": \"785\", \"account\": \"acct14\", \"amount\": -2}, {\"id\": \"786\", \"account\": \"acct15\", \"amount\": -39}, {\"id\": \"787\", \"account\": \"acct42\", \"amount\": 14}, {\"id\": \"788\", \"account\": \"acct46\", \"amount\": 30}, {\"id\": \"789\", \"account\": \"acct1\", \"amount\": -30}, {\"id\": \"790\", \"account\": \"acct19\", \"amount\": -46}, {\"id\": \"791\", \"account\": \"acct84\", \"amount\": 47}, {\"id\": \"792\", \"account\": \"acct91\", \"amount\": 1}, {\"id\": \"793\", \"account\": \"acct31\", \"amount\": 27}, {\"id\": \"794\", \"account\": \"acct69\", \"amount\": -28}, {\"id\": \"795\", \"account\": \"acct90\", \"amount\": 10}, {\"id\": \"796\", \"account\": \"acct44\", \"amount\": -5}, {\"id\": \"797\", \"account\": \"acct80\", \"amount\": -49}, {\"id\": \"798\", \"account\": \"acct69\", \"amount\": -10}, {\"id\": \"799\", \"account\": \"acct87\", \"amount\": -1}, {\"id\": \"800\", \"account\": \"acct12\", \"amount\": 4}, {\"id\": \"801\", \"account\": \"acct57\", \"amount\": -28}, {\"id\": \"802\", \"account\": \"acct15\", \"amount\": 22}, {\"id\": \"803\", \"account\": \"acct3\", \"amount\": -11}, {\"id\": \"804\", \"account\": \"acct33\", \"amount\": -4}, {\"id\": \"805\", \"account\": \"acct8\", \"amount\": -11}, {\"id\": \"806\", \"account\": \"acct3\", \"amount\": -50}, {\"id\": \"807\", \"account\": \"acct71\", \"amount\": -25}, {\"id\": \"808\", \"account\": \"acct6\", \"amount\": 15}, {\"id\": \"809\", \"account\": \"acct20\", \"amount\": -39}, {\"id\": \"810\", \"account\": \"acct41\", \"amount\": -19}, {\"id\": \"811\", \"account\": \"acct31\", \"amount\": 49}, {\"id\": \"812\", \"account\": \"acct46\", \"amount\": 17}, {\"id\": \"813\", \"account\": \"acct33\", \"amount\": 25}, {\"id\": \"814\", \"account\": \"acct33\", \"amount\": 9}, {\"id\": \"815\", \"account\": \"acct45\", \"amount\": -2}, {\"id\": \"816\", \"account\": \"acct94\", \"amount\": -19}, {\"id\": \"817\", \"account\": \"acct31\", \"amount\": 32}, {\"id\": \"818\", \"account\": \"acct54\", \"amount\": 22}, {\"id\": \"819\", \"account\": \"acct16\", \"amount\": 36}, {\"id\": \"820\", \"account\": \"acct69\", \"amount\": 28}, {\"id\": \"821\", \"account\": \"acct54\", \"amount\": -41}, {\"id\": \"822\", \"account\": \"acct27\", \"amount\": 4}, {\"id\": \"823\", \"account\": \"acct18\", \"amount\": -45}, {\"id\": \"824\", \"account\": \"acct69\", \"amount\": -9}, {\"id\": \"825\", \"account\": \"acct45\", \"amount\": -16}, {\"id\": \"826\", \"account\": \"acct20\", \"amount\": -31}, {\"id\": \"827\", \"account\": \"acct42\", \"amount\": -42}, {\"id\": \"828\", \"account\": \"acct61\", \"amount\": -24}, {\"id\": \"829\", \"account\": \"acct68\", \"amount\": 50}, {\"id\": \"830\", \"account\": \"acct75\", \"amount\": 22}, {\"id\": \"831\", \"account\": \"acct19\", \"amount\": -6}, {\"id\": \"832\", \"account\": \"acct82\", \"amount\": -21}, {\"id\": \"833\", \"account\": \"acct22\", \"amount\": 28}, {\"id\": \"834\", \"account\": \"acct65\", \"amount\": -42}, {\"id\": \"835\", \"account\": \"acct5\", \"amount\": 0}, {\"id\": \"836\", \"account\": \"acct72\", \"amount\": -6}, {\"id\": \"837\", \"account\": \"acct40\", \"amount\": -23}, {\"id\": \"838\", \"account\": \"acct8\", \"amount\": 11}, {\"id\": \"839\", \"account\": \"acct98\", \"amount\": -7}, {\"id\": \"840\", \"account\": \"acct12\", \"amount\": 34}, {\"id\": \"841\", \"account\": \"acct14\", \"amount\": -17}, {\"id\": \"842\", \"account\": \"acct73\", \"amount\": -19}, {\"id\": \"843\", \"account\": \"acct47\", \"amount\": 1}, {\"id\": \"844\", \"account\": \"acct68\", \"amount\": 6}, {\"id\": \"845\", \"account\": \"acct38\", \"amount\": -2}, {\"id\": \"846\", \"account\": \"acct97\", \"amount\": 12}, {\"id\": \"847\", \"account\": \"acct84\", \"amount\": 36}, {\"id\": \"848\", \"account\": \"acct76\", \"amount\": -19}, {\"id\": \"849\", \"account\": \"acct74\", \"amount\": 8}, {\"id\": \"850\", \"account\": \"acct97\", \"amount\": 22}, {\"id\": \"851\", \"account\": \"acct70\", \"amount\": -29}, {\"id\": \"852\", \"account\": \"acct12\", \"amount\": -10}, {\"id\": \"853\", \"account\": \"acct1\", \"amount\": 7}, {\"id\": \"854\", \"account\": \"acct15\", \"amount\": -4}, {\"id\": \"855\", \"account\": \"acct88\", \"amount\": 31}, {\"id\": \"856\", \"account\": \"acct4\", \"amount\": 43}, {\"id\": \"857\", \"account\": \"acct49\", \"amount\": 4}, {\"id\": \"858\", \"account\": \"acct74\", \"amount\": 31}, {\"id\": \"859\", \"account\": \"acct88\", \"amount\": -1}, {\"id\": \"860\", \"account\": \"acct98\", \"amount\": 2}, {\"id\": \"861\", \"account\": \"acct36\", \"amount\": 8}, {\"id\": \"862\", \"account\": \"acct46\", \"amount\": 16}, {\"id\": \"863\", \"account\": \"acct22\", \"amount\": 47}, {\"id\": \"864\", \"account\": \"acct13\", \"amount\": 9}, {\"id\": \"865\", \"account\": \"acct72\", \"amount\": 25}, {\"id\": \"866\", \"account\": \"acct62\", \"amount\": -27}, {\"id\": \"867\", \"account\": \"acct35\", \"amount\": -39}, {\"id\": \"868\", \"account\": \"acct29\", \"amount\": -48}, {\"id\": \"869\", \"account\": \"acct28\", \"amount\": 36}, {\"id\": \"870\", \"account\": \"acct90\", \"amount\": -17}, {\"id\": \"871\", \"account\": \"acct7\", \"amount\": -10}, {\"id\": \"872\", \"account\": \"acct24\", \"amount\": 1}, {\"id\": \"873\", \"account\": \"acct6\", \"amount\": -24}, {\"id\": \"874\", \"account\": \"acct50\", \"amount\": 36}, {\"id\": \"875\", \"account\": \"acct87\", \"amount\": -44}, {\"id\": \"876\", \"account\": \"acct45\", \"amount\": -38}, {\"id\": \"877\", \"account\": \"acct66\", \"amount\": 47}, {\"id\": \"878\", \"account\": \"acct75\", \"amount\": 8}, {\"id\": \"879\", \"account\": \"acct53\", \"amount\": 14}, {\"id\": \"880\", \"account\": \"acct2\", \"amount\": -48}, {\"id\": \"881\", \"account\": \"acct7\", \"amount\": -28}, {\"id\": \"882\", \"account\": \"acct88\", \"amount\": -38}, {\"id\": \"883\", \"account\": \"acct36\", \"amount\": -22}, {\"id\": \"884\", \"account\": \"acct0\", \"amount\": -27}, {\"id\": \"885\", \"account\": \"acct58\", \"amount\": 45}, {\"id\": \"886\", \"account\": \"acct67\", \"amount\": -37}, {\"id\": \"887\", \"account\": \"acct50\", \"amount\": -10}, {\"id\": \"888\", \"account\": \"acct94\", \"amount\": -38}, {\"id\": \"889\", \"account\": \"acct90\", \"amount\": -3}, {\"id\": \"890\", \"account\": \"acct25\", \"amount\": 34}, {\"id\": \"891\", \"account\": \"acct94\", \"amount\": 15}, {\"id\": \"892\", \"account\": \"acct24\", \"amount\": -7}, {\"id\": \"893\", \"account\": \"acct89\", \"amount\": -22}, {\"id\": \"894\", \"account\": \"acct3\", \"amount\": -5}, {\"id\": \"895\", \"account\": \"acct91\", \"amount\": -20}, {\"id\": \"896\", \"account\": \"acct18\", \"amount\": -25}, {\"id\": \"897\", \"account\": \"acct66\", \"amount\": 13}, {\"id\": \"898\", \"account\": \"acct12\", \"amount\": -5}, {\"id\": \"899\", \"account\": \"acct45\", \"amount\": 32}, {\"id\": \"900\", \"account\": \"acct9\", \"amount\": 42}, {\"id\": \"901\", \"account\": \"acct3\", \"amount\": 36}, {\"id\": \"902\", \"account\": \"acct21\", \"amount\": 23}, {\"id\": \"903\", \"account\": \"acct19\", \"amount\": -23}, {\"id\": \"904\", \"account\": \"acct40\", \"amount\": -8}, {\"id\": \"905\", \"account\": \"acct59\", \"amount\": 41}, {\"id\": \"906\", \"account\": \"acct94\", \"amount\": 22}, {\"id\": \"907\", \"account\": \"acct58\", \"amount\": 48}, {\"id\": \"908\", \"account\": \"acct4\", \"amount\": -1}, {\"id\": \"909\", \"account\": \"acct5\", \"amount\": -24}, {\"id\": \"910\", \"account\": \"acct94\", \"amount\": 9}, {\"id\": \"911\", \"account\": \"acct59\", \"amount\": -37}, {\"id\": \"912\", \"account\": \"acct87\", \"amount\": -1}, {\"id\": \"913\", \"account\": \"acct6\", \"amount\": 23}, {\"id\": \"914\", \"account\": \"acct59\", \"amount\": -20}, {\"id\": \"915\", \"account\": \"acct1\", \"amount\": -29}, {\"id\": \"916\", \"account\": \"acct86\", \"amount\": 39}, {\"id\": \"917\", \"account\": \"acct35\", \"amount\": -9}, {\"id\": \"918\", \"account\": \"acct88\", \"amount\": -13}, {\"id\": \"919\", \"account\": \"acct46\", \"amount\": -45}, {\"id\": \"920\", \"account\": \"acct54\", \"amount\": -10}, {\"id\": \"921\", \"account\": \"acct26\", \"amount\": -24}, {\"id\": \"922\", \"account\": \"acct27\", \"amount\": 22}, {\"id\": \"923\", \"account\": \"acct46\", \"amount\": -20}, {\"id\": \"924\", \"account\": \"acct18\", \"amount\": 6}, {\"id\": \"925\", \"account\": \"acct82\", \"amount\": -5}, {\"id\": \"926\", \"account\": \"acct44\", \"amount\": -40}, {\"id\": \"927\", \"account\": \"acct0\", \"amount\": 13}, {\"id\": \"928\", \"account\": \"acct96\", \"amount\": -24}, {\"id\": \"929\", \"account\": \"acct12\", \"amount\": 41}, {\"id\": \"930\", \"account\": \"acct78\", \"amount\": -41}, {\"id\": \"931\", \"account\": \"acct64\", \"amount\": -5}, {\"id\": \"932\", \"account\": \"acct52\", \"amount\": -12}, {\"id\": \"933\", \"account\": \"acct44\", \"amount\": 32}, {\"id\": \"934\", \"account\": \"acct44\", \"amount\": -16}, {\"id\": \"935\", \"account\": \"acct15\", \"amount\": -33}, {\"id\": \"936\", \"account\": \"acct79\", \"amount\": -39}, {\"id\": \"937\", \"account\": \"acct66\", \"amount\": -17}, {\"id\": \"938\", \"account\": \"acct82\", \"amount\": 20}, {\"id\": \"939\", \"account\": \"acct45\", \"amount\": -25}, {\"id\": \"940\", \"account\": \"acct31\", \"amount\": 8}, {\"id\": \"941\", \"account\": \"acct34\", \"amount\": -21}, {\"id\": \"942\", \"account\": \"acct33\", \"amount\": 7}, {\"id\": \"943\", \"account\": \"acct52\", \"amount\": 36}, {\"id\": \"944\", \"account\": \"acct29\", \"amount\": 18}, {\"id\": \"945\", \"account\": \"acct27\", \"amount\": 47}, {\"id\": \"946\", \"account\": \"acct30\", \"amount\": 47}, {\"id\": \"947\", \"account\": \"acct75\", \"amount\": 2}, {\"id\": \"948\", \"account\": \"acct93\", \"amount\": -16}, {\"id\": \"949\", \"account\": \"acct21\", \"amount\": 8}, {\"id\": \"950\", \"account\": \"acct22\", \"amount\": -6}, {\"id\": \"951\", \"account\": \"acct28\", \"amount\": -15}, {\"id\": \"952\", \"account\": \"acct10\", \"amount\": 13}, {\"id\": \"953\", \"account\": \"acct64\", \"amount\": 24}, {\"id\": \"954\", \"account\": \"acct29\", \"amount\": 44}, {\"id\": \"955\", \"account\": \"acct74\", \"amount\": -16}, {\"id\": \"956\", \"account\": \"acct95\", \"amount\": -16}, {\"id\": \"957\", \"account\": \"acct58\", \"amount\": -47}, {\"id\": \"958\", \"account\": \"acct20\", \"amount\": -11}, {\"id\": \"959\", \"account\": \"acct91\", \"amount\": 42}, {\"id\": \"960\", \"account\": \"acct24\", \"amount\": 22}, {\"id\": \"961\", \"account\": \"acct38\", \"amount\": -9}, {\"id\": \"962\", \"account\": \"acct32\", \"amount\": -11}, {\"id\": \"963\", \"account\": \"acct29\", \"amount\": -10}, {\"id\": \"964\", \"account\": \"acct86\", \"amount\": 27}, {\"id\": \"965\", \"account\": \"acct98\", \"amount\": 11}, {\"id\": \"966\", \"account\": \"acct44\", \"amount\": 45}, {\"id\": \"967\", \"account\": \"acct69\", \"amount\": -13}, {\"id\": \"968\", \"account\": \"acct87\", \"amount\": -8}, {\"id\": \"969\", \"account\": \"acct47\", \"amount\": -44}, {\"id\": \"970\", \"account\": \"acct62\", \"amount\": -24}, {\"id\": \"971\", \"account\": \"acct16\", \"amount\": 35}, {\"id\": \"972\", \"account\": \"acct36\", \"amount\": -17}, {\"id\": \"973\", \"account\": \"acct42\", \"amount\": 33}, {\"id\": \"974\", \"account\": \"acct54\", \"amount\": 39}, {\"id\": \"975\", \"account\": \"acct25\", \"amount\": 8}, {\"id\": \"976\", \"account\": \"acct25\", \"amount\": 44}, {\"id\": \"977\", \"account\": \"acct93\", \"amount\": -16}, {\"id\": \"978\", \"account\": \"acct27\", \"amount\": 0}, {\"id\": \"979\", \"account\": \"acct34\", \"amount\": -9}, {\"id\": \"980\", \"account\": \"acct31\", \"amount\": 36}, {\"id\": \"981\", \"account\": \"acct53\", \"amount\": 17}, {\"id\": \"982\", \"account\": \"acct40\", \"amount\": -13}, {\"id\": \"983\", \"account\": \"acct44\", \"amount\": -45}, {\"id\": \"984\", \"account\": \"acct42\", \"amount\": -3}, {\"id\": \"985\", \"account\": \"acct52\", \"amount\": -28}, {\"id\": \"986\", \"account\": \"acct12\", \"amount\": 45}, {\"id\": \"987\", \"account\": \"acct36\", \"amount\": 33}, {\"id\": \"988\", \"account\": \"acct27\", \"amount\": -47}, {\"id\": \"989\", \"account\": \"acct65\", \"amount\": -12}, {\"id\": \"990\", \"account\": \"acct52\", \"amount\": 42}, {\"id\": \"991\", \"account\": \"acct65\", \"amount\": -40}, {\"id\": \"992\", \"account\": \"acct15\", \"amount\": -22}, {\"id\": \"993\", \"account\": \"acct4\", \"amount\": 9}, {\"id\": \"994\", \"account\": \"acct21\", \"amount\": 30}, {\"id\": \"995\", \"account\": \"acct75\", \"amount\": 19}, {\"id\": \"996\", \"account\": \"acct91\", \"amount\": 13}, {\"id\": \"997\", \"account\": \"acct73\", \"amount\": 32}, {\"id\": \"998\", \"account\": \"acct78\", \"amount\": -8}, {\"id\": \"999\", \"account\": \"acct19\", \"amount\": 44}]}']' timed out after 10 seconds"
+  },
+  {
+    "language": "zero",
+    "trial": 2,
+    "workload": "topo_100",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/prepared/zero_2/program"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.7723442919999997,
+    "samples": [
+      2.0143782080000037,
+      1.7543708750000064,
+      0.7723442919999997,
+      0.3158317079999904,
+      0.312430667000001
+    ],
+    "error": null
+  },
+  {
+    "language": "zero",
+    "trial": 2,
+    "workload": "merge_1000",
+    "ok": true,
+    "command": [
+      "{ORIGINAL_BENCHMARK_ROOT}/prepared/zero_2/program"
+    ],
+    "raw_json_argument": true,
+    "median_seconds": 0.1598963340000097,
+    "samples": [
+      0.15974870799999508,
+      0.16200095800000724,
+      0.1656452499999972,
+      0.15910612499999388,
+      0.1598963340000097
+    ],
+    "error": null
+  }
+]

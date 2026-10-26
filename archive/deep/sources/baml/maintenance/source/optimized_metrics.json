@@ -1,0 +1,20 @@
+{
+  "language": "baml",
+  "stage": "optimized",
+  "model": "gpt-6.1-sol",
+  "reasoning": "medium",
+  "seconds": 274.220539208,
+  "timed_out": false,
+  "exit_code": 0,
+  "usage": [
+    {
+      "input_tokens": 1010262,
+      "cached_input_tokens": 939392,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 9742,
+      "reasoning_output_tokens": 3272
+    }
+  ],
+  "commands": 20,
+  "failed_commands": 3
+}

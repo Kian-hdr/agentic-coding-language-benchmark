@@ -1,0 +1,26 @@
+use lib
+
+pub fn main(world: World) -> Void raises {
+    let input: String = std.args.getOr(1, "{}")
+    var storage: [65536]u8 = [0; 65536]
+    var poolStorage: [60000]u8 = [0; 60000]
+    let pool: MutSpan<u8> = poolStorage
+    var used: [2]usize = [0, 0]
+    if true {
+        let op: Span<u8> = decode(pool, used, field(std.mem.span(input), "op"))
+        let output: MutSpan<u8> = storage
+        if std.mem.eqlBytes(op, "ledger") {
+            check ledger(pool, used, output, std.mem.span(input))
+        } else if std.mem.eqlBytes(op, "topo") {
+            check topo(pool, used, output, std.mem.span(input))
+        } else if std.mem.eqlBytes(op, "merge") {
+            check merge(output, used, std.mem.span(input))
+        } else if std.mem.eqlBytes(op, "calc") {
+            check calc(pool, used, output, std.mem.span(input))
+        } else {
+            check append(output, used, "{\"error\":\"unknown_op\"}")
+        }
+        check world.out.write(std.mem.prefix(output, used[1]))
+        check world.out.write("\n")
+    }
+}

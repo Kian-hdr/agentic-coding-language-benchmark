@@ -1,0 +1,21 @@
+{
+  "language": "go",
+  "trial": 1,
+  "phase": "initial",
+  "model": "gpt-6.1-sol",
+  "reasoning": "medium",
+  "seconds": 145.041,
+  "exit_code": 0,
+  "timed_out": false,
+  "usage": [
+    {
+      "input_tokens": 353226,
+      "cached_input_tokens": 330368,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 8578,
+      "reasoning_output_tokens": 549
+    }
+  ],
+  "tool_calls": 12,
+  "errors": []
+}

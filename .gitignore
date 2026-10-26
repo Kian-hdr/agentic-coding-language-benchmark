@@ -1,0 +1,8 @@
+.work/
+.toolchains/
+toolchains.local.json
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*

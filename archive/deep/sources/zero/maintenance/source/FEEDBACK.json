@@ -1,0 +1,118 @@
+{
+  "validation_summary": {
+    "planned": 2,
+    "attempted": 2,
+    "valid": 0,
+    "skipped": 0,
+    "pending": 0,
+    "all_valid": false
+  },
+  "reproducible_build": {
+    "exit_code": 1,
+    "seconds": 0.9220421249999999,
+    "stdout": "",
+    "stderr": "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/runs/zero/zero.graph:1:1 BLD004: direct backend object buildability has too many ABI argument slots\n  expected: direct AArch64 Mach-O object buildability subset\n  actual: groups\n  help: choose a supported direct target or reduce the program to Mach-O supported direct-backend constructs\n  explain: zero explain BLD004\n"
+  },
+  "failures": [
+    {
+      "dataset_type": "validation",
+      "error": null,
+      "mismatches": [
+        {
+          "error": "output file missing",
+          "input_excerpt": "{\"op\":\"invoice\",\"events\":[{\"id\":\"e21\",\"customer\":\" customer_34 \",\"amount_cents\":30070418,\"status\":\"void\"},{\"id\":\"e34\",\"customer\":\"Z\",\"amount_cents\":19808713,\"status\":\"pending\"},{\"id\":\"e53\",\"customer\":\"Z\",\"amount_cents\":17603040,\"status\":\"bad\"},{\"id\":\"e51\",\"customer\":\"a2\",\"amount_cents\":27349672,\"status\":\"paid\"},{\"id\":\"e18\",\"customer\":\"aa\",\"amount_cents\":49290232,\"status\":\"paid\"},{\"id\":\"e47\",\"customer\":\"\\tX\\r\",\"amount_cents\":27602076,\"status\":\"paid\"},{\"id\":\"e12\",\"customer\":\"a10\",\"amount_cents\":49263340,\"status\":\"paid\"},{\"id\":\"e30\",\"customer\":\"b\",\"amount_cents\":26449500,\"status\":\"void\"},{\"id\":\"e56\",\"customer\":\"aa\",\"amount_cents\":22357026,\"status\":\"paid\"},{\"id\":\"e54\",\"customer\":\"\\tX\\r\",\"amount_cents\":966106,\"status\":\"paid\"},{\"id\":\"e58\",\"customer\":\"aa\",\"amount_cents\":21051500,\"status\":\"refund\"},{\"id\":\"e40\",\"customer\":\"\\tX\\r\",\"amount_cents\":30782993,\"status\":\"refund\"},{\"id\":\"e24\",\"customer\":\"a2\",\"amount_cents\":45409249,\"status\":\"paid\"},{\"id\":\"e6\",\"customer\":\"aa\",\"amount_cents\":37642690,\"status\":\"paid\"},{\"id\":\"e13\",\"customer\":\" \",\"amount_cents\":42270876,\"status\":\"pending\"},{\"id\":\"e18\",\"customer\":\" customer_41 \",\"amount_cents\":33682844,\"status\":\"paid\"},{\"id\":\"e21\",\"customer\":\"aa\",\"amount_cents\":39582794,\"status\":\"paid\"},{\"id\":\"e61\",\"customer\":\"a\",\"amount_cents\":26820505,\"status\":\"paid\"},{\"id\":\"e34\",\"customer\":\"Z\",\"amount_cents\":4587304,\"status\":\"paid\"},{\"id\":\"e9\",\"customer\":\"a10\",\"amount_cents\":48578088,\"status\":\"pending\"},{\"id\":\"e35\",\"customer\":\"a10\",\"amount_cents\":45539659,\"status\":\"paid\"},{\"id\":\"e48\",\"customer\":\"aa\",\"amount_cents\":14206816,\"status\":\"pending\"},{\"id\":\"e37\",\"customer\":\"\\tX\\r\",\"amount_cents\":46128621,\"status\":\"paid\"},{\"id\":\"e48\",\"customer\":\"b\",\"amount_cents\":35972578,\"status\":\"pending\"},{\"id\":\"e5\",\"customer\":\" customer_60 \",\"amount_cents\":40652528,\"status\":\"refund\"},{\"id\":\"e11\",\"customer\":\"a\",\"amount_cents\":6275857,\"status\":\"paid\"},{\"id\":\"e49\",\"customer\":\" \",\"amount_cents\":32738554,\"status\":\"paid\"},{\"id\":\"e54\",\"customer\":\"\\tX\\r\",\"amount_cents\":43455194,\"status\":\"pending\"},{\"id\":\"e38\",\"customer\":\"b\",\"amount_cents\":34905986,\"status\":\"paid\"},{\"id\":\"e60\",\"customer\":\"b\",\"amount_cents\":44589917,\"status\":\"paid\"},{\"id\":\"e12\",\"customer\":\"a\",\"amount_cents\":32545555,\"status\":\"paid\"},{\"id\":\"e44\",\"customer\":\"\\tX\\r\",\"amount_cents\":37970752,\"status\":\"refund\"},{\"id\":\"e2\",\"customer\":\" \",\"amount_cents\":27494470,\"status\":\"paid\"},{\"id\":\"e0\",\"customer\":\" customer_61 \",\"amount_cents\":27864925,\"status\":\"paid\"},{\"id\":\"e40\",\"customer\":\" \",\"amount_cents\":37421390,\"status\":\"paid\"},{\"id\":\"e52\",\"customer\":\"b\",\"amount_cents\":14334258,\"status\":\"paid\"},{\"id\":\"e7\",\"customer\":\"Z\",\"amount_cents\":39092389,\"status\":\"paid\"},{\"id\":\"e33\",\"customer\":\"\\tX\\r\",\"amount_cents\":10281926,\"status\":\"refund\"},{\"id\":\"e24\",\"customer\":\"a2\",\"amount_cents\":13851267,\"status\":\"pending\"},{\"id\":\"e53\",\"customer\":\"a2\",\"amount_cents\":13790945,\"status\":\"pending\"},{\"id\":\"e10\",\"customer\":\"\\tX\\r\",\"amount_cents\":23233341,\"status\":\"paid\"},{\"id\":\"e42\",\"customer\":\"a2\",\"amount_cents\":44232295,\"status\":\"paid\"},{\"id\":\"e48\",\"customer\":\"aa\",\"amount_cents\":42989701,\"status\":\"paid\"},{\"id\":\"e37\",\"customer\":\"Z\",\"amount_cents\":11686194,\"status\":\"pending\"},{\"id\":\"e5\",\"customer\":\" \",\"amount_cents\":38759920,\"status\":\"void\"},{\"id\":\"e10\",\"customer\":\"\\tX\\r\",\"amount_cents\":12298568,\"status\":\"paid\"},{\"id\":\"e4\",\"customer\":\"a10\",\"amount_cents\":13565179,\"status\":\"paid\"},{\"id\":\"e15\",\"customer\":\"a\",\"amount_cents\":6393219,\"status\":\"refund\"},{\"id\":\"e14\",\"customer\":\"b\",\"amount_cents\":44353062,\"status\":\"void\"},{\"id\":\"e24\",\"customer\":\"aa\",\"amount_cents\":27854732,\"status\":\"paid\"},{\"id\":\"e23\",\"customer\":\"a\",\"amount_cents\":1701825,\"status\":\"pending\"},{\"id\":\"e60\",\"customer\":\"a10\",\"amount_cents\":20488043,\"status\":\"refund\"},{\"id\":\"e10\",\"customer\":\"aa\",\"amount_cents\":43941772,\"status\":\"paid\"},{\"id\":\"e43\",\"customer\":\"b\",\"amount_cents\":42305807,\"status\":\"paid\"},{\"id\":\"e33\",\"customer\":\" \",\"amount_cents\":8794711,\"status\":\"pending\"},{\"id\":\"e21\",\"customer\":\" customer_20 \",\"amount_cents\":29811950,\"status\":\"paid\"},{\"id\":\"e24\",\"cu"
+        }
+      ]
+    },
+    {
+      "dataset_type": "validation",
+      "error": null,
+      "mismatches": [
+        {
+          "error": "output file missing",
+          "input_excerpt": "{\"op\":"
+        }
+      ]
+    }
+  ],
+  "runtime_observations": [
+    {
+      "dataset": "access_log_medium",
+      "size": "medium",
+      "items": 32768,
+      "valid": false,
+      "cpu_seconds": 0.0043549999999999995,
+      "elapsed_seconds": 0.006214125,
+      "peak_rss_mib": 2.234375,
+      "cpu_seconds_per_million_input_items": null,
+      "timed_out": false
+    },
+    {
+      "dataset": "invoice_medium",
+      "size": "medium",
+      "items": 32768,
+      "valid": false,
+      "cpu_seconds": 0.004356,
+      "elapsed_seconds": 0.006648708,
+      "peak_rss_mib": 2.234375,
+      "cpu_seconds_per_million_input_items": null,
+      "timed_out": false
+    },
+    {
+      "dataset": "invoice_large",
+      "size": "large",
+      "items": 262144,
+      "valid": false,
+      "cpu_seconds": 0.004176,
+      "elapsed_seconds": 0.006507916,
+      "peak_rss_mib": 2.234375,
+      "cpu_seconds_per_million_input_items": null,
+      "timed_out": false
+    },
+    {
+      "dataset": "telemetry_medium",
+      "size": "medium",
+      "items": 262144,
+      "valid": false,
+      "cpu_seconds": 0.004487,
+      "elapsed_seconds": 0.006616791,
+      "peak_rss_mib": 2.234375,
+      "cpu_seconds_per_million_input_items": null,
+      "timed_out": false
+    },
+    {
+      "dataset": "telemetry_large",
+      "size": "large",
+      "items": 2097152,
+      "valid": false,
+      "cpu_seconds": 0.004987999999999999,
+      "elapsed_seconds": 0.007172375,
+      "peak_rss_mib": 2.21875,
+      "cpu_seconds_per_million_input_items": null,
+      "timed_out": false
+    },
+    {
+      "dataset": "access_log_large",
+      "size": "large",
+      "items": 262144,
+      "valid": false,
+      "cpu_seconds": 0.004566,
+      "elapsed_seconds": 0.006855292,
+      "peak_rss_mib": 2.234375,
+      "cpu_seconds_per_million_input_items": null,
+      "timed_out": false
+    },
+    {
+      "dataset": "empty",
+      "size": "empty",
+      "items": 0,
+      "valid": false,
+      "cpu_seconds": 0.004461,
+      "elapsed_seconds": 0.006720625,
+      "peak_rss_mib": 2.265625,
+      "cpu_seconds_per_million_input_items": null,
+      "timed_out": false
+    }
+  ],
+  "note": "These are local batch-worker results, not per-request latency or pure algorithm speed. Correctness first; do not hardcode examples."
+}

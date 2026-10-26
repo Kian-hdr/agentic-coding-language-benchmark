@@ -1,0 +1,6 @@
+{
+  "exit_code": 0,
+  "seconds": 0.106550375,
+  "stdout": "Built optimized Python bytecode: worker.pyc\n",
+  "stderr": ""
+}

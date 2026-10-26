@@ -1,0 +1,21 @@
+{
+  "language": "swift",
+  "trial": 1,
+  "phase": "initial",
+  "model": "gpt-6.1-sol",
+  "reasoning": "medium",
+  "seconds": 114.328,
+  "exit_code": 0,
+  "timed_out": false,
+  "usage": [
+    {
+      "input_tokens": 305287,
+      "cached_input_tokens": 285184,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6089,
+      "reasoning_output_tokens": 688
+    }
+  ],
+  "tool_calls": 9,
+  "errors": []
+}

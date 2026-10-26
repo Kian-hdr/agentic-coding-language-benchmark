@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node"],
+    "typeRoots": ["{ORIGINAL_BENCHMARK_ROOT}/toolchains/typescript/node_modules/@types"],
+    "outDir": "dist"
+  },
+  "include": ["*.ts"]
+}

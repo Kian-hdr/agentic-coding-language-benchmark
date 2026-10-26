@@ -1,0 +1,10 @@
+Add a backwards-compatible invoice fee feature to the current worker.
+If an invoice request includes optional integer fee_bps (0..1000), calculate
+fee per accepted paid event as (amount_cents*fee_bps + 5000) / 10000 using integer
+floor division (amounts nonnegative). Refunds have zero fee. Add fee_cents to
+each customer row and top-level totals, and subtract fees in net_cents.
+When fee_bps is ABSENT, preserve the exact old schema and behavior, including
+no fee_cents fields. When present as zero, include fee_cents=0. All amounts
+remain exactly representable within signed safe 53-bit range; intermediates
+also fit. Preserve all other operations, recovery, and request isolation.
+Maximum 240 seconds. Same dependency/scope rules. Build and test before ending.

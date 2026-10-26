@@ -1,0 +1,12 @@
+{
+  "language": "moonbit",
+  "stage": "optimized",
+  "model": "gpt-6.1-sol",
+  "reasoning": "medium",
+  "seconds": 360.017453792,
+  "timed_out": true,
+  "exit_code": -15,
+  "usage": [],
+  "commands": 7,
+  "failed_commands": 1
+}

@@ -1,0 +1,15 @@
+{
+  "seconds": 97.720037917,
+  "exit_code": 0,
+  "timed_out": false,
+  "usage": [
+    {
+      "input_tokens": 232698,
+      "cached_input_tokens": 202752,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 3128,
+      "reasoning_output_tokens": 947
+    }
+  ],
+  "classification": "extra targeted prompt, exploratory native-kernel reference"
+}

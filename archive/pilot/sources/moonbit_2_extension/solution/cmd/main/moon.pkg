@@ -1,0 +1,6 @@
+import {
+  "username/solution" @lib,
+  "moonbitlang/core/env",
+}
+
+pkgtype(kind: "executable")

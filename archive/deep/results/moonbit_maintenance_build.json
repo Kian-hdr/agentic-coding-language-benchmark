@@ -1,0 +1,6 @@
+{
+  "exit_code": 0,
+  "seconds": 0.06581804200004626,
+  "stdout": "Artifacts:\n  eval/deepio/cmd/main  native  {ORIGINAL_BENCHMARK_ROOT}/deep_phase/runs/moonbit/_build/native/release/build/cmd/main/main.exe\n",
+  "stderr": "Finished. moon: no work to do\n"
+}

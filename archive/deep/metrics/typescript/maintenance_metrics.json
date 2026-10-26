@@ -1,0 +1,20 @@
+{
+  "language": "typescript",
+  "stage": "maintenance",
+  "model": "gpt-6.1-sol",
+  "reasoning": "medium",
+  "seconds": 72.57237970800008,
+  "timed_out": false,
+  "exit_code": 0,
+  "usage": [
+    {
+      "input_tokens": 286599,
+      "cached_input_tokens": 253568,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 3000,
+      "reasoning_output_tokens": 391
+    }
+  ],
+  "commands": 8,
+  "failed_commands": 0
+}

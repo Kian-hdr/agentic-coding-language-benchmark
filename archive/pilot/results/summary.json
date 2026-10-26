@@ -1,0 +1,812 @@
+[
+  {
+    "language": "python",
+    "trials": [
+      {
+        "trial": 1,
+        "phases": {
+          "initial": {
+            "seconds": 70.537,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 5,
+            "usage_reported": true,
+            "input_tokens": 91696,
+            "cached_input_tokens": 73472,
+            "output_tokens": 3772,
+            "reasoning_output_tokens": 225,
+            "uncached_input_tokens": 18224,
+            "failed_commands": 0,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.022925
+          },
+          "extension": {
+            "seconds": 28.682,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 4,
+            "usage_reported": true,
+            "input_tokens": 123490,
+            "cached_input_tokens": 102400,
+            "output_tokens": 1007,
+            "reasoning_output_tokens": 0,
+            "uncached_input_tokens": 21090,
+            "failed_commands": 0,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.033112
+          }
+        }
+      },
+      {
+        "trial": 2,
+        "phases": {
+          "initial": {
+            "seconds": 84.489,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 7,
+            "usage_reported": true,
+            "input_tokens": 154235,
+            "cached_input_tokens": 135424,
+            "output_tokens": 4467,
+            "reasoning_output_tokens": 159,
+            "uncached_input_tokens": 18811,
+            "failed_commands": 0,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.026288
+          },
+          "extension": {
+            "seconds": 27.699,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 4,
+            "usage_reported": true,
+            "input_tokens": 125097,
+            "cached_input_tokens": 81152,
+            "output_tokens": 1172,
+            "reasoning_output_tokens": 19,
+            "uncached_input_tokens": 43945,
+            "failed_commands": 0,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.023819
+          }
+        }
+      }
+    ],
+    "complete_trials": 2,
+    "passed": 316,
+    "planned": 316,
+    "median_total_agent_seconds": 105.7035,
+    "total_input_tokens": 494518,
+    "total_cached_input_tokens": 392448,
+    "total_uncached_input_tokens": 102070,
+    "total_output_tokens": 10418,
+    "failed_commands": 0,
+    "tool_calls": 20,
+    "usage_complete": true
+  },
+  {
+    "language": "typescript",
+    "trials": [
+      {
+        "trial": 1,
+        "phases": {
+          "initial": {
+            "seconds": 82.799,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 4,
+            "usage_reported": true,
+            "input_tokens": 123949,
+            "cached_input_tokens": 105856,
+            "output_tokens": 4416,
+            "reasoning_output_tokens": 286,
+            "uncached_input_tokens": 18093,
+            "failed_commands": 0,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.05949
+          },
+          "extension": {
+            "seconds": 35.073,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 4,
+            "usage_reported": true,
+            "input_tokens": 125675,
+            "cached_input_tokens": 103808,
+            "output_tokens": 1493,
+            "reasoning_output_tokens": 16,
+            "uncached_input_tokens": 21867,
+            "failed_commands": 0,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.061264
+          }
+        }
+      },
+      {
+        "trial": 2,
+        "phases": {
+          "initial": {
+            "seconds": 100.316,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 4,
+            "usage_reported": true,
+            "input_tokens": 125332,
+            "cached_input_tokens": 84736,
+            "output_tokens": 5288,
+            "reasoning_output_tokens": 436,
+            "uncached_input_tokens": 40596,
+            "failed_commands": 0,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.055384
+          },
+          "extension": {
+            "seconds": 30.473,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 4,
+            "usage_reported": true,
+            "input_tokens": 126304,
+            "cached_input_tokens": 104064,
+            "output_tokens": 1259,
+            "reasoning_output_tokens": 17,
+            "uncached_input_tokens": 22240,
+            "failed_commands": 0,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.055591
+          }
+        }
+      }
+    ],
+    "complete_trials": 2,
+    "passed": 316,
+    "planned": 316,
+    "median_total_agent_seconds": 124.3305,
+    "total_input_tokens": 501260,
+    "total_cached_input_tokens": 398464,
+    "total_uncached_input_tokens": 102796,
+    "total_output_tokens": 12456,
+    "failed_commands": 0,
+    "tool_calls": 16,
+    "usage_complete": true
+  },
+  {
+    "language": "go",
+    "trials": [
+      {
+        "trial": 1,
+        "phases": {
+          "initial": {
+            "seconds": 145.041,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 12,
+            "usage_reported": true,
+            "input_tokens": 353226,
+            "cached_input_tokens": 330368,
+            "output_tokens": 8578,
+            "reasoning_output_tokens": 549,
+            "uncached_input_tokens": 22858,
+            "failed_commands": 2,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.010455
+          },
+          "extension": {
+            "seconds": 41.428,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 4,
+            "usage_reported": true,
+            "input_tokens": 162245,
+            "cached_input_tokens": 139392,
+            "output_tokens": 1495,
+            "reasoning_output_tokens": 84,
+            "uncached_input_tokens": 22853,
+            "failed_commands": 0,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.013901
+          }
+        }
+      },
+      {
+        "trial": 2,
+        "phases": {
+          "initial": {
+            "seconds": 131.986,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 12,
+            "usage_reported": true,
+            "input_tokens": 385056,
+            "cached_input_tokens": 360576,
+            "output_tokens": 6888,
+            "reasoning_output_tokens": 640,
+            "uncached_input_tokens": 24480,
+            "failed_commands": 2,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.009669
+          },
+          "extension": {
+            "seconds": 53.467,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 5,
+            "usage_reported": true,
+            "input_tokens": 201866,
+            "cached_input_tokens": 176896,
+            "output_tokens": 1865,
+            "reasoning_output_tokens": 210,
+            "uncached_input_tokens": 24970,
+            "failed_commands": 1,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.009695
+          }
+        }
+      }
+    ],
+    "complete_trials": 2,
+    "passed": 316,
+    "planned": 316,
+    "median_total_agent_seconds": 185.96099999999998,
+    "total_input_tokens": 1102393,
+    "total_cached_input_tokens": 1007232,
+    "total_uncached_input_tokens": 95161,
+    "total_output_tokens": 18826,
+    "failed_commands": 5,
+    "tool_calls": 33,
+    "usage_complete": true
+  },
+  {
+    "language": "rust",
+    "trials": [
+      {
+        "trial": 1,
+        "phases": {
+          "initial": {
+            "seconds": 79.444,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 6,
+            "usage_reported": true,
+            "input_tokens": 156990,
+            "cached_input_tokens": 134016,
+            "output_tokens": 4050,
+            "reasoning_output_tokens": 178,
+            "uncached_input_tokens": 22974,
+            "failed_commands": 0,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.008901
+          },
+          "extension": {
+            "seconds": 41.201,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 4,
+            "usage_reported": true,
+            "input_tokens": 208932,
+            "cached_input_tokens": 183552,
+            "output_tokens": 1301,
+            "reasoning_output_tokens": 45,
+            "uncached_input_tokens": 25380,
+            "failed_commands": 1,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.011127
+          }
+        }
+      },
+      {
+        "trial": 2,
+        "phases": {
+          "initial": {
+            "seconds": 124.97,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 8,
+            "usage_reported": true,
+            "input_tokens": 260464,
+            "cached_input_tokens": 240384,
+            "output_tokens": 4668,
+            "reasoning_output_tokens": 456,
+            "uncached_input_tokens": 20080,
+            "failed_commands": 1,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.030566
+          },
+          "extension": {
+            "seconds": 51.74,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 3,
+            "usage_reported": true,
+            "input_tokens": 173681,
+            "cached_input_tokens": 147968,
+            "output_tokens": 1209,
+            "reasoning_output_tokens": 15,
+            "uncached_input_tokens": 25713,
+            "failed_commands": 0,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.033758
+          }
+        }
+      }
+    ],
+    "complete_trials": 2,
+    "passed": 316,
+    "planned": 316,
+    "median_total_agent_seconds": 148.6775,
+    "total_input_tokens": 800067,
+    "total_cached_input_tokens": 705920,
+    "total_uncached_input_tokens": 94147,
+    "total_output_tokens": 11228,
+    "failed_commands": 2,
+    "tool_calls": 21,
+    "usage_complete": true
+  },
+  {
+    "language": "swift",
+    "trials": [
+      {
+        "trial": 1,
+        "phases": {
+          "initial": {
+            "seconds": 114.328,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 9,
+            "usage_reported": true,
+            "input_tokens": 305287,
+            "cached_input_tokens": 285184,
+            "output_tokens": 6089,
+            "reasoning_output_tokens": 688,
+            "uncached_input_tokens": 20103,
+            "failed_commands": 1,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.009263
+          },
+          "extension": {
+            "seconds": 50.555,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 4,
+            "usage_reported": true,
+            "input_tokens": 231930,
+            "cached_input_tokens": 208000,
+            "output_tokens": 1359,
+            "reasoning_output_tokens": 56,
+            "uncached_input_tokens": 23930,
+            "failed_commands": 0,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.010137
+          }
+        }
+      },
+      {
+        "trial": 2,
+        "phases": {
+          "initial": {
+            "seconds": 151.685,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 9,
+            "usage_reported": true,
+            "input_tokens": 443772,
+            "cached_input_tokens": 422528,
+            "output_tokens": 5292,
+            "reasoning_output_tokens": 604,
+            "uncached_input_tokens": 21244,
+            "failed_commands": 2,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.009957
+          },
+          "extension": {
+            "seconds": 60.453,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 3,
+            "usage_reported": true,
+            "input_tokens": 266287,
+            "cached_input_tokens": 238208,
+            "output_tokens": 1349,
+            "reasoning_output_tokens": 62,
+            "uncached_input_tokens": 28079,
+            "failed_commands": 0,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.013955
+          }
+        }
+      }
+    ],
+    "complete_trials": 2,
+    "passed": 316,
+    "planned": 316,
+    "median_total_agent_seconds": 188.5105,
+    "total_input_tokens": 1247276,
+    "total_cached_input_tokens": 1153920,
+    "total_uncached_input_tokens": 93356,
+    "total_output_tokens": 14089,
+    "failed_commands": 3,
+    "tool_calls": 25,
+    "usage_complete": true
+  },
+  {
+    "language": "kotlin",
+    "trials": [
+      {
+        "trial": 1,
+        "phases": {
+          "initial": {
+            "seconds": 74.387,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 5,
+            "usage_reported": true,
+            "input_tokens": 124811,
+            "cached_input_tokens": 101888,
+            "output_tokens": 4206,
+            "reasoning_output_tokens": 327,
+            "uncached_input_tokens": 22923,
+            "failed_commands": 0,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.041813
+          },
+          "extension": {
+            "seconds": 49.893,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 6,
+            "usage_reported": true,
+            "input_tokens": 230754,
+            "cached_input_tokens": 208128,
+            "output_tokens": 1800,
+            "reasoning_output_tokens": 118,
+            "uncached_input_tokens": 22626,
+            "failed_commands": 0,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.04346
+          }
+        }
+      },
+      {
+        "trial": 2,
+        "phases": {
+          "initial": {
+            "seconds": 125.284,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 7,
+            "usage_reported": true,
+            "input_tokens": 263113,
+            "cached_input_tokens": 243328,
+            "output_tokens": 4742,
+            "reasoning_output_tokens": 590,
+            "uncached_input_tokens": 19785,
+            "failed_commands": 1,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.173871
+          },
+          "extension": {
+            "seconds": 59.565,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 4,
+            "usage_reported": true,
+            "input_tokens": 229395,
+            "cached_input_tokens": 201600,
+            "output_tokens": 1448,
+            "reasoning_output_tokens": 33,
+            "uncached_input_tokens": 27795,
+            "failed_commands": 0,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.05624
+          }
+        }
+      }
+    ],
+    "complete_trials": 2,
+    "passed": 316,
+    "planned": 316,
+    "median_total_agent_seconds": 154.5645,
+    "total_input_tokens": 848073,
+    "total_cached_input_tokens": 754944,
+    "total_uncached_input_tokens": 93129,
+    "total_output_tokens": 12196,
+    "failed_commands": 1,
+    "tool_calls": 22,
+    "usage_complete": true
+  },
+  {
+    "language": "moonbit",
+    "trials": [
+      {
+        "trial": 1,
+        "phases": {
+          "initial": {
+            "seconds": 128.735,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 9,
+            "usage_reported": true,
+            "input_tokens": 352691,
+            "cached_input_tokens": 320512,
+            "output_tokens": 5618,
+            "reasoning_output_tokens": 773,
+            "uncached_input_tokens": 32179,
+            "failed_commands": 1,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.047145
+          },
+          "extension": {
+            "seconds": 51.406,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 5,
+            "usage_reported": true,
+            "input_tokens": 201242,
+            "cached_input_tokens": 177280,
+            "output_tokens": 1681,
+            "reasoning_output_tokens": 109,
+            "uncached_input_tokens": 23962,
+            "failed_commands": 0,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.054813
+          }
+        }
+      },
+      {
+        "trial": 2,
+        "phases": {
+          "initial": {
+            "seconds": 123.548,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 11,
+            "usage_reported": true,
+            "input_tokens": 454352,
+            "cached_input_tokens": 417408,
+            "output_tokens": 6168,
+            "reasoning_output_tokens": 680,
+            "uncached_input_tokens": 36944,
+            "failed_commands": 2,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.051626
+          },
+          "extension": {
+            "seconds": 38.733,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 4,
+            "usage_reported": true,
+            "input_tokens": 165185,
+            "cached_input_tokens": 129280,
+            "output_tokens": 1527,
+            "reasoning_output_tokens": 29,
+            "uncached_input_tokens": 35905,
+            "failed_commands": 0,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.041479
+          }
+        }
+      }
+    ],
+    "complete_trials": 2,
+    "passed": 316,
+    "planned": 316,
+    "median_total_agent_seconds": 171.211,
+    "total_input_tokens": 1173470,
+    "total_cached_input_tokens": 1044480,
+    "total_uncached_input_tokens": 128990,
+    "total_output_tokens": 14994,
+    "failed_commands": 3,
+    "tool_calls": 29,
+    "usage_complete": true
+  },
+  {
+    "language": "baml",
+    "trials": [
+      {
+        "trial": 1,
+        "phases": {
+          "initial": {
+            "seconds": 98.503,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 9,
+            "usage_reported": true,
+            "input_tokens": 284452,
+            "cached_input_tokens": 251904,
+            "output_tokens": 5240,
+            "reasoning_output_tokens": 443,
+            "uncached_input_tokens": 32548,
+            "failed_commands": 2,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.114102
+          },
+          "extension": {
+            "seconds": 57.25,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 5,
+            "usage_reported": true,
+            "input_tokens": 277546,
+            "cached_input_tokens": 227072,
+            "output_tokens": 2028,
+            "reasoning_output_tokens": 46,
+            "uncached_input_tokens": 50474,
+            "failed_commands": 0,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.116302
+          }
+        }
+      },
+      {
+        "trial": 2,
+        "phases": {
+          "initial": {
+            "seconds": 112.349,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 12,
+            "usage_reported": true,
+            "input_tokens": 389042,
+            "cached_input_tokens": 341248,
+            "output_tokens": 5538,
+            "reasoning_output_tokens": 393,
+            "uncached_input_tokens": 47794,
+            "failed_commands": 3,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.112631
+          },
+          "extension": {
+            "seconds": 47.291,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 6,
+            "usage_reported": true,
+            "input_tokens": 203667,
+            "cached_input_tokens": 178560,
+            "output_tokens": 1581,
+            "reasoning_output_tokens": 51,
+            "uncached_input_tokens": 25107,
+            "failed_commands": 0,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.114021
+          }
+        }
+      }
+    ],
+    "complete_trials": 2,
+    "passed": 316,
+    "planned": 316,
+    "median_total_agent_seconds": 157.6965,
+    "total_input_tokens": 1154707,
+    "total_cached_input_tokens": 998784,
+    "total_uncached_input_tokens": 155923,
+    "total_output_tokens": 14387,
+    "failed_commands": 5,
+    "tool_calls": 32,
+    "usage_complete": true
+  },
+  {
+    "language": "zero",
+    "trials": [
+      {
+        "trial": 1,
+        "phases": {
+          "initial": {
+            "seconds": 399.793,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 29,
+            "usage_reported": true,
+            "input_tokens": 1688370,
+            "cached_input_tokens": 1631616,
+            "output_tokens": 14968,
+            "reasoning_output_tokens": 3023,
+            "uncached_input_tokens": 56754,
+            "failed_commands": 9,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.567002
+          },
+          "extension": {
+            "seconds": 88.607,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 4,
+            "usage_reported": true,
+            "input_tokens": 324800,
+            "cached_input_tokens": 299008,
+            "output_tokens": 2418,
+            "reasoning_output_tokens": 332,
+            "uncached_input_tokens": 25792,
+            "failed_commands": 0,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.58328
+          }
+        }
+      },
+      {
+        "trial": 2,
+        "phases": {
+          "initial": {
+            "seconds": 448.219,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 43,
+            "usage_reported": true,
+            "input_tokens": 2118721,
+            "cached_input_tokens": 2073600,
+            "output_tokens": 15740,
+            "reasoning_output_tokens": 3366,
+            "uncached_input_tokens": 45121,
+            "failed_commands": 11,
+            "passed": 69,
+            "planned": 69,
+            "process_median_seconds": 0.503374
+          },
+          "extension": {
+            "seconds": 73.634,
+            "timed_out": false,
+            "exit_code": 0,
+            "tool_calls": 8,
+            "usage_reported": true,
+            "input_tokens": 326621,
+            "cached_input_tokens": 267520,
+            "output_tokens": 2620,
+            "reasoning_output_tokens": 120,
+            "uncached_input_tokens": 59101,
+            "failed_commands": 0,
+            "passed": 89,
+            "planned": 89,
+            "process_median_seconds": 0.476845
+          }
+        }
+      }
+    ],
+    "complete_trials": 2,
+    "passed": 316,
+    "planned": 316,
+    "median_total_agent_seconds": 505.12649999999996,
+    "total_input_tokens": 4458512,
+    "total_cached_input_tokens": 4271744,
+    "total_uncached_input_tokens": 186768,
+    "total_output_tokens": 35746,
+    "failed_commands": 20,
+    "tool_calls": 84,
+    "usage_complete": true
+  }
+]

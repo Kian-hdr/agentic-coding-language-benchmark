@@ -1,0 +1,20 @@
+use lib
+
+type Output {
+    len: usize,
+}
+
+type Stack {
+    vn: usize,
+    on: usize,
+    error: u32,
+}
+
+pub fn main(world: World) -> Void raises {
+    let request: String = std.args.getOr(1, "{}")
+    let input: Span<u8> = std.mem.span(request)
+    var storage: [130000]u8 = [0; 130000]
+    let n: usize = dispatch(input, storage)
+    check world.out.write(std.mem.prefix(storage, n))
+    check world.out.write("\n")
+}

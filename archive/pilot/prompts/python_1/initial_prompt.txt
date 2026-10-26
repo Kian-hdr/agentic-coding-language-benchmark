@@ -1,0 +1,12 @@
+Implement the three operations in SPEC.md in python.
+This is a bounded language evaluation, not a production project. Work only in this
+run directory. Read LANGUAGE.md and use its installed tools. Create executable
+./run.sh REQUEST_FILE that prints exactly one response JSON object. All business
+logic must be in python; wrappers may only transport IO and launch it.
+Do not use other languages to implement computation. Do not access other runs,
+benchmark evaluators, or sibling docs. Do not install packages, use the network,
+delegate, create goals, or add features beyond the specification. You may inspect
+the assigned toolchain's standard library and built-in help. Implement, run local
+examples/tests, fix errors, and finish. You have 480 seconds maximum.
+If requirements are infeasible, report the precise obstacle. Your final answer
+must briefly state implementation and tests. Preserve your tests in this folder.

@@ -1,0 +1,1312 @@
+[
+  {
+    "language": "python",
+    "trial": 1,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.025460417,
+    "samples": [
+      0.02401358399999999,
+      0.025460417,
+      0.02663558299999999,
+      0.026191208999999993,
+      0.023886458
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "python",
+    "trial": 2,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.02640379100000001,
+    "samples": [
+      0.03453833300000003,
+      0.02640379100000001,
+      0.023655125,
+      0.024419583999999994,
+      0.029649374999999978
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "typescript",
+    "trial": 1,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.055627208000000095,
+    "samples": [
+      0.057565374999999974,
+      0.055330917000000035,
+      0.05635599999999996,
+      0.055627208000000095,
+      0.054994667
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "typescript",
+    "trial": 2,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.05583495900000002,
+    "samples": [
+      0.05547874999999991,
+      0.05553399999999997,
+      0.05751591700000003,
+      0.058747667000000114,
+      0.05583495900000002
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "go",
+    "trial": 1,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.011083750000000059,
+    "samples": [
+      0.011710082999999871,
+      0.011083750000000059,
+      0.013056666999999855,
+      0.010395375000000096,
+      0.010122332999999983
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "go",
+    "trial": 2,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.010411791999999975,
+    "samples": [
+      0.013961833000000201,
+      0.010411791999999975,
+      0.013066334000000124,
+      0.009927916999999953,
+      0.01034866599999984
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "rust",
+    "trial": 1,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.009659459000000092,
+    "samples": [
+      0.009261415999999967,
+      0.009469167,
+      0.009659459000000092,
+      0.009679583000000047,
+      0.01009491600000012
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "rust",
+    "trial": 2,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.009611124999999943,
+    "samples": [
+      0.009611124999999943,
+      0.009495041999999954,
+      0.009279875000000049,
+      0.010007625000000075,
+      0.010412166999999917
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "swift",
+    "trial": 1,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.012451458999999998,
+    "samples": [
+      0.011876333000000017,
+      0.012451458999999998,
+      0.013761917000000068,
+      0.011773540999999943,
+      0.012733125000000012
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "swift",
+    "trial": 2,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.01230570799999997,
+    "samples": [
+      0.012043167000000077,
+      0.01140162499999997,
+      0.01230570799999997,
+      0.013026290999999857,
+      0.013734332999999932
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "kotlin",
+    "trial": 1,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.04676800000000014,
+    "samples": [
+      0.05169370799999995,
+      0.04676800000000014,
+      0.04624495900000003,
+      0.046937165999999975,
+      0.045634541000000084
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "kotlin",
+    "trial": 2,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.05012583299999962,
+    "samples": [
+      0.05299970799999976,
+      0.05247337499999993,
+      0.05012583299999962,
+      0.04886220799999963,
+      0.04484883300000009
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "moonbit",
+    "trial": 1,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.042478792000000265,
+    "samples": [
+      0.03720916700000032,
+      0.04258762499999991,
+      0.043061374999999735,
+      0.042478792000000265,
+      0.0391663750000002
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "moonbit",
+    "trial": 2,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.03547395799999986,
+    "samples": [
+      0.036055665999999764,
+      0.03387891700000001,
+      0.03510150000000012,
+      0.03547395799999986,
+      0.035793541999999956
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "baml",
+    "trial": 1,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.11401037499999989,
+    "samples": [
+      0.1369117499999999,
+      0.1150460419999999,
+      0.11401037499999989,
+      0.11144575000000012,
+      0.1128127499999998
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "baml",
+    "trial": 2,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.11206462499999992,
+    "samples": [
+      0.11163400000000001,
+      0.11375108299999992,
+      0.11443304199999993,
+      0.11206462499999992,
+      0.10899195899999992
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "zero",
+    "trial": 1,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 2.1920199169999997,
+    "samples": [
+      1.4756578750000005,
+      1.339457125000001,
+      2.370385666999999,
+      9.788956124999999,
+      2.1920199169999997
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "zero",
+    "trial": 2,
+    "workload": "ledger_100",
+    "status": "pass",
+    "median_seconds": 0.552322457999999,
+    "samples": [
+      0.567498166,
+      0.552322457999999,
+      0.6514891250000012,
+      0.5469605420000008,
+      0.5514342499999998
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "python",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "status": "pass",
+    "median_seconds": 0.02999099999999899,
+    "samples": [
+      0.03024837500000288,
+      0.02999099999999899,
+      0.027690082999999532,
+      0.02779325000000199,
+      0.032569708000000475
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "python",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "status": "pass",
+    "median_seconds": 0.027789083000001824,
+    "samples": [
+      0.027789083000001824,
+      0.02727949999999879,
+      0.02771100000000004,
+      0.043660624999997566,
+      0.02835424999999958
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "typescript",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "status": "pass",
+    "median_seconds": 0.09327129199999717,
+    "samples": [
+      0.06415320899999699,
+      0.09327129199999717,
+      0.13739999999999952,
+      0.10924683400000035,
+      0.08175533300000026
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "typescript",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "status": "pass",
+    "median_seconds": 0.06077170800000076,
+    "samples": [
+      0.06718741599999944,
+      0.06887425000000036,
+      0.06048324999999721,
+      0.06077170800000076,
+      0.05839233300000046
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "go",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "status": "pass",
+    "median_seconds": 0.012005207999997936,
+    "samples": [
+      0.012005207999997936,
+      0.012404250000003003,
+      0.012089041999999495,
+      0.011675832999998192,
+      0.011416792000002118
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "go",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "status": "pass",
+    "median_seconds": 0.011970916999999304,
+    "samples": [
+      0.011974833000000018,
+      0.011970916999999304,
+      0.011900457999999503,
+      0.012017166999999773,
+      0.011100875000000343
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "rust",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "status": "pass",
+    "median_seconds": 0.013220249999999822,
+    "samples": [
+      0.012445749999997702,
+      0.01228425000000044,
+      0.013220249999999822,
+      0.014048166999998557,
+      0.013262291000000204
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "rust",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "status": "pass",
+    "median_seconds": 0.014108457999999047,
+    "samples": [
+      0.013014791999999886,
+      0.014108457999999047,
+      0.013769499999998658,
+      0.01582170800000071,
+      0.01458945899999975
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "swift",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "status": "pass",
+    "median_seconds": 0.01323554100000024,
+    "samples": [
+      0.01323554100000024,
+      0.01270504199999678,
+      0.012849082999998984,
+      0.04786741600000255,
+      0.03612716700000007
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "swift",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "status": "pass",
+    "median_seconds": 0.02265487500000063,
+    "samples": [
+      0.03022637499999803,
+      0.026606291000000226,
+      0.02265487500000063,
+      0.014081374999999952,
+      0.012367125000000811
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "kotlin",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "status": "pass",
+    "median_seconds": 0.0695085000000013,
+    "samples": [
+      0.0695085000000013,
+      0.07695583299999953,
+      0.06683979199999968,
+      0.06380395800000116,
+      0.07000916700000204
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "kotlin",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "status": "pass",
+    "median_seconds": 0.0777891249999989,
+    "samples": [
+      0.06911108399999932,
+      0.07557670899999991,
+      0.09569999999999723,
+      0.08187495800000022,
+      0.0777891249999989
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "moonbit",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "status": "fail",
+    "median_seconds": null,
+    "samples": [],
+    "diagnostic": {
+      "code": 0,
+      "stderr": "Artifacts:\n  username/solution/cmd/main  native  {ORIGINAL_BENCHMARK_ROOT}/runs/moonbit_1/solution/_build/native/debug/build/cmd/main/main.exe\n",
+      "stdout": "{\"accounts\":[{\"account\":\"acct0\",\"balance\":43,\"count\":10},{\"account\":\"acct1\",\"balance\":0,\"count\":10},{\"account\":\"acct2\",\"balance\":-116,\"count\":9},{\"acc"
+    }
+  },
+  {
+    "language": "moonbit",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "status": "pass",
+    "median_seconds": 0.04471208300000029,
+    "samples": [
+      0.05085524999999791,
+      0.06586758399999937,
+      0.04471208300000029,
+      0.03971358399999758,
+      0.039305291999998104
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "baml",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "status": "pass",
+    "median_seconds": 0.11751537499999998,
+    "samples": [
+      0.11657741700000201,
+      0.11893745800000133,
+      0.11751537499999998,
+      0.11797250000000048,
+      0.11342274999999802
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "baml",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "status": "pass",
+    "median_seconds": 0.1167249169999991,
+    "samples": [
+      0.1167249169999991,
+      0.11646749999999884,
+      0.11964941700000153,
+      0.11539112500000215,
+      0.11860033299999984
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "zero",
+    "trial": 1,
+    "workload": "ledger_1000",
+    "status": "fail",
+    "median_seconds": null,
+    "samples": [],
+    "diagnostic": "Command '['{ORIGINAL_BENCHMARK_ROOT}/runs/zero_1/run.sh', '{ORIGINAL_BENCHMARK_ROOT}/results/stress_inputs/ledger_1000.json']' timed out after 10 seconds"
+  },
+  {
+    "language": "zero",
+    "trial": 2,
+    "workload": "ledger_1000",
+    "status": "fail",
+    "median_seconds": null,
+    "samples": [],
+    "diagnostic": "Command '['{ORIGINAL_BENCHMARK_ROOT}/runs/zero_2/run.sh', '{ORIGINAL_BENCHMARK_ROOT}/results/stress_inputs/ledger_1000.json']' timed out after 10 seconds"
+  },
+  {
+    "language": "python",
+    "trial": 1,
+    "workload": "ledger_5000",
+    "status": "pass",
+    "median_seconds": 0.040866708000002916,
+    "samples": [
+      0.07084912500000229,
+      0.040866708000002916,
+      0.045030208000000016,
+      0.034234707999999614,
+      0.030966207999995277
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "python",
+    "trial": 2,
+    "workload": "ledger_5000",
+    "status": "pass",
+    "median_seconds": 0.03202050000000156,
+    "samples": [
+      0.030228917000002298,
+      0.03202050000000156,
+      0.029067417000000262,
+      0.07531237500000287,
+      0.04046124999999989
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "typescript",
+    "trial": 1,
+    "workload": "ledger_5000",
+    "status": "pass",
+    "median_seconds": 0.05947562499999748,
+    "samples": [
+      0.05947562499999748,
+      0.059921791999997254,
+      0.057132291999998586,
+      0.058304958000000795,
+      0.06232687500000367
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "typescript",
+    "trial": 2,
+    "workload": "ledger_5000",
+    "status": "pass",
+    "median_seconds": 0.06097733300000385,
+    "samples": [
+      0.06097733300000385,
+      0.062159874999998976,
+      0.08532387500000027,
+      0.060678000000002896,
+      0.05838912499999793
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "go",
+    "trial": 1,
+    "workload": "ledger_5000",
+    "status": "pass",
+    "median_seconds": 0.019006291000003728,
+    "samples": [
+      0.0196387500000057,
+      0.01910374999999931,
+      0.018575375000004613,
+      0.019006291000003728,
+      0.01883633399999951
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "go",
+    "trial": 2,
+    "workload": "ledger_5000",
+    "status": "pass",
+    "median_seconds": 0.017605375000002255,
+    "samples": [
+      0.017605375000002255,
+      0.017540875000001677,
+      0.017368875000002504,
+      0.01768700000000223,
+      0.02210095899999942
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "rust",
+    "trial": 1,
+    "workload": "ledger_5000",
+    "status": "pass",
+    "median_seconds": 0.030955583999997316,
+    "samples": [
+      0.030955583999997316,
+      0.03168045800000385,
+      0.03165679199999971,
+      0.02966624999999823,
+      0.03054499999999649
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "rust",
+    "trial": 2,
+    "workload": "ledger_5000",
+    "status": "pass",
+    "median_seconds": 0.03338604099999998,
+    "samples": [
+      0.03371533300000351,
+      0.032842750000000365,
+      0.036889292000005014,
+      0.031209124999996618,
+      0.03338604099999998
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "swift",
+    "trial": 1,
+    "workload": "ledger_5000",
+    "status": "pass",
+    "median_seconds": 0.017867125000002204,
+    "samples": [
+      0.017915250000001492,
+      0.01788774999999987,
+      0.017867125000002204,
+      0.017328583000001174,
+      0.017307166999998458
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "swift",
+    "trial": 2,
+    "workload": "ledger_5000",
+    "status": "pass",
+    "median_seconds": 0.01724241699999851,
+    "samples": [
+      0.017094667000002062,
+      0.017566874999999982,
+      0.01723966600000182,
+      0.017283958000000155,
+      0.01724241699999851
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "kotlin",
+    "trial": 1,
+    "workload": "ledger_5000",
+    "status": "pass",
+    "median_seconds": 0.08031287500000417,
+    "samples": [
+      0.07846479199999834,
+      0.07935054199999314,
+      0.08352970800000037,
+      0.3207889580000014,
+      0.08031287500000417
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "kotlin",
+    "trial": 2,
+    "workload": "ledger_5000",
+    "status": "pass",
+    "median_seconds": 0.08592879100000061,
+    "samples": [
+      0.08332166699999988,
+      0.1638036249999999,
+      0.07935995800000484,
+      0.08592879100000061,
+      0.08845829100000202
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "moonbit",
+    "trial": 1,
+    "workload": "ledger_5000",
+    "status": "fail",
+    "median_seconds": null,
+    "samples": [],
+    "diagnostic": {
+      "code": 0,
+      "stderr": "Artifacts:\n  username/solution/cmd/main  native  {ORIGINAL_BENCHMARK_ROOT}/runs/moonbit_1/solution/_build/native/debug/build/cmd/main/main.exe\n",
+      "stdout": "{\"accounts\":[{\"account\":\"acct0\",\"balance\":175,\"count\":17},{\"account\":\"acct1\",\"balance\":-43,\"count\":17},{\"account\":\"acct2\",\"balance\":119,\"count\":7},{\"a"
+    }
+  },
+  {
+    "language": "moonbit",
+    "trial": 2,
+    "workload": "ledger_5000",
+    "status": "pass",
+    "median_seconds": 0.05282279199999351,
+    "samples": [
+      0.16019333299999516,
+      0.07026150000000086,
+      0.05282279199999351,
+      0.04898212499999488,
+      0.04823720800000331
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "baml",
+    "trial": 1,
+    "workload": "ledger_5000",
+    "status": "pass",
+    "median_seconds": 0.12881870799999717,
+    "samples": [
+      0.12220624999999785,
+      0.12881870799999717,
+      0.12866183300000245,
+      0.13139508300000102,
+      0.13233295899999575
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "baml",
+    "trial": 2,
+    "workload": "ledger_5000",
+    "status": "pass",
+    "median_seconds": 0.1344447500000001,
+    "samples": [
+      0.1481289999999973,
+      0.18104612500000172,
+      0.1344447500000001,
+      0.12756379200000367,
+      0.12727516700000052
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "zero",
+    "trial": 1,
+    "workload": "ledger_5000",
+    "status": "fail",
+    "median_seconds": null,
+    "samples": [],
+    "diagnostic": "Command '['{ORIGINAL_BENCHMARK_ROOT}/runs/zero_1/run.sh', '{ORIGINAL_BENCHMARK_ROOT}/results/stress_inputs/ledger_5000.json']' timed out after 10 seconds"
+  },
+  {
+    "language": "zero",
+    "trial": 2,
+    "workload": "ledger_5000",
+    "status": "fail",
+    "median_seconds": null,
+    "samples": [],
+    "diagnostic": "Command '['{ORIGINAL_BENCHMARK_ROOT}/runs/zero_2/run.sh', '{ORIGINAL_BENCHMARK_ROOT}/results/stress_inputs/ledger_5000.json']' timed out after 10 seconds"
+  },
+  {
+    "language": "python",
+    "trial": 1,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.024938125000005584,
+    "samples": [
+      0.025879583999994793,
+      0.022947791999996525,
+      0.02497254200000043,
+      0.024530749999996715,
+      0.024938125000005584
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "python",
+    "trial": 2,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.02463824999999531,
+    "samples": [
+      0.02463824999999531,
+      0.024640083000008417,
+      0.024694709000002035,
+      0.023093833000004338,
+      0.023622416999998563
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "typescript",
+    "trial": 1,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.0723418339999995,
+    "samples": [
+      0.08007804199999669,
+      0.0723418339999995,
+      0.07130725000000382,
+      0.0903476249999926,
+      0.06319358300000033
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "typescript",
+    "trial": 2,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.0634962919999964,
+    "samples": [
+      0.0634962919999964,
+      0.06472258399999475,
+      0.06842300000000989,
+      0.057704834000006144,
+      0.05575604199999873
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "go",
+    "trial": 1,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.009593917000003671,
+    "samples": [
+      0.009267625000006774,
+      0.009593917000003671,
+      0.010137124999999969,
+      0.01028349999999989,
+      0.009397249999992141
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "go",
+    "trial": 2,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.009827624999999784,
+    "samples": [
+      0.00921079199999042,
+      0.009263208999996664,
+      0.010941665999993688,
+      0.010127499999995848,
+      0.009827624999999784
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "rust",
+    "trial": 1,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.00920650000000478,
+    "samples": [
+      0.00920650000000478,
+      0.009084333000004108,
+      0.00916204099999618,
+      0.009486417000005076,
+      0.010042999999996027
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "rust",
+    "trial": 2,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.00918908399999907,
+    "samples": [
+      0.008984707999999841,
+      0.008976541999999199,
+      0.009372874999996839,
+      0.00918908399999907,
+      0.010239709000003927
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "swift",
+    "trial": 1,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.008854458999991266,
+    "samples": [
+      0.009084708000003161,
+      0.008854458999991266,
+      0.008725375000011582,
+      0.008684249999987514,
+      0.008877917000006619
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "swift",
+    "trial": 2,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.008784292000001415,
+    "samples": [
+      0.008958290999999008,
+      0.008121375000001763,
+      0.008451292000003718,
+      0.008784292000001415,
+      0.009148749999994266
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "kotlin",
+    "trial": 1,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.04406016699999782,
+    "samples": [
+      0.044624500000011835,
+      0.04406016699999782,
+      0.04259641700001282,
+      0.0432897080000032,
+      0.045184750000004215
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "kotlin",
+    "trial": 2,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.04317779099999086,
+    "samples": [
+      0.04317779099999086,
+      0.043306708000002914,
+      0.04264575000000548,
+      0.0442769170000048,
+      0.04298541699999703
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "moonbit",
+    "trial": 1,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.03530125000000339,
+    "samples": [
+      0.03530125000000339,
+      0.0372987089999981,
+      0.035973708000000215,
+      0.03437070900000094,
+      0.03453204100000562
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "moonbit",
+    "trial": 2,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.033478999999999814,
+    "samples": [
+      0.034282541999999694,
+      0.033459292000003416,
+      0.035574457999999254,
+      0.033478999999999814,
+      0.0328835410000039
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "baml",
+    "trial": 1,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.11459079200000133,
+    "samples": [
+      0.11401729199999977,
+      0.1140827910000013,
+      0.11764770799999269,
+      0.11514070799999843,
+      0.11459079200000133
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "baml",
+    "trial": 2,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.11548224999999945,
+    "samples": [
+      0.11305270799999789,
+      0.11548224999999945,
+      0.11563729200000239,
+      0.11555087499999672,
+      0.11486420800000019
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "zero",
+    "trial": 1,
+    "workload": "topo_100",
+    "status": "fail",
+    "median_seconds": null,
+    "samples": [],
+    "diagnostic": "Command '['{ORIGINAL_BENCHMARK_ROOT}/runs/zero_1/run.sh', '{ORIGINAL_BENCHMARK_ROOT}/results/stress_inputs/topo_100.json']' timed out after 10 seconds"
+  },
+  {
+    "language": "zero",
+    "trial": 2,
+    "workload": "topo_100",
+    "status": "pass",
+    "median_seconds": 0.7847021249999955,
+    "samples": [
+      0.7985620420000004,
+      0.7654819589999988,
+      0.807455791999999,
+      0.7847021249999955,
+      0.7518544160000005
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "python",
+    "trial": 1,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.023445875000007277,
+    "samples": [
+      0.023445875000007277,
+      0.023966624999999908,
+      0.02433029200000192,
+      0.02307708400000763,
+      0.023165833000007297
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "python",
+    "trial": 2,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.022792124999995167,
+    "samples": [
+      0.02261116700000798,
+      0.023347708000002854,
+      0.023366499999994517,
+      0.022792124999995167,
+      0.022499541000001955
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "typescript",
+    "trial": 1,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.05635250000000269,
+    "samples": [
+      0.05688054200000181,
+      0.05583124999999711,
+      0.05735470800000542,
+      0.05635250000000269,
+      0.05466850000000534
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "typescript",
+    "trial": 2,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.055343375000006745,
+    "samples": [
+      0.0548163330000051,
+      0.055343375000006745,
+      0.05697137500000338,
+      0.05581841600000814,
+      0.054544332999995504
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "go",
+    "trial": 1,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.01012950000000501,
+    "samples": [
+      0.009777249999999071,
+      0.009870417000001908,
+      0.010359082999997327,
+      0.010628375000010237,
+      0.01012950000000501
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "go",
+    "trial": 2,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.009942083999987972,
+    "samples": [
+      0.010030999999997903,
+      0.009856708000000935,
+      0.009764334000010422,
+      0.010270834000010609,
+      0.009942083999987972
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "rust",
+    "trial": 1,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.010139208999987659,
+    "samples": [
+      0.010280249999993885,
+      0.009894291999998472,
+      0.010139208999987659,
+      0.010217749999995362,
+      0.009894625000001156
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "rust",
+    "trial": 2,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.010178584000001933,
+    "samples": [
+      0.010040958999994132,
+      0.010178584000001933,
+      0.010102582999991228,
+      0.011133415999992735,
+      0.010925249999999664
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "swift",
+    "trial": 1,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.009419915999998807,
+    "samples": [
+      0.009772792000006802,
+      0.009419915999998807,
+      0.009238417000005938,
+      0.009216541000000689,
+      0.009672416000000794
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "swift",
+    "trial": 2,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.009222375000007332,
+    "samples": [
+      0.009096083999992288,
+      0.009085624999997322,
+      0.009222375000007332,
+      0.009321167000010178,
+      0.010102374999988228
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "kotlin",
+    "trial": 1,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.06462283300000138,
+    "samples": [
+      0.06442033399999048,
+      0.06489183299999013,
+      0.06413541599999917,
+      0.06499924999999962,
+      0.06462283300000138
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "kotlin",
+    "trial": 2,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.06373945899999,
+    "samples": [
+      0.051054667000002496,
+      0.06446595799999955,
+      0.05324058300000445,
+      0.06373945899999,
+      0.06544720799999482
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "moonbit",
+    "trial": 1,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.03875908300000219,
+    "samples": [
+      0.04131662499999322,
+      0.03952787500000454,
+      0.03835850000000107,
+      0.038130000000009545,
+      0.03875908300000219
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "moonbit",
+    "trial": 2,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.0405449170000054,
+    "samples": [
+      0.0405449170000054,
+      0.04237062500000377,
+      0.04099108400001228,
+      0.038153125000008004,
+      0.039966125000006514
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "baml",
+    "trial": 1,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.13942025000000058,
+    "samples": [
+      0.14590220899999906,
+      0.19239258300000017,
+      0.13942025000000058,
+      0.12424854200000368,
+      0.12437937500000373
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "baml",
+    "trial": 2,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.12154395899999315,
+    "samples": [
+      0.12269295799998758,
+      0.12279920799998933,
+      0.1196641249999999,
+      0.11961737500000424,
+      0.12154395899999315
+    ],
+    "diagnostic": null
+  },
+  {
+    "language": "zero",
+    "trial": 1,
+    "workload": "merge_1000",
+    "status": "fail",
+    "median_seconds": null,
+    "samples": [],
+    "diagnostic": "Command '['{ORIGINAL_BENCHMARK_ROOT}/runs/zero_1/run.sh', '{ORIGINAL_BENCHMARK_ROOT}/results/stress_inputs/merge_1000.json']' timed out after 10 seconds"
+  },
+  {
+    "language": "zero",
+    "trial": 2,
+    "workload": "merge_1000",
+    "status": "pass",
+    "median_seconds": 0.6488590000000016,
+    "samples": [
+      0.6119984999999986,
+      0.6488590000000016,
+      0.6428865419999994,
+      0.7249254999999977,
+      0.7443929999999881
+    ],
+    "diagnostic": null
+  }
+]

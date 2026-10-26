@@ -1,0 +1,536 @@
+pub fn greeting_code() -> i32 {
+    return 42
+}
+
+fn decode(pool: MutSpan<u8>, used: MutSpan<usize>, raw: Span<u8>) -> Span<u8> {
+    let s: Span<u8> = trim(raw)
+    let n: usize = std.mem.len(s)
+    if n < 2 {
+        return ""
+    }
+    if !std.str.contains(s, "\\") {
+        return slice(s, 1, n - 1)
+    }
+    let buffer: MutSpan<u8> = std.mem.dropPrefix(pool, used[0])
+    let d: Maybe<Span<u8>> = std.json.stringDecode(buffer, s)
+    if d.has {
+        used[0] = used[0] + std.mem.len(d.value)
+        return d.value
+    }
+    return ""
+}
+
+fn emitString(output: MutSpan<u8>, cursor: MutSpan<usize>, s: Span<u8>) -> Void raises {
+    var storage: [65536]u8 = [0; 65536]
+    let out: Maybe<Span<u8>> = std.json.writeStringBytes(storage, s)
+    if out.has {
+        check append(output, cursor, out.value)
+    }
+}
+
+fn slice(s: Span<u8>, a: usize, b: usize) -> Span<u8> {
+    return std.mem.prefix(std.mem.dropPrefix(s, a), b - a)
+}
+
+fn ws(c: u8) -> Bool {
+    return c == 32 || c >= 9 && c <= 13
+}
+
+fn skip(s: Span<u8>, start: usize) -> usize {
+    var p: usize = start
+    let n: usize = std.mem.len(s)
+    while p < n && (ws(s[p]) || s[p] == 44) {
+        p = p + 1
+    }
+    return p
+}
+
+fn valueEnd(s: Span<u8>, start: usize) -> usize {
+    var p: usize = start
+    var depth: i32 = 0
+    var quoted: Bool = false
+    let n: usize = std.mem.len(s)
+    while p < n {
+        let c: u8 = s[p]
+        if quoted {
+            if c == 92 {
+                p = p + 2
+                continue
+            }
+            if c == 34 {
+                quoted = false
+            }
+        } else if c == 34 {
+            quoted = true
+        } else if c == 91 || c == 123 {
+            depth = depth + 1
+        } else if c == 93 || c == 125 {
+            if depth == 0 {
+                return p
+            }
+            depth = depth - 1
+            if depth == 0 {
+                return p + 1
+            }
+        } else if c == 44 && depth == 0 {
+            return p
+        }
+        p = p + 1
+    }
+    return p
+}
+
+fn field(s: Span<u8>, key: Span<u8>) -> Span<u8> {
+    let f: Maybe<Span<u8>> = std.json.field(s, key)
+    if f.has {
+        return f.value
+    }
+    return ""
+}
+
+fn less(a: Span<u8>, b: Span<u8>) -> Bool {
+    var i: usize = 0
+    while i < std.mem.len(a) && i < std.mem.len(b) {
+        if a[i] != b[i] {
+            return a[i] < b[i]
+        }
+        i = i + 1
+    }
+    return std.mem.len(a) < std.mem.len(b)
+}
+
+fn emitInt(output: MutSpan<u8>, cursor: MutSpan<usize>, n: i32) -> Void raises {
+    var buf: [32]u8 = [0; 32]
+    let out: Maybe<Span<u8>> = std.fmt.i32(buf, n)
+    if out.has {
+        check append(output, cursor, out.value)
+    }
+}
+
+fn firstId(pool: MutSpan<u8>, used: MutSpan<usize>, entries: Span<u8>, id: Span<u8>) -> Bool {
+    var p: usize = skip(entries, 1)
+    while p < std.mem.len(entries) {
+        let e: usize = valueEnd(entries, p)
+        if std.mem.eqlBytes(decode(pool, used, field(slice(entries, p, e), "id")), id) {
+            return false
+        }
+        p = skip(entries, e)
+    }
+    return true
+}
+
+fn ledger(pool: MutSpan<u8>, used: MutSpan<usize>, output: MutSpan<u8>, input: Span<u8>) -> Void raises {
+    let entries: Span<u8> = field(input, "entries")
+    var accepted: i32 = 0
+    var p: usize = skip(entries, 1)
+    while p < std.mem.len(entries) && entries[p] != 93 {
+        let e: usize = valueEnd(entries, p)
+        let item: Span<u8> = slice(entries, p, e)
+        if firstId(pool, used, std.mem.prefix(entries, p), decode(pool, used, field(item, "id"))) {
+            if std.mem.len(trim(decode(pool, used, field(item, "account")))) == 0 {
+                check append(output, used, "{\"error\":\"empty_account\"}")
+                return
+            }
+            accepted = accepted + 1
+        }
+        p = skip(entries, e)
+    }
+    check append(output, used, "{\"accounts\":[")
+    var previous: Span<u8> = ""
+    var emitted: Bool = false
+    while true {
+        var found: Bool = false
+        var best: Span<u8> = ""
+        p = skip(entries, 1)
+        while p < std.mem.len(entries) && entries[p] != 93 {
+            let e: usize = valueEnd(entries, p)
+            let item: Span<u8> = slice(entries, p, e)
+            if firstId(pool, used, std.mem.prefix(entries, p), decode(pool, used, field(item, "id"))) {
+                let name: Span<u8> = trim(decode(pool, used, field(item, "account")))
+                if (!emitted || less(previous, name)) && (!found || less(name, best)) {
+                    best = name
+                    found = true
+                }
+            }
+            p = skip(entries, e)
+        }
+        if !found {
+            break
+        }
+        var balance: i32 = 0
+        var count: i32 = 0
+        p = skip(entries, 1)
+        while p < std.mem.len(entries) && entries[p] != 93 {
+            let e: usize = valueEnd(entries, p)
+            let item: Span<u8> = slice(entries, p, e)
+            if firstId(pool, used, std.mem.prefix(entries, p), decode(pool, used, field(item, "id"))) && std.mem.eqlBytes(trim(decode(pool, used, field(item, "account"))), best) {
+                let amount: Maybe<i32> = std.parse.parseI32(trim(field(item, "amount")))
+                if amount.has {
+                    balance = balance + amount.value
+                }
+                count = count + 1
+            }
+            p = skip(entries, e)
+        }
+        if emitted {
+            check append(output, used, ",")
+        }
+        check append(output, used, "{\"account\":")
+        check emitString(output, used, best)
+        check append(output, used, ",\"balance\":")
+        check emitInt(output, used, balance)
+        check append(output, used, ",\"count\":")
+        check emitInt(output, used, count)
+        check append(output, used, "}")
+        previous = best
+        emitted = true
+    }
+    check append(output, used, "],\"accepted\":")
+    check emitInt(output, used, accepted)
+    check append(output, used, "}")
+}
+
+fn nodeIndex(pool: MutSpan<u8>, used: MutSpan<usize>, nodes: Span<u8>, name: Span<u8>) -> usize {
+    var p: usize = skip(nodes, 1)
+    var i: usize = 0
+    while p < std.mem.len(nodes) && nodes[p] != 93 {
+        let e: usize = valueEnd(nodes, p)
+        if std.mem.eqlBytes(decode(pool, used, slice(nodes, p, e)), name) {
+            return i
+        }
+        i = i + 1
+        p = skip(nodes, e)
+    }
+    return i
+}
+
+fn nodeCount(nodes: Span<u8>) -> usize {
+    var p: usize = skip(nodes, 1)
+    var n: usize = 0
+    while p < std.mem.len(nodes) && nodes[p] != 93 {
+        n = n + 1
+        p = skip(nodes, valueEnd(nodes, p))
+    }
+    return n
+}
+
+fn topo(pool: MutSpan<u8>, used: MutSpan<usize>, output: MutSpan<u8>, input: Span<u8>) -> Void raises {
+    let nodes: Span<u8> = field(input, "nodes")
+    let edges: Span<u8> = field(input, "edges")
+    let n: usize = nodeCount(nodes)
+    var storage: [65536]u8 = [0; 65536]
+    if true {
+        let done: MutSpan<u8> = storage
+        let cleared: usize = std.mem.fill(done, 0)
+        var p: usize = skip(edges, 1)
+        while p < std.mem.len(edges) && edges[p] != 93 {
+            let e: usize = valueEnd(edges, p)
+            let edge: Span<u8> = slice(edges, p, e)
+            let x: usize = skip(edge, 1)
+            let xe: usize = valueEnd(edge, x)
+            let y: usize = skip(edge, xe)
+            if nodeIndex(pool, used, nodes, decode(pool, used, slice(edge, x, xe))) == n || nodeIndex(pool, used, nodes, decode(pool, used, slice(edge, y, valueEnd(edge, y)))) == n {
+                check append(output, used, "{\"error\":\"unknown_node\"}")
+                return
+            }
+            p = skip(edges, e)
+        }
+        var k: usize = 0
+        while k < n {
+            var best: usize = n
+            var bestName: Span<u8> = ""
+            var np: usize = skip(nodes, 1)
+            var i: usize = 0
+            while i < n {
+                let ne: usize = valueEnd(nodes, np)
+                let name: Span<u8> = decode(pool, used, slice(nodes, np, ne))
+                if done[i] == 0 {
+                    var available: Bool = true
+                    p = skip(edges, 1)
+                    while p < std.mem.len(edges) && edges[p] != 93 {
+                        let e: usize = valueEnd(edges, p)
+                        let edge: Span<u8> = slice(edges, p, e)
+                        let x: usize = skip(edge, 1)
+                        let xe: usize = valueEnd(edge, x)
+                        let y: usize = skip(edge, xe)
+                        if std.mem.eqlBytes(decode(pool, used, slice(edge, y, valueEnd(edge, y))), name) {
+                            let source: usize = nodeIndex(pool, used, nodes, decode(pool, used, slice(edge, x, xe)))
+                            if done[source] == 0 {
+                                available = false
+                            }
+                        }
+                        p = skip(edges, e)
+                    }
+                    if available && (best == n || less(name, bestName)) {
+                        best = i
+                        bestName = name
+                    }
+                }
+                i = i + 1
+                np = skip(nodes, ne)
+            }
+            if best == n {
+                check append(output, used, "{\"error\":\"cycle\"}")
+                return
+            }
+            done[best] = 1
+            k = k + 1
+        }
+        let reset: usize = std.mem.fill(done, 0)
+        check append(output, used, "{\"order\":[")
+        k = 0
+        while k < n {
+            var best: usize = n
+            var bestName: Span<u8> = ""
+            var np: usize = skip(nodes, 1)
+            var i: usize = 0
+            while i < n {
+                let ne: usize = valueEnd(nodes, np)
+                let name: Span<u8> = decode(pool, used, slice(nodes, np, ne))
+                if done[i] == 0 {
+                    var available: Bool = true
+                    p = skip(edges, 1)
+                    while p < std.mem.len(edges) && edges[p] != 93 {
+                        let e: usize = valueEnd(edges, p)
+                        let edge: Span<u8> = slice(edges, p, e)
+                        let x: usize = skip(edge, 1)
+                        let xe: usize = valueEnd(edge, x)
+                        let y: usize = skip(edge, xe)
+                        if std.mem.eqlBytes(decode(pool, used, slice(edge, y, valueEnd(edge, y))), name) {
+                            let source: usize = nodeIndex(pool, used, nodes, decode(pool, used, slice(edge, x, xe)))
+                            if done[source] == 0 {
+                                available = false
+                            }
+                        }
+                        p = skip(edges, e)
+                    }
+                    if available && (best == n || less(name, bestName)) {
+                        best = i
+                        bestName = name
+                    }
+                }
+                i = i + 1
+                np = skip(nodes, ne)
+            }
+            if k > 0 {
+                check append(output, used, ",")
+            }
+            check emitString(output, used, bestName)
+            done[best] = 1
+            k = k + 1
+        }
+        check append(output, used, "]}")
+    }
+}
+
+fn whitespace(s: Span<u8>, pos: MutSpan<usize>) -> Void {
+    while pos[0] < std.mem.len(s) && ws(s[pos[0]]) {
+        pos[0] = pos[0] + 1
+    }
+}
+
+fn expression(s: Span<u8>, pos: MutSpan<usize>, failure: MutSpan<i32>, minimum: i32) -> i64 {
+    whitespace(s, pos)
+    var negative: Bool = false
+    while pos[0] < std.mem.len(s) && (s[pos[0]] == 43 || s[pos[0]] == 45) {
+        if s[pos[0]] == 45 {
+            negative = !negative
+        }
+        pos[0] = pos[0] + 1
+        whitespace(s, pos)
+    }
+    var result: i64 = 0
+    if pos[0] >= std.mem.len(s) {
+        failure[0] = 1
+        return 0
+    }
+    if s[pos[0]] == 40 {
+        pos[0] = pos[0] + 1
+        result = expression(s, pos, failure, 0)
+        whitespace(s, pos)
+        if pos[0] >= std.mem.len(s) {
+            failure[0] = 1
+            return 0
+        }
+        if s[pos[0]] != 41 {
+            failure[0] = 1
+            return 0
+        }
+        pos[0] = pos[0] + 1
+    } else {
+        if s[pos[0]] < 48 || s[pos[0]] > 57 {
+            failure[0] = 1
+            return 0
+        }
+        while pos[0] < std.mem.len(s) && s[pos[0]] >= 48 && s[pos[0]] <= 57 {
+            result = result * 10 + s[pos[0]] as i64 - 48
+            pos[0] = pos[0] + 1
+        }
+    }
+    if negative {
+        result = -result
+    }
+    while failure[0] == 0 {
+        whitespace(s, pos)
+        if pos[0] >= std.mem.len(s) {
+            break
+        }
+        let op: u8 = s[pos[0]]
+        var precedence: i32 = -1
+        if op == 43 || op == 45 {
+            precedence = 1
+        }
+        if op == 42 || op == 47 {
+            precedence = 2
+        }
+        if precedence < minimum {
+            break
+        }
+        pos[0] = pos[0] + 1
+        let right: i64 = expression(s, pos, failure, precedence + 1)
+        if failure[0] != 0 {
+            return 0
+        }
+        if op == 43 {
+            result = result + right
+        }
+        if op == 45 {
+            result = result - right
+        }
+        if op == 42 {
+            result = result * right
+        }
+        if op == 47 {
+            if right == 0 {
+                failure[0] = 2
+                return 0
+            }
+            result = result / right
+        }
+    }
+    return result
+}
+
+fn calc(pool: MutSpan<u8>, used: MutSpan<usize>, output: MutSpan<u8>, input: Span<u8>) -> Void raises {
+    let s: Span<u8> = decode(pool, used, field(input, "expr"))
+    var pos: [1]usize = [0]
+    var failure: [1]i32 = [0]
+    let result: i64 = expression(s, pos, failure, 0)
+    whitespace(s, pos)
+    if failure[0] == 2 {
+        check append(output, used, "{\"error\":\"division_by_zero\"}")
+        return
+    }
+    if failure[0] != 0 || pos[0] != std.mem.len(s) {
+        check append(output, used, "{\"error\":\"syntax\"}")
+        return
+    }
+    check append(output, used, "{\"value\":")
+    check emitInt(output, used, result as i32)
+    check append(output, used, "}")
+}
+
+fn append(output: MutSpan<u8>, cursor: MutSpan<usize>, s: Span<u8>) -> Void raises {
+    var i: usize = 0
+    while i < std.mem.len(s) {
+        output[cursor[1]] = s[i]
+        cursor[1] = cursor[1] + 1
+        i = i + 1
+    }
+}
+
+fn trim(s: Span<u8>) -> Span<u8> {
+    var a: usize = 0
+    var b: usize = std.mem.len(s)
+    while a < b && ws(s[a]) {
+        a = a + 1
+    }
+    while b > a && ws(s[b - 1]) {
+        b = b - 1
+    }
+    return slice(s, a, b)
+}
+
+fn whitespaceTest(a: Bool, b: Bool) -> Bool {
+    return a && b && ws(9_u8) && ws(10_u8) && ws(11_u8) && ws(12_u8) && ws(13_u8) && ws(32_u8) && !ws(65_u8) && less("A", "a") && less("a", "aa") && !less("aa", "a")
+}
+
+fn merge(output: MutSpan<u8>, used: MutSpan<usize>, input: Span<u8>) -> Void raises {
+    let intervals: Span<u8> = field(input, "intervals")
+    var p: usize = skip(intervals, 1)
+    while p < std.mem.len(intervals) && intervals[p] != 93 {
+        let e: usize = valueEnd(intervals, p)
+        let item: Span<u8> = slice(intervals, p, e)
+        let x: usize = skip(item, 1)
+        let xe: usize = valueEnd(item, x)
+        let y: usize = skip(item, xe)
+        let a: Maybe<i32> = std.parse.parseI32(trim(slice(item, x, xe)))
+        let b: Maybe<i32> = std.parse.parseI32(trim(slice(item, y, valueEnd(item, y))))
+        if a.has && b.has {
+            if a.value > b.value {
+                check append(output, used, "{\"error\":\"invalid_interval\"}")
+                return
+            }
+        }
+        p = skip(intervals, e)
+    }
+    check append(output, used, "{\"intervals\":[")
+    var selected: Bool = false
+    var previousStart: i32 = 0
+    var previousEnd: i32 = 0
+    var currentStart: i32 = 0
+    var currentEnd: i32 = 0
+    while true {
+        var found: Bool = false
+        var bestStart: i32 = 0
+        var bestEnd: i32 = 0
+        p = skip(intervals, 1)
+        while p < std.mem.len(intervals) && intervals[p] != 93 {
+            let e: usize = valueEnd(intervals, p)
+            let item: Span<u8> = slice(intervals, p, e)
+            let x: usize = skip(item, 1)
+            let xe: usize = valueEnd(item, x)
+            let y: usize = skip(item, xe)
+            let a: Maybe<i32> = std.parse.parseI32(trim(slice(item, x, xe)))
+            let b: Maybe<i32> = std.parse.parseI32(trim(slice(item, y, valueEnd(item, y))))
+            if a.has && b.has {
+                if (!selected || a.value > previousStart || a.value == previousStart && b.value > previousEnd) && (!found || a.value < bestStart || a.value == bestStart && b.value < bestEnd) {
+                    bestStart = a.value
+                    bestEnd = b.value
+                    found = true
+                }
+            }
+            p = skip(intervals, e)
+        }
+        if !found {
+            break
+        }
+        if !selected {
+            currentStart = bestStart
+            currentEnd = bestEnd
+        } else if bestStart <= currentEnd {
+            if bestEnd > currentEnd {
+                currentEnd = bestEnd
+            }
+        } else {
+            check append(output, used, "[")
+            check emitInt(output, used, currentStart)
+            check append(output, used, ",")
+            check emitInt(output, used, currentEnd)
+            check append(output, used, "],")
+            currentStart = bestStart
+            currentEnd = bestEnd
+        }
+        previousStart = bestStart
+        previousEnd = bestEnd
+        selected = true
+    }
+    if selected {
+        check append(output, used, "[")
+        check emitInt(output, used, currentStart)
+        check append(output, used, ",")
+        check emitInt(output, used, currentEnd)
+        check append(output, used, "]")
+    }
+    check append(output, used, "]}")
+}

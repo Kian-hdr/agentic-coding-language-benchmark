@@ -1,0 +1,21 @@
+{
+  "language": "baml",
+  "trial": 1,
+  "phase": "extension",
+  "model": "gpt-6.1-sol",
+  "reasoning": "medium",
+  "seconds": 57.25,
+  "exit_code": 0,
+  "timed_out": false,
+  "usage": [
+    {
+      "input_tokens": 277546,
+      "cached_input_tokens": 227072,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2028,
+      "reasoning_output_tokens": 46
+    }
+  ],
+  "tool_calls": 5,
+  "errors": []
+}

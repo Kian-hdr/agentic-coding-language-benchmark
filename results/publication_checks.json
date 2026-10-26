@@ -1,0 +1,49 @@
+{
+  "classification": "publication-time validation, distinct from historical scores",
+  "date": "2026-10-27",
+  "checks": {
+    "offline_evidence_full": {
+      "passed": true,
+      "exported_files": 952,
+      "frozen_gzip_files": 42,
+      "oracle_response_comparisons": 3946
+    },
+    "derived_analysis_check": true,
+    "focused_unit_tests": 7,
+    "long_dataset_original_input_and_expected_hashes": true,
+    "generic_public_pattern_and_link_checks": true
+  },
+  "candidate_smokes": [
+    {
+      "scope": [
+        "deep",
+        "python_1",
+        "maintenance"
+      ],
+      "passed": 4,
+      "total": 4,
+      "classification": "new publication-adapter rerun, not original observations"
+    },
+    {
+      "scope": [
+        "pilot",
+        "python_1",
+        "initial"
+      ],
+      "passed": 69,
+      "total": 69,
+      "classification": "new publication-adapter rerun, not original observations"
+    },
+    {
+      "scope": [
+        "pilot",
+        "python_2",
+        "extension"
+      ],
+      "passed": 89,
+      "total": 89,
+      "classification": "new publication-adapter rerun, not original observations"
+    }
+  ],
+  "not_run": "Other compiler adapters were not revalidated as a publication-time batch; model authoring was not rerun. Original scored results remain in archive. Public CI evidence follows on GitHub."
+}

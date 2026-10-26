@@ -1,0 +1,181 @@
+{
+  "language": "zero",
+  "stage": "optimized",
+  "mode": "validate",
+  "worker": "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/runs/zero/worker.sh",
+  "platform": "darwin",
+  "measurement": "single prebuilt file worker; lifecycle CPU/RSS; warm filesystem cache; no per-record subprocess; correctness from independent expected JSONL",
+  "seed": null,
+  "randomization_scope": "one language, dataset order within each repetition block",
+  "scheduled_languages": [
+    "zero"
+  ],
+  "expected_repetitions": 1,
+  "empty_repetitions": null,
+  "records": [
+    {
+      "language": "zero",
+      "dataset": "validation",
+      "kind": "validation",
+      "size": "mixed",
+      "repetition": 0,
+      "sequence": 0,
+      "global_sequence": 0,
+      "items": 0,
+      "requests": 80,
+      "input": "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/datasets/validation.jsonl",
+      "expected": "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/datasets/validation.expected.jsonl",
+      "input_bytes": 296912,
+      "expected_bytes": 129080,
+      "command": [
+        "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/runs/zero/worker.sh",
+        "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/datasets/validation.jsonl",
+        "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/results/zero_optimized_validate_artifacts/000_validation_r0.output.jsonl"
+      ],
+      "timeout_seconds": 30.0,
+      "stdout_file": "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/results/zero_optimized_validate_artifacts/000_validation_r0.stdout.log",
+      "stderr_file": "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/results/zero_optimized_validate_artifacts/000_validation_r0.stderr.log",
+      "output_file": "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/results/zero_optimized_validate_artifacts/000_validation_r0.output.jsonl",
+      "runtime_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      },
+      "resource_scope": "wait4 child lifetime; reaped descendants as accounted by OS; RSS is not aggregate tree RSS",
+      "elapsed_seconds": 0.009328917,
+      "exit_code": 1,
+      "user_cpu_seconds": 0.001423,
+      "system_cpu_seconds": 0.002672,
+      "cpu_seconds": 0.004095,
+      "peak_rss_raw": 2375680,
+      "peak_rss_source_units": "bytes",
+      "peak_rss_bytes": 2375680,
+      "peak_rss_mib": 2.265625,
+      "remaining_process_group_members": [],
+      "observed_descendant_pids": [],
+      "process_tree_observation": "best-effort snapshots; short-lived descendants may be missed; wrapper requires independent exec audit",
+      "process_tree_unsupported": false,
+      "resource_accounting_supported": true,
+      "timed_out": false,
+      "termination_signals": [],
+      "tree_observation_errors": 0,
+      "output_bytes": 0,
+      "stdout_bytes": 0,
+      "stderr_bytes": 214,
+      "correct": false,
+      "actual_responses": 0,
+      "expected_responses": 80,
+      "mismatches": [
+        {
+          "response": 1,
+          "error": "missing response",
+          "expected_excerpt": "{\"customers\":[{\"customer\":\"X\",\"gross_cents\":97930144,\"refund_cents\":79035671,\"net_cents\":18894473,\"count\":7},{\"customer\":\"Z\",\"gross_cents\":56870612,\"refund_cents\":0,\"net_cents\":56870612,\"count\":2},{\"customer\":\"a\",\"gross_cents\":33096362,\"refund_cents\":6393219,\"net_cents\":26703143,\"count\":3},{\"customer\":\"a10\",\"gross_cents\":149545362,\"refund_cents\":0,\"net_cents\":149545362,\"count\":5},{\"customer\":\"a2\",\"gross_cents\":143436407,\"refund_cents\":0,\"net_cents\":143436407,\"count\":4},{\"customer\":\"aa\",\"gross_cents\":109289948,\"refund_cents\":21051500,\"net_cents\":88238448,\"count\":4},{\"customer\":\"b\",\"gross_cents\":136135968,\"refund_cents\":0,\"net_cents\":136135968,\"count\":4},{\"customer\":\"customer_60\",\"gross_cents\":0,\"refund_cents\":40652528,\"net_cents\":-40652528,\"count\":1},{\"customer\":\"customer_61\",\"gross_cents\":"
+        },
+        {
+          "response": 2,
+          "error": "missing response",
+          "expected_excerpt": "{\"customers\":[{\"customer\":\"X\",\"gross_cents\":47474510,\"refund_cents\":0,\"net_cents\":47474510,\"count\":2},{\"customer\":\"Z\",\"gross_cents\":11436082,\"refund_cents\":4754178,\"net_cents\":6681904,\"count\":2},{\"customer\":\"a\",\"gross_cents\":1494940,\"refund_cents\":40512066,\"net_cents\":-39017126,\"count\":2},{\"customer\":\"a10\",\"gross_cents\":53626732,\"refund_cents\":10015334,\"net_cents\":43611398,\"count\":3},{\"customer\":\"a2\",\"gross_cents\":37510570,\"refund_cents\":12407758,\"net_cents\":25102812,\"count\":2},{\"customer\":\"aa\",\"gross_cents\":77826501,\"refund_cents\":0,\"net_cents\":77826501,\"count\":3},{\"customer\":\"b\",\"gross_cents\":46234463,\"refund_cents\":39776259,\"net_cents\":6458204,\"count\":2},{\"customer\":\"customer_14\",\"gross_cents\":5343044,\"refund_cents\":0,\"net_cents\":5343044,\"count\":1}],\"accepted\":17,\"duplicates\":18,\"ignore"
+        },
+        {
+          "response": 3,
+          "error": "missing response",
+          "expected_excerpt": "{\"customers\":[],\"accepted\":0,\"duplicates\":1,\"ignored\":1,\"rejected\":0,\"gross_cents\":0,\"refund_cents\":0,\"net_cents\":0}"
+        }
+      ],
+      "mismatch_count": 80,
+      "valid": false
+    },
+    {
+      "language": "zero",
+      "dataset": "formatting",
+      "kind": "validation",
+      "size": "mixed",
+      "repetition": 0,
+      "sequence": 1,
+      "global_sequence": 1,
+      "items": 0,
+      "requests": 12,
+      "input": "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/datasets/formatting.jsonl",
+      "expected": "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/datasets/formatting.expected.jsonl",
+      "input_bytes": 100059,
+      "expected_bytes": 93177,
+      "command": [
+        "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/runs/zero/worker.sh",
+        "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/datasets/formatting.jsonl",
+        "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/results/zero_optimized_validate_artifacts/001_formatting_r0.output.jsonl"
+      ],
+      "timeout_seconds": 30.0,
+      "stdout_file": "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/results/zero_optimized_validate_artifacts/001_formatting_r0.stdout.log",
+      "stderr_file": "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/results/zero_optimized_validate_artifacts/001_formatting_r0.stderr.log",
+      "output_file": "{ORIGINAL_BENCHMARK_ROOT}/deep_phase/results/zero_optimized_validate_artifacts/001_formatting_r0.output.jsonl",
+      "runtime_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      },
+      "resource_scope": "wait4 child lifetime; reaped descendants as accounted by OS; RSS is not aggregate tree RSS",
+      "elapsed_seconds": 0.005846792,
+      "exit_code": 1,
+      "user_cpu_seconds": 0.001472,
+      "system_cpu_seconds": 0.002549,
+      "cpu_seconds": 0.004021,
+      "peak_rss_raw": 2375680,
+      "peak_rss_source_units": "bytes",
+      "peak_rss_bytes": 2375680,
+      "peak_rss_mib": 2.265625,
+      "remaining_process_group_members": [],
+      "observed_descendant_pids": [],
+      "process_tree_observation": "best-effort snapshots; short-lived descendants may be missed; wrapper requires independent exec audit",
+      "process_tree_unsupported": false,
+      "resource_accounting_supported": true,
+      "timed_out": false,
+      "termination_signals": [],
+      "tree_observation_errors": 0,
+      "output_bytes": 0,
+      "stdout_bytes": 0,
+      "stderr_bytes": 214,
+      "correct": false,
+      "actual_responses": 0,
+      "expected_responses": 12,
+      "mismatches": [
+        {
+          "response": 1,
+          "error": "missing response",
+          "expected_excerpt": "{\"error\":\"invalid_json\"}"
+        },
+        {
+          "response": 2,
+          "error": "missing response",
+          "expected_excerpt": "{\"error\":\"unknown_op\"}"
+        },
+        {
+          "response": 3,
+          "error": "missing response",
+          "expected_excerpt": "{\"customers\":[],\"accepted\":0,\"duplicates\":1,\"ignored\":0,\"rejected\":1,\"gross_cents\":0,\"refund_cents\":0,\"net_cents\":0}"
+        }
+      ],
+      "mismatch_count": 12,
+      "valid": false
+    }
+  ],
+  "limitations": [
+    "CPU/RSS include startup and worker shutdown, exclude builds and output checking.",
+    "Batch elapsed time does not provide individual-request p95/p99 or energy.",
+    "Process-tree checks are observational and require independent wrapper audit.",
+    "After two runtime timeouts per language/stage, remaining perf cases are unmeasured resource-budget skips, not proven failures."
+  ],
+  "summary": {
+    "planned": 2,
+    "attempted": 2,
+    "valid": 0,
+    "skipped": 0,
+    "pending": 0,
+    "all_valid": false
+  }
+}

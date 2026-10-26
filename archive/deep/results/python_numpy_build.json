@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "Built optimized Python bytecode: worker.pyc\n",
+  "stderr": ""
+}

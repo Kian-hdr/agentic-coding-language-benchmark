@@ -1,0 +1,30 @@
+{
+  "classification": "publication-time serialization integrity; binary encoding not byte-identical; text-structure equality checked",
+  "records": [
+    {
+      "public": "archive/pilot/sources/zero_1_initial/zero.graph",
+      "canonical_text_roundtrip_equal": false,
+      "binary_roundtrip_matches_original": false
+    },
+    {
+      "public": "archive/pilot/sources/zero_1_extension/zero.graph",
+      "canonical_text_roundtrip_equal": false,
+      "binary_roundtrip_matches_original": false
+    },
+    {
+      "public": "archive/pilot/sources/zero_2_initial/zero.graph",
+      "canonical_text_roundtrip_equal": false,
+      "binary_roundtrip_matches_original": false
+    },
+    {
+      "public": "archive/pilot/sources/zero_2_extension/zero.graph",
+      "canonical_text_roundtrip_equal": false,
+      "binary_roundtrip_matches_original": false
+    },
+    {
+      "public": "archive/deep/sources/zero/maintenance/source/zero.graph",
+      "canonical_text_roundtrip_equal": false,
+      "binary_roundtrip_matches_original": false
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "validation_summary": {
+    "planned": 2,
+    "attempted": 2,
+    "valid": 2,
+    "skipped": 0,
+    "pending": 0,
+    "all_valid": true
+  },
+  "reproducible_build": {
+    "exit_code": 0,
+    "seconds": 0.09758637500000006,
+    "stdout": "",
+    "stderr": "    Finished `release` profile [optimized] target(s) in 0.06s\n"
+  },
+  "failures": [],
+  "runtime_observations": [
+    {
+      "dataset": "invoice_large",
+      "size": "large",
+      "items": 262144,
+      "valid": true,
+      "cpu_seconds": 0.09663999999999999,
+      "elapsed_seconds": 0.103390917,
+      "peak_rss_mib": 2.796875,
+      "cpu_seconds_per_million_input_items": 0.36865234374999994,
+      "timed_out": false
+    },
+    {
+      "dataset": "access_log_large",
+      "size": "large",
+      "items": 262144,
+      "valid": true,
+      "cpu_seconds": 0.102085,
+      "elapsed_seconds": 0.110725125,
+      "peak_rss_mib": 2.796875,
+      "cpu_seconds_per_million_input_items": 0.3894233703613281,
+      "timed_out": false
+    },
+    {
+      "dataset": "telemetry_medium",
+      "size": "medium",
+      "items": 262144,
+      "valid": true,
+      "cpu_seconds": 0.008771999999999999,
+      "elapsed_seconds": 0.01277125,
+      "peak_rss_mib": 2.453125,
+      "cpu_seconds_per_million_input_items": 0.03346252441406249,
+      "timed_out": false
+    },
+    {
+      "dataset": "invoice_medium",
+      "size": "medium",
+      "items": 32768,
+      "valid": true,
+      "cpu_seconds": 0.015047999999999999,
+      "elapsed_seconds": 0.019098458,
+      "peak_rss_mib": 2.765625,
+      "cpu_seconds_per_million_input_items": 0.45922851562499994,
+      "timed_out": false
+    },
+    {
+      "dataset": "empty",
+      "size": "empty",
+      "items": 0,
+      "valid": true,
+      "cpu_seconds": 0.004322,
+      "elapsed_seconds": 0.00923375,
+      "peak_rss_mib": 1.859375,
+      "cpu_seconds_per_million_input_items": null,
+      "timed_out": false
+    },
+    {
+      "dataset": "telemetry_large",
+      "size": "large",
+      "items": 2097152,
+      "valid": true,
+      "cpu_seconds": 0.042894,
+      "elapsed_seconds": 0.047587333,
+      "peak_rss_mib": 2.484375,
+      "cpu_seconds_per_million_input_items": 0.020453453063964844,
+      "timed_out": false
+    },
+    {
+      "dataset": "access_log_medium",
+      "size": "medium",
+      "items": 32768,
+      "valid": true,
+      "cpu_seconds": 0.016634,
+      "elapsed_seconds": 0.020753708,
+      "peak_rss_mib": 2.78125,
+      "cpu_seconds_per_million_input_items": 0.50762939453125,
+      "timed_out": false
+    },
+    {
+      "dataset": "empty",
+      "size": "empty",
+      "items": 0,
+      "valid": true,
+      "cpu_seconds": 0.0037459999999999998,
+      "elapsed_seconds": 0.007543875,
+      "peak_rss_mib": 1.859375,
+      "cpu_seconds_per_million_input_items": null,
+      "timed_out": false
+    },
+    {
+      "dataset": "invoice_large",
+      "size": "large",
+      "items": 262144,
+      "valid": true,
+      "cpu_seconds": 0.09550299999999999,
+      "elapsed_seconds": 0.101140375,
+      "peak_rss_mib": 2.78125,
+      "cpu_seconds_per_million_input_items": 0.3643150329589843,
+      "timed_out": false
+    },
+    {
+      "dataset": "telemetry_large",
+      "size": "large",
+      "items": 2097152,
+      "valid": true,
+      "cpu_seconds": 0.043047,
+      "elapsed_seconds": 0.048484708,
+      "peak_rss_mib": 2.5,
+      "cpu_seconds_per_million_input_items": 0.020526409149169922,
+      "timed_out": false
+    },
+    {
+      "dataset": "access_log_large",
+      "size": "large",
+      "items": 262144,
+      "valid": true,
+      "cpu_seconds": 0.101403,
+      "elapsed_seconds": 0.10732225,
+      "peak_rss_mib": 2.859375,
+      "cpu_seconds_per_million_input_items": 0.3868217468261719,
+      "timed_out": false
+    },
+    {
+      "dataset": "access_log_medium",
+      "size": "medium",
+      "items": 32768,
+      "valid": true,
+      "cpu_seconds": 0.016242,
+      "elapsed_seconds": 0.02055875,
+      "peak_rss_mib": 2.8125,
+      "cpu_seconds_per_million_input_items": 0.49566650390625,
+      "timed_out": false
+    },
+    {
+      "dataset": "invoice_medium",
+      "size": "medium",
+      "items": 32768,
+      "valid": true,
+      "cpu_seconds": 0.016125,
+      "elapsed_seconds": 0.020526541,
+      "peak_rss_mib": 2.78125,
+      "cpu_seconds_per_million_input_items": 0.492095947265625,
+      "timed_out": false
+    },
+    {
+      "dataset": "telemetry_medium",
+      "size": "medium",
+      "items": 262144,
+      "valid": true,
+      "cpu_seconds": 0.009285,
+      "elapsed_seconds": 0.013841083,
+      "peak_rss_mib": 2.46875,
+      "cpu_seconds_per_million_input_items": 0.035419464111328125,
+      "timed_out": false
+    },
+    {
+      "dataset": "access_log_medium",
+      "size": "medium",
+      "items": 32768,
+      "valid": true,
+      "cpu_seconds": 0.016545999999999998,
+      "elapsed_seconds": 0.02119575,
+      "peak_rss_mib": 2.8125,
+      "cpu_seconds_per_million_input_items": 0.50494384765625,
+      "timed_out": false
+    },
+    {
+      "dataset": "invoice_large",
+      "size": "large",
+      "items": 262144,
+      "valid": true,
+      "cpu_seconds": 0.100462,
+      "elapsed_seconds": 0.106472667,
+      "peak_rss_mib": 2.796875,
+      "cpu_seconds_per_million_input_items": 0.38323211669921875,
+      "timed_out": false
+    },
+    {
+      "dataset": "empty",
+      "size": "empty",
+      "items": 0,
+      "valid": true,
+      "cpu_seconds": 0.003907,
+      "elapsed_seconds": 0.007947583,
+      "peak_rss_mib": 1.875,
+      "cpu_seconds_per_million_input_items": null,
+      "timed_out": false
+    },
+    {
+      "dataset": "invoice_medium",
+      "size": "medium",
+      "items": 32768,
+      "valid": true,
+      "cpu_seconds": 0.015376999999999998,
+      "elapsed_seconds": 0.020067833,
+      "peak_rss_mib": 2.765625,
+      "cpu_seconds_per_million_input_items": 0.46926879882812494,
+      "timed_out": false
+    },
+    {
+      "dataset": "telemetry_large",
+      "size": "large",
+      "items": 2097152,
+      "valid": true,
+      "cpu_seconds": 0.043418,
+      "elapsed_seconds": 0.048363167,
+      "peak_rss_mib": 2.515625,
+      "cpu_seconds_per_million_input_items": 0.02070331573486328,
+      "timed_out": false
+    },
+    {
+      "dataset": "telemetry_medium",
+      "size": "medium",
+      "items": 262144,
+      "valid": true,
+      "cpu_seconds": 0.009339,
+      "elapsed_seconds": 0.014600292,
+      "peak_rss_mib": 2.515625,
+      "cpu_seconds_per_million_input_items": 0.035625457763671875,
+      "timed_out": false
+    },
+    {
+      "dataset": "access_log_large",
+      "size": "large",
+      "items": 262144,
+      "valid": true,
+      "cpu_seconds": 0.106176,
+      "elapsed_seconds": 0.111930375,
+      "peak_rss_mib": 2.765625,
+      "cpu_seconds_per_million_input_items": 0.405029296875,
+      "timed_out": false
+    },
+    {
+      "dataset": "telemetry_medium",
+      "size": "medium",
+      "items": 262144,
+      "valid": true,
+      "cpu_seconds": 0.008863,
+      "elapsed_seconds": 0.012902166,
+      "peak_rss_mib": 2.328125,
+      "cpu_seconds_per_million_input_items": 0.033809661865234375,
+      "timed_out": false
+    },
+    {
+      "dataset": "access_log_medium",
+      "size": "medium",
+      "items": 32768,
+      "valid": true,
+      "cpu_seconds": 0.016732999999999998,
+      "elapsed_seconds": 0.021423375,
+      "peak_rss_mib": 2.78125,
+      "cpu_seconds_per_million_input_items": 0.5106506347656249,
+      "timed_out": false
+    },
+    {
+      "dataset": "access_log_large",
+      "size": "large",
+      "items": 262144,
+      "valid": true,
+      "cpu_seconds": 0.110996,
+      "elapsed_seconds": 0.117155292,
+      "peak_rss_mib": 2.796875,
+      "cpu_seconds_per_million_input_items": 0.4234161376953125,
+      "timed_out": false
+    },
+    {
+      "dataset": "telemetry_large",
+      "size": "large",
+      "items": 2097152,
+      "valid": true,
+      "cpu_seconds": 0.043383,
+      "elapsed_seconds": 0.048112125,
+      "peak_rss_mib": 2.484375,
+      "cpu_seconds_per_million_input_items": 0.020686626434326172,
+      "timed_out": false
+    },
+    {
+      "dataset": "invoice_large",
+      "size": "large",
+      "items": 262144,
+      "valid": true,
+      "cpu_seconds": 0.100773,
+      "elapsed_seconds": 0.106944458,
+      "peak_rss_mib": 2.796875,
+      "cpu_seconds_per_million_input_items": 0.3844184875488281,
+      "timed_out": false
+    },
+    {
+      "dataset": "invoice_medium",
+      "size": "medium",
+      "items": 32768,
+      "valid": true,
+      "cpu_seconds": 0.015536999999999999,
+      "elapsed_seconds": 0.019975416,
+      "peak_rss_mib": 2.78125,
+      "cpu_seconds_per_million_input_items": 0.47415161132812494,
+      "timed_out": false
+    },
+    {
+      "dataset": "access_log_medium",
+      "size": "medium",
+      "items": 32768,
+      "valid": true,
+      "cpu_seconds": 0.016878999999999998,
+      "elapsed_seconds": 0.021451417,
+      "peak_rss_mib": 2.78125,
+      "cpu_seconds_per_million_input_items": 0.5151062011718749,
+      "timed_out": false
+    },
+    {
+      "dataset": "invoice_large",
+      "size": "large",
+      "items": 262144,
+      "valid": true,
+      "cpu_seconds": 0.10424399999999999,
+      "elapsed_seconds": 0.11029125,
+      "peak_rss_mib": 2.796875,
+      "cpu_seconds_per_million_input_items": 0.39765930175781244,
+      "timed_out": false
+    },
+    {
+      "dataset": "telemetry_medium",
+      "size": "medium",
+      "items": 262144,
+      "valid": true,
+      "cpu_seconds": 0.009158999999999999,
+      "elapsed_seconds": 0.013831,
+      "peak_rss_mib": 2.3125,
+      "cpu_seconds_per_million_input_items": 0.03493881225585937,
+      "timed_out": false
+    },
+    {
+      "dataset": "invoice_medium",
+      "size": "medium",
+      "items": 32768,
+      "valid": true,
+      "cpu_seconds": 0.015871999999999997,
+      "elapsed_seconds": 0.020444292,
+      "peak_rss_mib": 2.78125,
+      "cpu_seconds_per_million_input_items": 0.4843749999999999,
+      "timed_out": false
+    },
+    {
+      "dataset": "telemetry_large",
+      "size": "large",
+      "items": 2097152,
+      "valid": true,
+      "cpu_seconds": 0.043026,
+      "elapsed_seconds": 0.048209292,
+      "peak_rss_mib": 2.484375,
+      "cpu_seconds_per_million_input_items": 0.020516395568847656,
+      "timed_out": false
+    },
+    {
+      "dataset": "access_log_large",
+      "size": "large",
+      "items": 262144,
+      "valid": true,
+      "cpu_seconds": 0.101824,
+      "elapsed_seconds": 0.107965333,
+      "peak_rss_mib": 2.78125,
+      "cpu_seconds_per_million_input_items": 0.388427734375,
+      "timed_out": false
+    }
+  ],
+  "note": "These are local batch-worker results, not per-request latency or pure algorithm speed. Correctness first; do not hardcode examples."
+}

@@ -1,0 +1,11 @@
+This is a separately disclosed exploratory Python+NumPy reference,
+not an equal-budget trial. Starting from the existing correct Python worker,
+replace ONLY telemetry's numerical kernel with NumPy int64 vector operations
+where helpful. Preserve exact integer semantics, truncation toward zero, and all
+other behavior including invoice fee feature and streaming file IO. Avoid floats
+for exact integer arithmetic. The original SPEC.md still governs the worker.
+NumPy 2.5.4 is already installed in {ORIGINAL_BENCHMARK_ROOT}/deep_phase/toolchains/python/bin/python .
+Use that interpreter in worker.sh; build.py may compile with the same interpreter.
+Keep CLI worker.sh INPUT_JSONL OUTPUT_JSONL and build.sh. No other dependencies,
+network, goals, delegation, cross-run/evaluator access or other changes. Test
+your implementation and build before finishing. Maximum 180 seconds.

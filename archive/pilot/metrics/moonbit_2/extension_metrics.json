@@ -1,0 +1,21 @@
+{
+  "language": "moonbit",
+  "trial": 2,
+  "phase": "extension",
+  "model": "gpt-6.1-sol",
+  "reasoning": "medium",
+  "seconds": 38.733,
+  "exit_code": 0,
+  "timed_out": false,
+  "usage": [
+    {
+      "input_tokens": 165185,
+      "cached_input_tokens": 129280,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1527,
+      "reasoning_output_tokens": 29
+    }
+  ],
+  "tool_calls": 4,
+  "errors": []
+}

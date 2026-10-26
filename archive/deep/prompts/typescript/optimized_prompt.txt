@@ -1,0 +1,10 @@
+Read FEEDBACK.json and inspect your current implementation. You have 360
+seconds to repair correctness failures and optimize CPU/memory use of the same
+worker and operations. Preserve exact SPEC.md semantics and streaming file IO.
+Prefer better algorithms and allocation behavior before micro-optimizations.
+Do not hardcode responses or dataset patterns. You may use stdlib plus approved
+JSON/IO dependencies already installed. Python may additionally use the preinstalled
+NumPy environment described in LANGUAGE.md; disclose this native-library use.
+No other languages for business computation, no external downloads/network,
+delegation, goals or access to evaluator/other runs. Build optimized/release
+artifacts and test your changes. Keep worker.sh interface unchanged.

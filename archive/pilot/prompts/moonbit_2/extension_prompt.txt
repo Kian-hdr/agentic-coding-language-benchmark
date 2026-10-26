@@ -1,0 +1,11 @@
+Extend your existing implementation with the following operation,
+preserving all existing behavior. Keep the same language and run.sh protocol.
+Input: {"op":"merge","intervals":[[4,6],[1,3],[3,4]]}.
+Treat intervals as closed ranges; sort and merge overlaps or equal endpoints,
+but do not merge separated integer ranges such as [1,2] and [3,4].
+Output: {"intervals":[[1,6]]}. Any range with start greater than end returns
+{"error":"invalid_interval"}. Empty input intervals returns {"intervals":[]}.
+Integers and the required results fit signed 32-bit. Read your current code and
+LANGUAGE.md, implement this change, test it and the prior operations, and finish.
+Work only in this directory. No other-language computation, network, packages,
+delegation, goals, or reading other run/evaluation directories. 240 seconds max.

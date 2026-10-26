@@ -1,0 +1,20 @@
+{
+  "language": "zero",
+  "stage": "initial",
+  "model": "gpt-6.1-sol",
+  "reasoning": "medium",
+  "seconds": 408.74919854200004,
+  "timed_out": false,
+  "exit_code": 0,
+  "usage": [
+    {
+      "input_tokens": 2003901,
+      "cached_input_tokens": 1958656,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 15247,
+      "reasoning_output_tokens": 3747
+    }
+  ],
+  "commands": 37,
+  "failed_commands": 21
+}
