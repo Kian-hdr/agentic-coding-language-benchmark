@@ -5,6 +5,13 @@ from scripts.analyze import derive
 from scripts.verify import equal
 from lib.oracle import solve
 class IntegrityTests(unittest.TestCase):
+ def test_analysis_reads_utf8_under_other_locale(self):
+  from scripts.analyze import rendered
+  expected=rendered(derive())
+  raw=(ROOT/'results/TABLES.md').read_bytes()
+  self.assertIn('–',expected)
+  self.assertEqual(raw.decode('utf-8'),expected)
+  self.assertNotEqual(raw.decode('cp1252'),expected)
  def test_bool_is_not_integer(self):
   self.assertFalse(equal({'value':True},{'value':1}))
  def test_array_order_is_significant(self):

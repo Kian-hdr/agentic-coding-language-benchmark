@@ -12,7 +12,7 @@ def digest(p):
  return h.hexdigest()
 def unpack(destination):
  destination.mkdir(parents=True,exist_ok=True)
- for row in json.loads((ROOT/'data/fixtures.json').read_text()):
+ for row in json.loads((ROOT/'data/fixtures.json').read_text(encoding='utf-8')):
   src=ROOT/row['gzip'];dst=destination/row['name']
   if digest(src)!=row['compressed_sha256']:raise ValueError('Compressed fixture hash mismatch: '+row['name'])
   if dst.exists():
@@ -27,7 +27,7 @@ def unpack(destination):
 
 def long_files(destination):
  longdir=destination/'long_run';longdir.mkdir(exist_ok=True)
- manifest=json.loads((ROOT/'data/long_manifest.json').read_text())
+ manifest=json.loads((ROOT/'data/long_manifest.json').read_text(encoding='utf-8'))
  for row in manifest:
   kind=row['kind'];src=destination/(row['source_dataset']+'.jsonl')
   paths=[longdir/(kind+'_long.jsonl'),longdir/(kind+'_long.expected.jsonl')]

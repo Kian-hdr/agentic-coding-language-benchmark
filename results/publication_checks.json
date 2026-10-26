@@ -9,9 +9,10 @@
       "oracle_response_comparisons": 3946
     },
     "derived_analysis_check": true,
-    "focused_unit_tests": 7,
+    "focused_unit_tests": 8,
     "long_dataset_original_input_and_expected_hashes": true,
-    "generic_public_pattern_and_link_checks": true
+    "generic_public_pattern_and_link_checks": true,
+    "fresh_local_clone_offline_and_python_smoke": true
   },
   "candidate_smokes": [
     {
@@ -45,5 +46,12 @@
       "classification": "new publication-adapter rerun, not original observations"
     }
   ],
-  "not_run": "Other compiler adapters were not revalidated as a publication-time batch; model authoring was not rerun. Original scored results remain in archive. Public CI evidence follows on GitHub."
+  "not_run": "Other compiler adapters were not revalidated as a publication-time batch; model authoring was not rerun. Original scored results remain in archive. Public CI evidence follows on GitHub.",
+  "public_repository": "https://github.com/Kian-hdr/agentic-coding-language-benchmark",
+  "initial_public_ci": {
+    "run": "https://github.com/Kian-hdr/agentic-coding-language-benchmark/actions/runs/40409775421",
+    "linux": "passed",
+    "macos": "passed",
+    "windows": "analysis text decoding failed; explicit UTF-8 fix requires next run"
+  }
 }

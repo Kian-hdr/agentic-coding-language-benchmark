@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from lib.oracle import solve
 from scripts.analyze import derive
 LANGS=['python','typescript','go','rust','swift','kotlin','moonbit','baml','zero']
-def load(path):return json.loads((ROOT/path).read_text())
+def load(path):return json.loads((ROOT/path).read_text(encoding='utf-8'))
 def digest(data):return hashlib.sha256(data).hexdigest()
 def equal(a,b):
  if isinstance(a,bool) or isinstance(b,bool):return type(a)==type(b) and a==b

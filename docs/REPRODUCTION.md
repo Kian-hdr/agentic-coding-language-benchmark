@@ -92,3 +92,7 @@ See [model replay](MODEL_REPLAY.md). The recorded `gpt-6.1-sol` alias, model acc
 ## Checksums and changes
 
 `archive/export_manifest.json` maps original file hashes to exported hashes and records path redaction. Historical hashes inside raw result records refer to original pre-redaction files and are intentionally retained; they need not equal sanitized public-source hashes. The export manifest is the integrity contract for published archive bytes. Derived CSV/JSON/Markdown can be regenerated with `python3 scripts/analyze.py` and checked with `--check`. A checksum provides integrity and internal consistency, not an external timestamp, independent replication or proof of an unobserved event.
+
+## Text encoding
+
+Maintained analysis and document checks explicitly read UTF-8. The first Windows CI run caught locale-dependent Markdown decoding; the fix changes publication tooling only, not any historical numeric observation. Generated numeric tables use UTF-8 text and the repository enforces LF checkout for text.

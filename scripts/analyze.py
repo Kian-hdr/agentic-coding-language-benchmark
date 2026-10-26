@@ -5,7 +5,7 @@ import argparse,csv,io,json,statistics
 ROOT=Path(__file__).resolve().parents[1]
 LANGS=['python','typescript','go','rust','swift','kotlin','moonbit','baml','zero']
 KINDS=['invoice','access_log','telemetry']
-def read(rel):return json.loads((ROOT/rel).read_text())
+def read(rel):return json.loads((ROOT/rel).read_text(encoding='utf-8'))
 def derive():
  long=read('archive/deep/results/long_run.json'); rows=[]
  for lang in LANGS:
@@ -37,7 +37,7 @@ def main():
  for rel,text in outputs.items():
   path=ROOT/rel
   if args.check:
-   if not path.is_file() or path.read_text()!=text:raise SystemExit('Derived output differs: '+rel)
-  else:path.parent.mkdir(parents=True,exist_ok=True);path.write_text(text)
+   if not path.is_file() or path.read_text(encoding='utf-8')!=text:raise SystemExit('Derived output differs: '+rel)
+  else:path.parent.mkdir(parents=True,exist_ok=True);path.write_text(text,encoding='utf-8')
  print('Recorded analysis '+('verified' if args.check else 'generated')+'; no benchmark/model calls.')
 if __name__=='__main__':main()

@@ -25,7 +25,7 @@ def main():
   if path.is_symlink():problems.append((rel,'unexpected_symlink'))
   if path.name=='toolchains.local.json' or path.name.endswith('_events.jsonl') or path.name.startswith('.env'):problems.append((rel,'excluded_private_file'))
   if path.suffix=='.gz':continue
-  try:text=path.read_text()
+  try:text=path.read_text(encoding='utf-8')
   except UnicodeDecodeError:
    if path.name=='zero.graph':text=path.read_bytes().decode('latin1')
    else:problems.append((rel,'unexpected_binary'));continue
@@ -34,7 +34,7 @@ def main():
  # Link checking applies to maintained public-facing docs, not path-redacted historical snapshots.
  for path in [ROOT/'README.md',*(ROOT/'docs').glob('*.md')]:
   if not path.exists():continue
-  for target in re.findall(r'\]\(([^)]+)\)',path.read_text()):
+  for target in re.findall(r'\]\(([^)]+)\)',path.read_text(encoding='utf-8')):
    if target.startswith(('https:','http:','mailto:','#')):continue
    dest=target.split('#',1)[0]
    if dest and not (path.parent/dest).exists():problems.append((str(path.relative_to(ROOT)),'missing_link:'+dest))

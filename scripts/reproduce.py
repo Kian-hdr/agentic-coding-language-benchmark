@@ -7,7 +7,7 @@ from scripts.datasets import unpack,long_files
 LANGS=['python','typescript','go','rust','swift','kotlin','moonbit','baml','zero','python_numpy']
 
 def config():
- p=ROOT/'toolchains.local.json';return json.loads(p.read_text()) if p.exists() else {}
+ p=ROOT/'toolchains.local.json';return json.loads(p.read_text(encoding='utf-8')) if p.exists() else {}
 def tool(cfg,key,default):
  value=cfg.get(key,os.environ.get('BENCH_'+key.upper(),default))
  found=shutil.which(value)
@@ -37,7 +37,7 @@ def build(lang,stage,phase='deep',trial=1):
   runtime=[interpreter,'-O',str(dest/'main.py')]
  elif lang=='typescript':
   tsc=tool(cfg,'tsc','tsc');node=tool(cfg,'node','node')
-  conf=json.loads((dest/'tsconfig.json').read_text());opts=conf.setdefault('compilerOptions',{})
+  conf=json.loads((dest/'tsconfig.json').read_text(encoding='utf-8'));opts=conf.setdefault('compilerOptions',{})
   if cfg.get('node_types'):opts['typeRoots']=[cfg['node_types']]
   else:opts.pop('typeRoots',None)
   opts['outDir']='dist';(dest/'tsconfig.json').write_text(json.dumps(conf,indent=2)+'\n')
@@ -104,7 +104,7 @@ def execute(args):
  if args.phase=='pilot':
   if args.action!='validate':raise RuntimeError('Pilot perf: use archived protocol; this adapter currently replays correctness only.')
   from lib.pilot_oracle import cases,equivalent
-  metadata=json.loads((dest/'publication_build.json').read_text());records=[]
+  metadata=json.loads((dest/'publication_build.json').read_text(encoding='utf-8'));records=[]
   for i,(group,req,expected) in enumerate(cases(args.stage=='extension')):
    inp=out/f'case_{i:03d}.json';inp.write_text(json.dumps(req))
    arg=json.dumps(req) if metadata['raw_json_argument'] else str(inp)
@@ -114,10 +114,10 @@ def execute(args):
    records.append({'case':i,'group':group,'correct':proc.returncode==0 and equivalent(actual,expected),'returncode':proc.returncode})
   report={'classification':'new publication-adapter rerun, not original observations','records':records,'passed':sum(r['correct'] for r in records),'total':len(records)}
  else:
-  data=unpack(ROOT/'.work/data');index=json.loads((ROOT/'data/index.json').read_text())
+  data=unpack(ROOT/'.work/data');index=json.loads((ROOT/'data/index.json').read_text(encoding='utf-8'))
   if args.long:long_files(data)
   if args.action=='validate':selected=[r for r in index if r['kind']=='validation' and args.stage in r['stages']]
-  elif args.long:selected=[{'name':r['name'],'input':'long_run/'+r['name']+'.jsonl','expected':'long_run/'+r['name']+'.expected.jsonl','expected_maintenance':'long_run/'+r['name']+'.expected.jsonl','requests':r['requests']} for r in json.loads((ROOT/'data/long_manifest.json').read_text())]
+  elif args.long:selected=[{'name':r['name'],'input':'long_run/'+r['name']+'.jsonl','expected':'long_run/'+r['name']+'.expected.jsonl','expected_maintenance':'long_run/'+r['name']+'.expected.jsonl','requests':r['requests']} for r in json.loads((ROOT/'data/long_manifest.json').read_text(encoding='utf-8'))]
   else:selected=[r for r in index if r['size'] in ['medium','large','empty'] and args.stage in r['stages']]
   records=[];m.TIMEOUT_SECONDS=args.timeout
   for rep in range(1 if args.action=='validate' else args.repetitions):
