@@ -7,3 +7,7 @@ Keep original observations immutable. New timings belong in a separately labeled
 Before a change, run `python3 scripts/verify.py --full`, `python3 scripts/analyze.py --check` and `python3 -m unittest discover -s tests -v`. Do not submit credentials, private machine paths, proprietary datasets, hidden model reasoning or raw account/runtime transcripts. Document necessary redactions. Changes to the analysis or oracle need a meaningful regression case and explanation of which conclusions change.
 
 No automatic model calls run in CI. Please discuss expensive additional experiments before assuming maintainer-funded compute or model access.
+
+## License for contributions
+
+Original project code, research write-ups and synthetic data are MIT-licensed; see [licensing scope](LICENSING.md). Submit contributions under the same MIT terms unless different terms are explicitly identified and agreed before inclusion. Only contribute material you have the right to share, and retain necessary upstream attribution. External results should be proposed through a pull request with their full measurement provenance; contributors do not need direct write access to the main repository.

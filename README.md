@@ -168,3 +168,9 @@ Host/account paths are redacted. Raw agent event transcripts, credentials, binar
 ## Public verification
 
 The corrected public verification workflow passed on **Linux, macOS and Windows**: [run40409920865](https://github.com/Kian-hdr/agentic-coding-language-benchmark/actions/runs/40409920865). Linux/macOS also rebuild and validate the Python worker; Windows verifies the evidence, analysis, units and public-file checks. This verifies the public package, not nine-language consumer-app compatibility or independent model replication.
+
+## Open source and open research
+
+Our original **code, study write-up, documentation, synthetic fixtures, measured results and native chart definitions are MIT-licensed**. You can run the benchmark on your own hardware, test other models or workloads, fork it, reuse the materials and contribute improvements or new result records through pull requests. Preserve the MIT copyright/permission notice when redistributing covered material.
+
+Read [LICENSE](LICENSE), the [licensing scope](LICENSING.md), and [contribution guidance](CONTRIBUTING.md). External compilers, SDKs, dependencies and model weights retain their own terms. This project grants reuse permissions for its original material, not rights it does not hold in third-party components.
