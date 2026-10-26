@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 IGNORED={'.git','.work','.toolchains','__pycache__'}
 def files():
  try:
-  p=subprocess.run(['git','ls-files','-z'],cwd=ROOT,capture_output=True,check=True)
+  p=subprocess.run(['git','ls-files','--cached','--others','--exclude-standard','-z'],cwd=ROOT,capture_output=True,check=True)
   paths=[ROOT/s for s in p.stdout.decode().split('\0') if s]
   if paths:return paths
  except (OSError,subprocess.CalledProcessError):pass

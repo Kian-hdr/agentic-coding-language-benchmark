@@ -9,10 +9,12 @@
       "oracle_response_comparisons": 3946
     },
     "derived_analysis_check": true,
-    "focused_unit_tests": 8,
+    "focused_unit_tests": 10,
     "long_dataset_original_input_and_expected_hashes": true,
     "generic_public_pattern_and_link_checks": true,
-    "fresh_local_clone_offline_and_python_smoke": true
+    "fresh_local_clone_offline_and_python_smoke": true,
+    "native_visual_data_check": true,
+    "reusable_agents_policy_sync": true
   },
   "candidate_smokes": [
     {
@@ -53,5 +55,12 @@
     "linux": "passed",
     "macos": "passed",
     "windows": "analysis text decoding failed; explicit UTF-8 fix requires next run"
+  },
+  "public_ci_verified": {
+    "run": "https://github.com/Kian-hdr/agentic-coding-language-benchmark/actions/runs/40410380049",
+    "linux": "passed",
+    "macos": "passed",
+    "windows": "passed",
+    "scope": "public offline verification and Python smoke where supported; before latest adoption-policy addition"
   }
 }

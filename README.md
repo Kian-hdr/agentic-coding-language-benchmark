@@ -6,7 +6,7 @@
 
 [![Verify benchmark evidence](https://github.com/Kian-hdr/agentic-coding-language-benchmark/actions/workflows/verify.yml/badge.svg)](https://github.com/Kian-hdr/agentic-coding-language-benchmark/actions/workflows/verify.yml)
 
-**[Tier list](docs/TIER_LIST.md) · [Visual results](docs/VISUAL_GUIDE.md) · [Methods](docs/METHODS.md) · [Reproduce](docs/REPRODUCTION.md) · [Raw evidence](archive/)**
+**[Tier list](docs/TIER_LIST.md) · [Visual results](docs/VISUAL_GUIDE.md) · [Set up your agent](docs/AGENTS_SETUP.md) · [Methods](docs/METHODS.md) · [Reproduce](docs/REPRODUCTION.md) · [Raw evidence](archive/)**
 
 **Independent research by Kian-hdr.** A descriptive, AI-assisted comparison of software authored through Codex using the recorded model alias `gpt-6.1-sol` with medium reasoning. Experiments ran October 26–27, 2026 on one Apple Silicon Mac.
 
@@ -33,6 +33,10 @@ These are **use-case recommendations**, separate from the measured results below
 [Read the full tier list, tradeoffs and selection map →](docs/TIER_LIST.md)
 
 > **The practical default:** TypeScript for a typical public web product; Go for a standalone service or CLI; Rust when memory/control constraints earn the complexity. Swift/Kotlin for native platforms, Python for its automation/data ecosystem. Compatibility means the relevant modern devices, with lower weight than reliability, compute use and continued support.
+
+## Use the policy in your own agent
+
+Want your agent to choose languages this way? Use the **[copy-ready setup prompt](docs/AGENTS_SETUP.md)**, or copy the [policy-only section](policy/PROGRAMMING_LANGUAGE_SELECTION.md). The repository's [AGENTS.md](AGENTS.md) includes the same reusable policy and separately labeled benchmark-maintenance rules. Adoption preserves your existing instructions and authorizes no application migration or compiler installation.
 
 ## From an authored program to a supported result
 
@@ -143,7 +147,7 @@ python3 scripts/reproduce.py perf typescript --stage maintenance
 Local publication verification completed:
 
 - `verify.py --full` passed for 952 exported files, 42 frozen fixtures and 3,946 oracle comparisons; `analyze.py --check` passed.
-- `datasets.py --long` reproduced all original longer input/expected hashes; eight focused unit tests passed.
+- `datasets.py --long` reproduced all original longer input/expected hashes; ten focused unit tests passed.
 - The portable Python adapter built and passed all four final deep validation files (221 responses), plus pilot initial trial 1 (69 checks) and extension trial 2 (89 checks).
 
 These are local publication-tool checks, not independent replication of model authoring or the historical resource measurements. Other language adapters have **not been revalidated for this public release**. A heavy compiler batch was deferred because of host memory pressure; adapter availability is not a cross-platform success claim. See [reproduction](docs/REPRODUCTION.md), [toolchains](docs/TOOLCHAINS.md) and [provenance](docs/PROVENANCE.md).

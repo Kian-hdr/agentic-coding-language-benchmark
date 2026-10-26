@@ -12,6 +12,20 @@ class IntegrityTests(unittest.TestCase):
   self.assertIn('–',expected)
   self.assertEqual(raw.decode('utf-8'),expected)
   self.assertNotEqual(raw.decode('cp1252'),expected)
+ def test_native_visuals_preserve_exclusions_and_counts(self):
+  from scripts.visuals import generate
+  outputs=generate()
+  self.assertIn('xychart-beta horizontal',outputs['docs/VISUAL_GUIDE.md'])
+  self.assertNotIn('.png',outputs['README.md'].lower())
+  data=json.loads(outputs['results/visual_data.json'])['data']
+  self.assertEqual(len(data['invoice']),8)
+  self.assertTrue(all(row['language']!='zero' for row in data['invoice']))
+  self.assertEqual(next(r for r in data['invoice'] if r['language']=='baml')['resource_n'],1)
+ def test_reusable_policy_matches_agents_section(self):
+  agents=(ROOT/'AGENTS.md').read_text(encoding='utf8')
+  policy=(ROOT/'policy/PROGRAMMING_LANGUAGE_SELECTION.md').read_text(encoding='utf8')
+  reused=agents.split('<!-- BEGIN REUSABLE LANGUAGE POLICY -->\n',1)[1].split('<!-- END REUSABLE LANGUAGE POLICY -->',1)[0]
+  self.assertEqual(reused,policy)
  def test_bool_is_not_integer(self):
   self.assertFalse(equal({'value':True},{'value':1}))
  def test_array_order_is_significant(self):
