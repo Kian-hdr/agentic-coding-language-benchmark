@@ -1,4 +1,4 @@
-<h1 align="center">Agentic Coding<br>Language Benchmark</h1>
+<p align="center"><strong>Agentic Coding <br>Language Benchmark</strong></p>
 
 <p align="center">Which language should an AI agent use to write software?</p>
 
